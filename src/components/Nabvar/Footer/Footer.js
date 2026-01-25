@@ -8,10 +8,10 @@ export default function Footer() {
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY < lastScrollY.current) {
-        // scroll hacia arriba → ocultar
+     
         setVisible(false);
       } else {
-        // scroll hacia abajo → mostrar
+
         setVisible(true);
       }
 
