@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import { BrowserRouter,Routes, Route, RouterProvider } from 'react-router-dom';
+import { useEffect } from 'react';
 import './App.css';
+import Nabvar from './components/Nabvar/Nabvar';
+import Home from './views/Home';
+import Footer from './components/Nabvar/Footer/Footer';
+import Comercial from './views/Comercial/Comercial';
+
+import Card from './views/Card/Card';
+import SectionInfo from './components/Nabvar/SectionInfo/SectionInfo';
+import Whatsapp from './components/Nabvar/Whatsapp/Whatsapp';
+import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
+
+
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+  <>
+  <BrowserRouter>
+  <Nabvar/>
+  <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/card' element={<Card/>} />
+    <Route path= "/comercial" element={<Comercial/>}/>
+    <Route path='/productoDetalle/:id' element={<ProductoDetalle/>}/>
+  </Routes>
+  <SectionInfo/>
+  <Whatsapp/>
+  <Footer />
+  </BrowserRouter>
+  
+  </>
+)
 }
 
 export default App;

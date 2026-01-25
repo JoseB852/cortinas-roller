@@ -1,0 +1,178 @@
+/* ==============================
+   CONTENEDOR GENERAL
+============================== */
+.custom-navbar {
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  width: 93%;
+  margin: 50px auto 0;
+  background: rgba(30,30,30,0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.4s ease, opacity 0.2s ease;
+}
+
+/* ==============================
+   ALTURA CONTROLADA
+============================== */
+.custom-navbar {
+  height: 80px;
+}
+
+.custom-navbar.expanded {
+  height: 150px;
+}
+
+@media (max-width: 900px) {
+  .custom-navbar {
+    height: auto;
+    min-height: 80px;
+  }
+}
+
+/* ==============================
+   HIDE ON SCROLL
+============================== */
+.custom-navbar.navbar-hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ==============================
+   HEADER
+============================== */
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==============================
+   LOGO
+============================== */
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  transform: scale(2);
+}
+
+/* ==============================
+   MENÚ DESKTOP
+============================== */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-nav a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+/* ==============================
+   ACCIONES
+============================== */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* ==============================
+   HAMBURGUESA
+============================== */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-btn span {
+  width: 22px;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* ==============================
+   MOBILE MENU
+============================== */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* ==============================
+   SEARCH
+============================== */
+.navbar-search {
+  display: none;
+  padding: 20px;
+}
+
+.custom-navbar.expanded .navbar-search {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-search input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  color: white;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 900px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .custom-navbar.menu-open .mobile-menu {
+    display: flex;
+  }
+}
+
+/* ==============================
+   OFFSET
+============================== */
+.main-content {
+  padding-top: 140px;
+}

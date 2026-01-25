@@ -1,0 +1,22 @@
+.Whatsapp {
+    position: fixed;       
+    bottom: 40px;          
+    right: 40px;            
+    width: 60px;            
+    height: 60px;
+    z-index: 1000;         
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .Whatsapp img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .Whatsapp:hover {
+    transform: scale(1.1);  
+  }

@@ -1,0 +1,251 @@
+/* ===============================
+   BODY
+================================ 
+body.card-page {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    #e29c56 0%,
+    #ebd6c1 0%,
+    #cca783 50%,
+    #cca783 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 80vh;
+}*/
+
+/* ===============================
+   SECCIÓN CENTRADA
+================================ */
+.cards-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===============================
+   SCROLL HORIZONTAL
+================================ */
+.cards-scroll {
+  width: 100%;
+  overflow-x: auto;
+  padding: 60px 0;
+}
+
+/* ocultar scrollbar */
+.cards-scroll::-webkit-scrollbar {
+  display: none;
+}
+.cards-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* ===============================
+   CONTENEDOR
+================================ */
+.cards-container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  width: max-content;
+  margin: 0 auto;
+}
+
+/* ===============================
+   WRAPPER EXPANDIBLE
+================================ */
+.card-wrapper {
+  display: flex;
+  height: 600px;
+  width: 250px; /* SOLO la card */
+  flex-shrink: 0;
+  transition: width 0.6s ease;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: cardFadeLeft 0.9s ease-out forwards;
+}
+
+/* espacio para el panel */
+.card-wrapper.open {
+  width: 920px; /* 300 card + 620 panel */
+}
+
+/* stagger animación */
+.card-wrapper:nth-child(1) { animation-delay: 0.1s; }
+.card-wrapper:nth-child(2) { animation-delay: 0.25s; }
+.card-wrapper:nth-child(3) { animation-delay: 0.4s; }
+.card-wrapper:nth-child(4) { animation-delay: 0.55s; }
+
+/* ===============================
+   CARD PRINCIPAL (NO TOCAR)
+================================ */
+.card {
+  width: 300px;
+  height: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===============================
+   TÍTULO
+================================ */
+.card h3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
+
+/* ===============================
+   FLECHA
+================================ */
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .arrow {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
+}
+
+.card-wrapper.open .arrow {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+/* ===============================
+   PANEL LATERAL (GRANDE)
+================================ */
+.card-panel {
+  width: 620px;
+  height: 520px;
+  background: #ffffff;
+  padding: 40px;
+  /*box-shadow: 14px 0 40px rgba(0,0,0,0.15);*/ 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateX(-30px);
+  pointer-events: none;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.card-wrapper.open .card-panel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* ===============================
+   TEXTO PANEL
+================================ */
+.card-panel h4 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #111;
+}
+
+.card-panel p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ===============================
+   BOTÓN (DEBAJO DEL TEXTO)
+================================ */
+.card-panel button {
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  padding: 12px;
+  background-color: rgb(13, 110, 253);
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+  margin: 10px 0 30px;
+}
+
+/* ===============================
+   MINI CARDS (TIPO LUTRON)
+================================ */
+.panel-cards {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px; /* más espacio vertical */
+}
+
+/* CONTENEDOR */
+.panel-mini-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* IMAGEN = MINI CARD */
+.panel-mini-card img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* TEXTO FUERA, ABAJO */
+.panel-mini-card span {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #111;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* HOVER */
+.panel-mini-card:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ===============================
+   ANIMACIÓN ENTRADA
+================================ */
+@keyframes cardFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

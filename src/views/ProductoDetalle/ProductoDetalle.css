@@ -1,0 +1,207 @@
+.main-content {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.container-detalle {
+  width: 100%;
+  height: 100%;
+  margin-top: -130px;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.video-contenedor {
+  width: 100%;
+  height: 700px;
+
+  overflow: hidden;
+}
+
+.video-contenedor video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.introduccion {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  font-size: x-large;
+  padding: 20px;
+}
+
+.introduccion-one {
+  width: 45%;
+  height: 100px;
+  font-size: x-large;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo-one {
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+
+.content.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.content-image {
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  animation-name: zoomIn;
+  animation-timeline: view();
+  /* Animacion en cartas se puede usar en cualquier componente*/
+  animation-duration: 5s;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.50);
+    filter: brightness(0.5) opacity(0.5)
+  }
+
+  to {
+    transform: scale(1);
+    filter: (1);
+    opacity: (1);
+  }
+
+}
+
+.content-description {
+  width: 30%;
+
+}
+
+.button-explorer {
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(13, 110, 253);
+  color: white;
+  cursor: pointer;
+}
+
+/* línea */
+.content-half::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  top: -40px;
+  width: 90%;
+  /* controla el largo */
+  height: 2px;
+  background: 2px solid rgb(237, 237, 237);;
+}
+
+/* =========================
+   LINEA SEPARADORA
+========================= */
+
+.explore-wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-bottom: 80px;
+}
+
+
+/* =========================
+   EXPLORE SECTION
+========================= */
+
+.explore-wrapper {
+  width: 100%;
+  margin-top: 120px;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+/* TEXTO SUPERIOR */
+.half-header {
+  text-align:center;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+.half-header h2 { 
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.half-header p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* CONTENEDOR DE CUADROS */
+.half-row {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* CADA CUADRO */
+.content-half {
+  flex: 1;
+  min-height: 220px;
+  padding: 40px;
+  border-bottom: 2px solid rgb(237, 237, 237);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+/* TITULO */
+.content-half h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* DESCRIPCIÓN */
+.content-half p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .half-row {
+    flex-direction: column;
+  }
+
+  .content-half {
+    width: 100%;
+  }
+}
+

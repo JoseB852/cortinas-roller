@@ -1,0 +1,121 @@
+/* ==============================
+   CONTENEDOR
+============================== */
+.menu {
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+/* ==============================
+   ANIMACIÓN
+============================== */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ==============================
+   LISTA DESKTOP
+============================== */
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-left: 55px;
+  align-items: center;
+}
+
+/* ==============================
+   ITEMS
+============================== */
+.menu li {
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ==============================
+   LINKS
+============================== */
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* ACTIVE */
+.menu a.active {
+  background-color: rgba(30, 30, 30, 0.7);
+  color: white;
+}
+
+/* ==============================
+   HOVER
+============================== */
+.hvr-fade {
+  transition: 0.3s;
+}
+
+.hvr-fade:hover {
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+}
+
+/*  MAIN ITEM (Residencia mobile)*/
+.menu-main {
+  display: none; 
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.menu-main .arrow {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+/*  RESPONSIVE*/
+@media (max-width: 768px) {
+
+  .menu {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  /* Mostrar solo main */
+  .menu-main {
+    display: flex;
+  }
+
+  .menu-item {
+    display: none;
+  }
+
+  .menu-list.open .menu-item {
+    display: block;
+  }
+
+  .menu-list.open .menu-main .arrow {
+    transform: rotate(180deg);
+  }
+}

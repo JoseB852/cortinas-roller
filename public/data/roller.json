@@ -1,0 +1,212 @@
+{
+  "roller": [
+    {
+      "id": 1,
+      "slug": "roller-blackout",
+      "title": "Cortina Roller Blackout",
+      "image": "/images/imagen-1.jpg"
+    },
+    {
+      "id": 2,
+      "slug": "roller-dual",
+      "title": "Cortina Roller Dual",
+      "image": "/images/imagen-2.jpg"
+    },
+    {
+      "id": 3,
+      "slug": "roller-duo",
+      "title": "Cortina Roller Duo",
+      "image": "/images/imagen-3.jpg"
+    },
+    {
+      "id": 4,
+      "slug": "roller-duo",
+      "title": "Cortina Roller Duo",
+      "image": "/images/imagen-3.jpg"
+    }
+  ],
+
+  "comercial": [
+    {
+      "id": 1,
+      "slug": "comercial-blackout",
+      "title": "Cortina Comercial Blackout",
+      "image": "/images/imagen-4.jpg"
+    },
+    {
+      "id": 2,
+      "slug": "comercial-dual",
+      "title": "Cortina Comercial Dual",
+      "image": "/images/imagen-5.jpg"
+    },
+    {
+      "id": 3,
+      "slug": "comercial-duo",
+      "title": "Cortina Comercial Duo",
+      "image": "/images/imagen-6.jpg"
+    }
+  ],
+
+  "rollerDetalle": [
+    {
+      "id": 1,
+      "slug": "roller-blackout",
+      "hero": {
+        "type": "video",
+        "src": "/videos/CortinaBlackout.mp4"
+      },
+      "intro": {
+        "title": "Built for Brilliance",
+        "subtitle": "Cortina Roller Blackout",
+        "description": "Oscurecimiento total con diseño elegante para crear ambientes confortables y modernos."
+      },
+      "sections": [
+        {
+          "id": 1,
+          "title": "Total Light Control",
+          "text": "Bloquea completamente la entrada de luz, ideal para dormitorios, salas de cine y oficinas.",
+          "image": "/images/imagen-blackout-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Premium Fabrics",
+          "text": "Materiales de alta calidad que aseguran durabilidad, fácil mantenimiento y una caída perfecta.",
+          "image": "/images/imagen-blackout-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Minimal Design",
+          "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.",
+          "image": "/images/imagen-blackout-3.jpg"
+        }
+      ],
+      "explore": {
+        "title": "Explore Intelligent Lighting",
+        "description": "Find the light source best suited to a project based on the desired range of color temperatures, budget, and system compatibility.",
+        "items": [
+          {
+            "id": 1,
+            "name": "Lumaris",
+            "text": "Tunable white and warm dim from one light source."
+          },
+          {
+            "id": 2,
+            "name": "Rania",
+            "text": "Exceptional natural light for high-craft lamps and luminaires."
+          },
+          {
+            "id": 3,
+            "name": "Ketra",
+            "text": "Our most innovative lighting technology for high-craft lamps and luminaires."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 2,
+      "slug": "roller-dual",
+      "hero": {
+        "type": "video",
+        "src": "/videos/dual.mp4"
+      },
+      "intro": {
+        "title": "Flexible Lighting",
+        "subtitle": "Cortina Roller Dual",
+        "description": "Combina privacidad y control de luz natural en un solo sistema."
+      },
+      "sections": [
+        {
+          "id": 1,
+          "title": "Day & Night Control",
+          "text": "Permite alternar entre luz natural y privacidad total con suavidad.",
+          "image": "/images/imagen-dual-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Modern Aesthetic",
+          "text": "Un diseño contemporáneo pensado para hogares y espacios corporativos.",
+          "image": "/images/imagen-dual-2.jpg"
+        }
+      ],
+      "explore": {
+        "title": "Explore Intelligent Lighting",
+        "description": "Flexible lighting solutions designed to adapt to every moment of the day.",
+        "items": [
+          {
+            "id": 1,
+            "name": "Dynamic Light",
+            "text": "Adaptive light that follows your daily rhythm."
+          },
+          {
+            "id": 2,
+            "name": "Balanced Control",
+            "text": "Perfect harmony between light and privacy."
+          },
+          {
+            "id": 3,
+            "name": "Smart Integration",
+            "text": "Compatible with modern smart home systems."
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 3,
+      "slug": "roller-duo",
+      "hero": {
+        "type": "video",
+        "src": "/videos/duo.mp4"
+      },
+      "intro": {
+        "title": "Design Meets Function",
+        "subtitle": "Cortina Roller Duo",
+        "description": "La combinación perfecta entre estética, funcionalidad y fácil instalación."
+      },
+      "sections": [
+        {
+          "id": 1,
+          "title": "Elegant Finishes",
+          "text": "Acabados premium que elevan la estética de cualquier ambiente.",
+          "image": "/images/imagen-duo-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Smooth Operation",
+          "text": "Sistema de accionamiento suave y silencioso.",
+          "image": "/images/imagen-duo-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Versatile Spaces",
+          "text": "Perfecta para salas, oficinas y dormitorios modernos.",
+          "image": "/images/imagen-duo-3.jpg"
+        }
+      ],
+      "explore": {
+        "title": "Explore Intelligent Lighting",
+        "description": "Innovative lighting concepts created for modern living.",
+        "items": [
+          {
+            "id": 1,
+            "name": "Precision Light",
+            "text": "Exact control over brightness and ambiance."
+          },
+          {
+            "id": 2,
+            "name": "Soft Transitions",
+            "text": "Smooth changes between lighting scenarios."
+          },
+          {
+            "id": 3,
+            "name": "Architectural Design",
+            "text": "Lighting designed to enhance architectural spaces."
+          }
+        ]
+      }
+    }
+  ]
+}
+
+

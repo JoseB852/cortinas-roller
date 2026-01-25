@@ -1,0 +1,65 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(237, 237, 237);
+    padding: 20px 0;
+    font-size: 0.85rem;
+    color: #111;
+  }
+  
+  /* 👉 CENTRAR TEXTO */
+  .footer-content li {
+    margin-right: 40px;
+    white-space: nowrap;
+  }
+  
+  /* 👉 empujar iconos a la derecha */
+  .footer-content li:nth-last-child(3) {
+    margin-left: auto;
+  }
+  
+  /* iconos juntos */
+  .footer-content li:nth-last-child(-n+3) {
+    margin-right: 18px;
+  }
+  
+  /* iconos hover */
+  .footer-content i {
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .footer-content i:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+  }
+  
+  /* show / hide */
+  .footer.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .footer.hide {
+    opacity: 0;
+    transform: translateY(40px);
+    pointer-events: none;
+  }
+  
