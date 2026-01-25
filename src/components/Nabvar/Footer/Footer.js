@@ -1,20 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Footer.css';
 
 export default function Footer() {
   const [visible, setVisible] = useState(true);
-  let lastScrollY = window.scrollY;
+  const lastScrollY = useRef(window.scrollY);
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY < lastScrollY) {
+      if (window.scrollY < lastScrollY.current) {
         // scroll hacia arriba → ocultar
         setVisible(false);
       } else {
         // scroll hacia abajo → mostrar
         setVisible(true);
       }
-      lastScrollY = window.scrollY;
+
+      lastScrollY.current = window.scrollY;
     };
 
     window.addEventListener('scroll', onScroll);
@@ -30,13 +31,20 @@ export default function Footer() {
         <li>Legal</li>
         <li>Site Map</li>
         <li>Site Feedback</li>
-        <li><i class="fa-brands fa-facebook"></i></li>
+
+        <li><i className="fa-brands fa-facebook"></i></li>
+
         <li>
-          <a href="https://www.instagram.com/cortinaslenox?igsh=MW11dnpzdWdnbnp2bQ==" target="_blank" rel="noopener noreferrer" >
+          <a
+            href="https://www.instagram.com/cortinaslenox?igsh=MW11dnpzdWdnbnp2bQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-instagram"></i>
           </a>
         </li>
-        <li><i class="fa-brands fa-whatsapp"></i></li>
+
+        <li><i className="fa-brands fa-whatsapp"></i></li>
       </ul>
     </footer>
   );
