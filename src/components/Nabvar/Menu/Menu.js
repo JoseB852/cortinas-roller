@@ -11,7 +11,7 @@ export default function Menu() {
 
         {/* Menu principal con click mobile */}
         <li className="menu-main" onClick={() => setOpen(!open)}>
-          <span>Residencia</span>
+          <span>Residencial</span>
           <i className={`fa-solid fa-chevron-down ${open ? "rotate" : ""}`}></i>
         </li>
 
@@ -30,7 +30,7 @@ export default function Menu() {
 
         <li className="menu-item">
           <NavLink to="/hospitality" className="hvr-fade">
-            Infantiles
+            Infantil
           </NavLink>
         </li>
 

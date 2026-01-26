@@ -22,25 +22,21 @@ body.card-page {
   width: 100%;
   display: flex;
   justify-content: center;
+ 
 }
 
 /* ===============================
    SCROLL HORIZONTAL
 ================================ */
-.cards-scroll {
+.cards-scroll{
   width: 100%;
-  overflow-x: auto;
-  padding: 60px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-/* ocultar scrollbar */
-.cards-scroll::-webkit-scrollbar {
-  display: none;
-}
-.cards-scroll {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
+
+
 
 /* ===============================
    CONTENEDOR
@@ -48,9 +44,10 @@ body.card-page {
 .cards-container {
   display: flex;
   gap: 60px;
-  align-items: flex-start;
   width: max-content;
-  margin: 0 auto;
+  margin-top: 50px;
+  transition: transform 0.6s ease; /* movimiento suave */
+
 }
 
 /* ===============================
@@ -59,12 +56,9 @@ body.card-page {
 .card-wrapper {
   display: flex;
   height: 600px;
-  width: 250px; /* SOLO la card */
+  width: 250px; 
   flex-shrink: 0;
   transition: width 0.6s ease;
-  opacity: 0;
-  transform: translateX(-40px);
-  animation: cardFadeLeft 0.9s ease-out forwards;
 }
 
 /* espacio para el panel */
@@ -143,7 +137,7 @@ body.card-page {
    PANEL LATERAL (GRANDE)
 ================================ */
 .card-panel {
-  width: 620px;
+  width: 600px;
   height: 520px;
   background: #ffffff;
   padding: 40px;
