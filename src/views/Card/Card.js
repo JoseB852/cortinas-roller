@@ -51,8 +51,7 @@ export default function Card() {
                   {/* TEXTO */}
                   <h4>{product.title}</h4>
                   <p>
-                    Soluciones premium diseñadas para ofrecer confort,
-                    control de luz y estética moderna en cualquier espacio.
+                  Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno.
                   </p>
 
                     {/* BOTÓN ARRIBA */}
