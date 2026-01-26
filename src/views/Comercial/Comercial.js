@@ -1,5 +1,6 @@
 import './Comercial.css';
 import { useEffect, useState } from 'react';
+import Menu from '../../components/Nabvar/Menu/Menu';
 
 export default function Comercial() {
   const [comercial, setComercial] = useState([]);
@@ -18,7 +19,10 @@ export default function Comercial() {
   }, []);
 
   return (
+    <>
+    <Menu/>
     <div className="comercial-content">
+   
       {comercial.map(product => (
         <div
           className={`comercial-wrapper ${
@@ -48,5 +52,8 @@ export default function Comercial() {
         </div>
       ))}
     </div>
+    
+    </>
+    
   );
 }

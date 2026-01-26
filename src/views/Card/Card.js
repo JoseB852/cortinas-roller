@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
+import Menu from "../../components/Nabvar/Menu/Menu";
 
 export default function Card() {
   const [roller, setRoller] = useState([]);
@@ -24,6 +25,7 @@ export default function Card() {
 
   return (
     <section className="card-page">
+      <Menu/>
       <div className="cards-section">
         <div className="cards-scroll">
           <div className="cards-container">

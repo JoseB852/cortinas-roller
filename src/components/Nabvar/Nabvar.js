@@ -47,7 +47,7 @@ const Nabvar = () => {
             className="search-btn"
             onClick={() => setSearchOpen(!searchOpen)}
           >
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass "></i>
           </button>
 
           <button

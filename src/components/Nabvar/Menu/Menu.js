@@ -9,13 +9,13 @@ export default function Menu() {
     <div className="menu">
       <ul className={`menu-list ${open ? "open" : ""}`}>
 
-        
+        {/* Menu principal con click mobile */}
         <li className="menu-main" onClick={() => setOpen(!open)}>
           <span>Residencia</span>
           <i className={`fa-solid fa-chevron-down ${open ? "rotate" : ""}`}></i>
         </li>
 
-       
+        {/* Subitems que aparecen al click (mobile) o hover (desktop) */}
         <li className="menu-item">
           <NavLink to="/card" className="hvr-fade">
             Residencia
