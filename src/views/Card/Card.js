@@ -61,9 +61,7 @@ export default function Card() {
                 {/* PANEL */}
                 <div className="card-panel">
                   <h4>{product.title}</h4>
-                  <p>
-                  Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmeßnte en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno.
-                  </p>
+                  <p>{product.panel.description}</p>
 
                   <div className="panel-header">
                     <Link to={`/productoDetalle/${product.id}`}>

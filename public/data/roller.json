@@ -4,25 +4,41 @@
       "id": 1,
       "slug": "roller-blackout",
       "title": "Cortina Roller Blackout",
-      "image": "/images/imagen-1.jpg"
+      "image": "/images/imagen-1.jpg",
+      "panel": {
+        "title": "Cortina Blackout",
+        "description": "Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno."
+      }
     },
     {
       "id": 2,
       "slug": "roller-dual",
       "title": "Cortina Roller Dual",
-      "image": "/images/imagen-2.jpg"
+      "image": "/images/imagen-2.jpg",
+      "panel": {
+        "title": "Cortinas Roller Dual",
+        "description": "Las persianas enrollables dobles son un complemento elegante y funcional para cualquier hogar. Ya sea que busques controlar la luz, mejorar la privacidad o añadir un toque elegante a tus ventanas, ¡son la solución perfecta!"
+      }
     },
     {
       "id": 3,
       "slug": "roller-duo",
       "title": "Cortina Roller Duo",
-      "image": "/images/imagen-3.jpg"
+      "image": "/images/imagen-3.jpg",
+      "panel": {
+        "title": "Cortinas Roller Dúo",
+        "description": "Esas rayas modernas, clásicas y elegantes que permiten la entrada de luz natural y brindan privacidad por la noche. Las Cortinas Roller Duo vienen en una amplia selección de tonos neutros."
+      }
     },
     {
       "id": 4,
-      "slug": "roller-duo",
-      "title": "Cortina Roller Duo",
-      "image": "/images/imagen-3.jpg"
+      "slug": "Cortina Vertical",
+      "title": "Cortina Vertical",
+      "image": "/images/imagen-3.1.jpg",
+      "panel": {
+        "title": "Cortinas Verticales",
+        "description": "Nuestras cortinas verticales brindan privacidad total cuando están cerradas y se pueden apilar fácilmente a los lados, lo que le brinda vistas ininterrumpidas. Las cortinas verticales se pueden fabricar a partir de una amplia gama de tejidos que filtran y bloquean la luz."
+      }
     }
   ],
 
