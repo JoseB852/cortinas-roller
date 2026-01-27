@@ -7,7 +7,29 @@
       "image": "/images/imagen-1.jpg",
       "panel": {
         "title": "Cortina Blackout",
-        "description": "Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno."
+        "description": "Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno.",
+        "miniCards": [
+          {
+            "id": 1,
+            "image": "/images/cortina-blackout-1.jpg",
+            "label": "Blackout Total"
+          },
+          {
+            "id": 2,
+            "image": "/images/cortina-blackout-2.jpg",
+            "label": "Blackout Térmico"
+          },
+          {
+            "id": 3,
+            "image": "/images/cortina-blackout-3.jpg",
+            "label": "Blackout Acústico"
+          },
+          {
+            "id": 4,
+            "image": "/images/cortina-blackout-4.jpg",
+            "label": "Blackout Premium"
+          }
+        ]
       }
     },
     {
@@ -17,7 +39,29 @@
       "image": "/images/imagen-2.jpg",
       "panel": {
         "title": "Cortinas Roller Dual",
-        "description": "Las persianas enrollables dobles son un complemento elegante y funcional para cualquier hogar. Ya sea que busques controlar la luz, mejorar la privacidad o añadir un toque elegante a tus ventanas, ¡son la solución perfecta!"
+        "description": "Las persianas enrollables dobles son un complemento elegante y funcional para cualquier hogar. Ya sea que busques controlar la luz, mejorar la privacidad o añadir un toque elegante a tus ventanas, ¡son la solución perfecta!",
+        "miniCards": [
+          {
+            "id": 1,
+            "image": "/images/cortinadual-1.jpg",
+            "label": "Día y Noche"
+          },
+          {
+            "id": 2,
+            "image": "/images/cortinadual-2.jpg",
+            "label": "Control de Luz"
+          },
+          {
+            "id": 3,
+            "image": "/images/cortinadual-3.jpg",
+            "label": "Diseño Moderno"
+          },
+          {
+            "id": 4,
+            "image": "/images/cortinadual-4.jpg",
+            "label": "Diseño Moderno"
+          }
+        ]
       }
     },
     {
@@ -27,17 +71,61 @@
       "image": "/images/imagen-3.jpg",
       "panel": {
         "title": "Cortinas Roller Dúo",
-        "description": "Esas rayas modernas, clásicas y elegantes que permiten la entrada de luz natural y brindan privacidad por la noche. Las Cortinas Roller Duo vienen en una amplia selección de tonos neutros."
+        "description": "Esas rayas modernas, clásicas y elegantes que permiten la entrada de luz natural y brindan privacidad por la noche. Las Cortinas Roller Duo vienen en una amplia selección de tonos neutros.",
+        "miniCards": [
+          {
+            "id": 1,
+            "image": "/images/cortinaduo-1.jpg",
+            "label": "Rayas Elegantes"
+          },
+          {
+            "id": 2,
+            "image": "/images/cortinaduo-2.jpg",
+            "label": "Luz Natural"
+          },
+          {
+            "id": 3,
+            "image": "/images/cortinaduo-3.jpg",
+            "label": "Privacidad Nocturna"
+          },
+          {
+            "id": 4,
+            "image": "/images/cortinaduo-4.jpg",
+            "label": "Privacidad Nocturna"
+          }
+        ]
       }
     },
     {
       "id": 4,
-      "slug": "Cortina Vertical",
+      "slug": "cortina-vertical",
       "title": "Cortina Vertical",
       "image": "/images/imagen-3.1.jpg",
       "panel": {
         "title": "Cortinas Verticales",
-        "description": "Nuestras cortinas verticales brindan privacidad total cuando están cerradas y se pueden apilar fácilmente a los lados, lo que le brinda vistas ininterrumpidas. Las cortinas verticales se pueden fabricar a partir de una amplia gama de tejidos que filtran y bloquean la luz."
+        "description": "Nuestras cortinas verticales brindan privacidad total cuando están cerradas y se pueden apilar fácilmente a los lados, lo que le brinda vistas ininterrumpidas. Las cortinas verticales se pueden fabricar a partir de una amplia gama de tejidos que filtran y bloquean la luz.",
+        "miniCards": [
+          {
+            "id": 1,
+            "image": "/images/cortinavertical-1.jpg",
+            "label": "Privacidad Total"
+          },
+          {
+            "id": 2,
+            "image": "/images/cortinavertical-2.jpg",
+            "label": "Apertura Lateral"
+          },
+          {
+            "id": 3,
+            "image": "/images/cortinavertical-3.jpg",
+            "label": "Control Lumínico"
+          },
+          {
+            "id": 4,
+            "image": "/images/cortinavertical-4.jpg",
+            "label": "Control Lumínico"
+          }
+        ]
       }
     }
   ],

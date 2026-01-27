@@ -9,15 +9,16 @@ export default function Card() {
 
   useEffect(() => {
     fetch("/data/roller.json")
-      .then(res => res.json())
-      .then(data => setRoller(data.roller))
-      .catch(err => console.error(err));
+      .then((res) => res.json())
+      .then((data) => setRoller(data.roller))
+      .catch((err) => console.error(err));
   }, []);
 
   const toggleCard = (id, index) => {
     if (openId === id) {
       setOpenId(null);
-      document.querySelector(".cards-container").style.transform = "translateX(0)";
+      document.querySelector(".cards-container").style.transform =
+        "translateX(0)";
     } else {
       setOpenId(id);
 
@@ -27,9 +28,10 @@ export default function Card() {
       const containerWidth = container.offsetWidth;
       const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
 
-      // Si el panel se sale del contenedor, mueve las cartas
       if (wrapperRight + panelWidth > containerWidth) {
-        container.style.transform = `translateX(-${wrapperRight + panelWidth - containerWidth + 30}px)`;
+        container.style.transform = `translateX(-${
+          wrapperRight + panelWidth - containerWidth + 30
+        }px)`;
       } else {
         container.style.transform = "translateX(0)";
       }
@@ -39,18 +41,22 @@ export default function Card() {
   return (
     <section className="card-page">
       <Menu />
+
       <div className="cards-section">
         <div className="cards-scroll">
           <div className="cards-container">
-
             {roller.map((product, index) => (
               <div
                 key={product.id}
-                className={`card-wrapper ${openId === product.id ? "open" : ""}`}
+                className={`card-wrapper ${
+                  openId === product.id ? "open" : ""
+                }`}
               >
-
                 {/* CARD */}
-                <div className="card" onClick={() => toggleCard(product.id, index)}>
+                <div
+                  className="card"
+                  onClick={() => toggleCard(product.id, index)}
+                >
                   <h3>{product.title}</h3>
                   <img src={product.image} alt={product.title} />
                   <div className="arrow">
@@ -60,7 +66,7 @@ export default function Card() {
 
                 {/* PANEL */}
                 <div className="card-panel">
-                  <h4>{product.title}</h4>
+                  <h4>{product.panel.title}</h4>
                   <p>{product.panel.description}</p>
 
                   <div className="panel-header">
@@ -70,28 +76,17 @@ export default function Card() {
                   </div>
 
                   <div className="panel-cards">
-                    <div className="panel-mini-card">
-                      <img src="/images/cortina-roller-1.jpg" alt="Blackout Total" />
-                      <span>Blackout Total</span>
-                    </div>
-                    <div className="panel-mini-card">
-                      <img src="/images/cortina-roller-2.jpg" alt="Blackout Térmico" />
-                      <span>Blackout Térmico</span>
-                    </div>
-                    <div className="panel-mini-card">
-                      <img src="/images/cortina-roller-3.jpg" alt="Blackout Acústico" />
-                      <span>Blackout Acústico</span>
-                    </div>
-                    <div className="panel-mini-card">
-                      <img src="/images/cortina-roller-4.jpg" alt="Blackout Premium" />
-                      <span>Blackout Premium</span>
-                    </div>
+                    {product.panel.miniCards.map((item) => (
+                      <div className="panel-mini-card" key={item.id}>
+                        <img src={item.image} alt={item.label} />
+                        <span>{item.label}</span>
+                      </div>
+                    ))}
                   </div>
-
                 </div>
+                {/* END PANEL */}
               </div>
             ))}
-
           </div>
         </div>
       </div>
