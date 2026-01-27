@@ -1,125 +1,262 @@
 /* ==============================
-   CONTENEDOR
+   CONTENEDOR PRINCIPAL
+============================== */
+.menu-container {
+  width: 400px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ==============================
+   PRIMER PANEL (PÍLDORA PRINCIPAL) - MOBILE
 ============================== */
 .menu {
-  width: 400px;
-  height: 50px;
-  margin: 20px auto; /* 🔹 separa del navbar */
-  opacity: 0;
-  padding: 0;
-  animation: slideIn 1.5s ease-out forwards;
+  width: 200px;
+  height: 40px;
   display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-/* ==============================
-   ANIMACIÓN
-============================== */
-@keyframes slideIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* ==============================
-   LISTA DESKTOP
-============================== */
 .menu-list {
-  margin-top: 30px;
   list-style: none;
   width: 100%;
-  height: 45px;
+  height: 40px;
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin-left: 30px;
+  justify-content: center;
   align-items: center;
+  padding: 0;
   border-radius: 50px;
   color: white;
-  background: rgba(30,30,30,0.75);
-}
-
-/* ==============================
-   ITEMS
-============================== */
-.menu li {
-  padding: 8px;
-  border-radius: 6px;
+  background: rgba(30, 30, 30, 0.75);
+  margin: 0;
   cursor: pointer;
-  text-align: center;
-  width: 100%; /* ancho automático según contenido */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-list:hover {
+  background: rgba(40, 40, 40, 0.85);
+}
+
+/* Título del menú */
+.menu-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+
+/* Icono de flecha */
+.chevron-icon {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.chevron-icon::after {
+  content: "›";
+  display: inline-block;
+}
+
+.chevron-icon.closed {
+  transform: rotate(90deg);
+}
+
+.chevron-icon.open {
+  transform: rotate(-90deg);
 }
 
 /* ==============================
-   LINKS
+   SEGUNDO PANEL (SUB-MENÚ) - DEBAJO Y POR DELANTE
 ============================== */
-.menu a {
+.submenu-panel {
+  width: 200px;
+  position: absolute;
+  top: 45px; /* Justo debajo del primer panel */
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              opacity 0.3s ease,
+              transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  background: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  z-index: 1002; /* MÁS ALTO que el primer panel */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.submenu-panel.open {
+  max-height: 280px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu-list {
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.submenu-item {
+  width: 85%;
+  text-align: center;
+}
+
+.submenu-item a {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: transparent;
+  font-size: 14px;
+}
+
+.submenu-item a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.submenu-item a.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* ==============================
+   VERSIÓN DESKTOP
+============================== */
+.menu-desktop {
+  display: flex;
+  list-style: none;
+  width: 400px;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: white;
+  background: rgba(30, 30, 30, 0.75);
+  position: relative;
+  z-index: 1;
+}
+
+.menu-item {
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-item a {
   text-decoration: none;
   color: inherit;
-  padding: 8px 20px;             
+  padding: 8px 20px;
   border-radius: 20px;
   display: inline-block;
-  width: 100%;
-  transition: all 0.3s ease;     
-  box-sizing:border-box;        
+  transition: all 0.3s ease;
 }
 
-/* ACTIVE */
-.menu a.active {
+.menu-item a.active {
   background-color: white;
   color: black;
 }
 
-/* ==============================
-   HOVER BONITO
-============================== */
-.hvr-fade:hover {
+.menu-item a:hover {
   background-color: grey;
-  padding: 8px 20px;      
   color: white;
 }
 
-
-/*  MAIN ITEM (Residencia mobile)*/
-.menu-main {
-  display: none; 
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
-}
-
-.menu-main .arrow {
-  font-size: 0.9rem;
-  transition: transform 0.3s ease;
-}
-
-/*  RESPONSIVE*/
+/* ==============================
+   MEDIA QUERIES
+============================== */
 @media (max-width: 768px) {
-
-  .menu {
-    width: 100%;
-    height: auto;
+  .menu-container {
+    width: 200px;
   }
-
-  .menu-list {
-    flex-direction: column;
-    gap: 12px;
-    margin-left: 0;
-    align-items: center;
-  }
-
-  /* Mostrar solo main */
-  .menu-main {
-    display: flex;
-  }
-
-  .menu-item {
+  
+  .menu-desktop {
     display: none;
   }
+}
 
-  .menu-list.open .menu-item {
-    display: block;
+@media (min-width: 769px) {
+  .menu-container {
+    width: 400px;
   }
+  
+  .menu,
+  .submenu-panel {
+    display: none;
+  }
+  
+  .menu-desktop {
+    display: flex;
+  }
+}
 
-  .menu-list.open .menu-main .arrow {
-    transform: rotate(180deg);
+/* ==============================
+   GARANTIZAR QUE EL MENÚ ESTÉ POR DELANTE
+============================== */
+/* Asegurar que el contenedor cree un nuevo stacking context */
+.menu-container {
+  isolation: isolate;
+}
+
+/* Garantizar que los paneles del menú tengan z-index alto */
+.menu,
+.menu-list,
+.submenu-panel {
+  transform: translateZ(0); /* Acelera GPU y mejora stacking */
+}
+
+/* El submenú debe estar por encima de TODO */
+.submenu-panel {
+  z-index: 9999 !important; /* Valor muy alto para garantizar */
+}
+
+/* Si hay problemas con otros elementos, ajustar estos */
+body > *:not(.menu-container) {
+  position: relative;
+  z-index: auto;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-container {
+  animation: slideIn 1.5s ease-out forwards;
 }

@@ -17,23 +17,28 @@ export default function Card() {
   const toggleCard = (id, index) => {
     if (openId === id) {
       setOpenId(null);
-      document.querySelector(".cards-container").style.transform =
-        "translateX(0)";
+      // Solo para desktop
+      if (window.innerWidth > 768) {
+        document.querySelector(".cards-container").style.transform = "translateX(0)";
+      }
     } else {
       setOpenId(id);
+      
+      // Solo para desktop
+      if (window.innerWidth > 768) {
+        const container = document.querySelector(".cards-container");
+        const wrapper = container.children[index];
+        const panelWidth = wrapper.querySelector(".card-panel").offsetWidth;
+        const containerWidth = container.offsetWidth;
+        const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
 
-      const container = document.querySelector(".cards-container");
-      const wrapper = container.children[index];
-      const panelWidth = wrapper.querySelector(".card-panel").offsetWidth;
-      const containerWidth = container.offsetWidth;
-      const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
-
-      if (wrapperRight + panelWidth > containerWidth) {
-        container.style.transform = `translateX(-${
-          wrapperRight + panelWidth - containerWidth + 30
-        }px)`;
-      } else {
-        container.style.transform = "translateX(0)";
+        if (wrapperRight + panelWidth > containerWidth) {
+          container.style.transform = `translateX(-${
+            wrapperRight + panelWidth - containerWidth + 30
+          }px)`;
+        } else {
+          container.style.transform = "translateX(0)";
+        }
       }
     }
   };
@@ -52,7 +57,7 @@ export default function Card() {
                   openId === product.id ? "open" : ""
                 }`}
               >
-                {/* CARD */}
+                {/* CARD (igual que antes) */}
                 <div
                   className="card"
                   onClick={() => toggleCard(product.id, index)}
@@ -64,7 +69,7 @@ export default function Card() {
                   </div>
                 </div>
 
-                {/* PANEL */}
+                {/* PANEL (igual que antes) */}
                 <div className="card-panel">
                   <h4>{product.panel.title}</h4>
                   <p>{product.panel.description}</p>
@@ -84,7 +89,6 @@ export default function Card() {
                     ))}
                   </div>
                 </div>
-                {/* END PANEL */}
               </div>
             ))}
           </div>

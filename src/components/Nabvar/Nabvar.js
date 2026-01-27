@@ -38,8 +38,8 @@ const Nabvar = () => {
         <ul className="navbar-nav">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/features">Features</Link></li>
-          <li><Link to="/pricing">Pricing</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/pricing">Nosotros</Link></li>
+          <li><Link to="/contact">Contacto</Link></li>
         </ul>
 
         <div className="navbar-actions">
