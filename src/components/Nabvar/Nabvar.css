@@ -5,7 +5,7 @@
   position: sticky;
   top: 20px;
   z-index: 1000;
-  width: 93%;
+  width: 1300px; /* tamaño nabvar*/
   margin: 50px auto 0;
   background: rgba(30,30,30,0.75);
   backdrop-filter: blur(12px);
@@ -186,4 +186,18 @@
 ============================== */
 .main-content {
   padding-top: 140px;
+}
+@media (max-width: 900px) {
+  .navbar-logo {
+    transform: scale(1);  
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 900px) {
+  .custom-navbar {
+    width: calc(100% - 20px); /* se adapta al viewport */
+    margin: 20px auto 0;
+  }
 }
