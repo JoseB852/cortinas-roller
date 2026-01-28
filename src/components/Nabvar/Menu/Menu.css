@@ -9,11 +9,10 @@
   flex-direction: column;
   align-items: center;
   z-index: 1000;
+  isolation: isolate; /* stacking context */
 }
 
-/* ==============================
-   PRIMER PANEL (PÍLDORA PRINCIPAL) - MOBILE
-============================== */
+/* ================= MOBILE ================= */
 .menu {
   width: 200px;
   height: 40px;
@@ -45,7 +44,6 @@
   background: rgba(40, 40, 40, 0.85);
 }
 
-/* Título del menú */
 .menu-main {
   display: flex;
   align-items: center;
@@ -58,7 +56,6 @@
   height: 100%;
 }
 
-/* Icono de flecha */
 .chevron-icon {
   display: inline-block;
   font-weight: bold;
@@ -74,21 +71,13 @@
   display: inline-block;
 }
 
-.chevron-icon.closed {
-  transform: rotate(90deg);
-}
+.chevron-icon.closed { transform: rotate(90deg); }
+.chevron-icon.open { transform: rotate(-90deg); }
 
-.chevron-icon.open {
-  transform: rotate(-90deg);
-}
-
-/* ==============================
-   SEGUNDO PANEL (SUB-MENÚ) - DEBAJO Y POR DELANTE
-============================== */
 .submenu-panel {
   width: 200px;
   position: absolute;
-  top: 45px; /* Justo debajo del primer panel */
+  top: 45px;
   left: 0;
   max-height: 0;
   overflow: hidden;
@@ -100,7 +89,7 @@
   background: rgba(40, 40, 40, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 25px;
-  z-index: 1002; /* MÁS ALTO que el primer panel */
+  z-index: 1002;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -147,9 +136,7 @@
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-/* ==============================
-   VERSIÓN DESKTOP
-============================== */
+/* ================= DESKTOP ================= */
 .menu-desktop {
   display: flex;
   list-style: none;
@@ -157,19 +144,21 @@
   height: 45px;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 0 10px;
   margin-left: 30px;
   border-radius: 50px;
   color: white;
   background: rgba(30, 30, 30, 0.75);
   position: relative;
-  z-index: 1;
+  overflow: hidden;
 }
 
 .menu-item {
   padding: 8px;
   text-align: center;
   cursor: pointer;
+  position: relative;
+  z-index: 1; /* sobre el slider */
 }
 
 .menu-item a {
@@ -182,81 +171,35 @@
 }
 
 .menu-item a.active {
-  background-color: white;
   color: black;
 }
 
+/* Hover estilo anterior: mover ligeramente el link */
 .menu-item a:hover {
-  background-color: grey;
-  color: white;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
 }
 
-/* ==============================
-   MEDIA QUERIES
-============================== */
+/* ================= SLIDER FONDO BLANCO ================= */
+.menu-slider {
+  position: absolute;
+  top: 50%;           
+  transform: translateY(-50%); 
+  height: 70%;
+  background-color: white;
+  border-radius: 25px;
+  transition: all 0.6s ease; /* más lenta para ver el movimiento */
+  z-index: 0; /* debajo de los items */
+}
+
+/* ================= MEDIA QUERIES ================= */
 @media (max-width: 768px) {
-  .menu-container {
-    width: 200px;
-  }
-  
-  .menu-desktop {
-    display: none;
-  }
+  .menu-container { width: 200px; }
+  .menu-desktop { display: none; }
 }
 
 @media (min-width: 769px) {
-  .menu-container {
-    width: 400px;
-  }
-  
-  .menu,
-  .submenu-panel {
-    display: none;
-  }
-  
-  .menu-desktop {
-    display: flex;
-  }
-}
-
-/* ==============================
-   GARANTIZAR QUE EL MENÚ ESTÉ POR DELANTE
-============================== */
-/* Asegurar que el contenedor cree un nuevo stacking context */
-.menu-container {
-  isolation: isolate;
-}
-
-/* Garantizar que los paneles del menú tengan z-index alto */
-.menu,
-.menu-list,
-.submenu-panel {
-  transform: translateZ(0); /* Acelera GPU y mejora stacking */
-}
-
-/* El submenú debe estar por encima de TODO */
-.submenu-panel {
-  z-index: 9999 !important; /* Valor muy alto para garantizar */
-}
-
-/* Si hay problemas con otros elementos, ajustar estos */
-body > *:not(.menu-container) {
-  position: relative;
-  z-index: auto;
-}
-
-/* Animación de entrada */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.menu-container {
-  animation: slideIn 1.5s ease-out forwards;
+  .menu, .submenu-panel { display: none; }
+  .menu-desktop { display: flex; }
 }

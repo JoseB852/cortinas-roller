@@ -1,31 +1,22 @@
 /* ===============================
-   FONDO (NO TOCADO)
+   SECCIÓN CENTRADA
 ================================ */
-body.comercial-page {
-  margin: 0;
-  padding: 0;
-
-  background: linear-gradient(
-    135deg,
-    #f5f7fa 0%,
-    hsl(220, 71%, 62%) 25%,
-    #79a0dc 50%,
-    #f3f4f5 75%,
-    #f5f7fa 100%
-  );
-
-  background-repeat: no-repeat;
-
-  /* 👇 AQUÍ CONTROLAS CUÁNTO OCUPA */
-  background-size: 100% 80vh; /* ← cambia este valor */
+.comercial-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden; /* evita scroll lateral */
 }
 
-/* Navbar (NO TOCADO) 
-body.comercial-page .custom-navbar {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-}*/
+/* ===============================
+   SCROLL HORIZONTAL
+================================ */
+.comercial-scroll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
 
 /* ===============================
    CONTENEDOR
@@ -33,28 +24,50 @@ body.comercial-page .custom-navbar {
 .comercial-content {
   display: flex;
   gap: 60px;
-  justify-content: center;
   width: max-content;
-  margin: 60px auto;
+  margin: 50px auto 0;
+  transition: transform 0.6s ease;
 }
 
 /* ===============================
-   WRAPPER EXPANDIBLE (CLAVE)
+   ANIMACIÓN ENTRADA IZQ → DER
+================================ */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   WRAPPER EXPANDIBLE
 ================================ */
 .comercial-wrapper {
   display: flex;
-  width: 300px;
   height: 600px;
-  transition: width 0.5s ease;
+  width: 250px;
   flex-shrink: 0;
+  opacity: 0;
+  animation: fadeInLeft 0.8s ease forwards;
+  transition: width 0.6s ease;
 }
 
 .comercial-wrapper.open {
-  width: 680px; /* 340 + 340 */
+  width: 920px;
 }
 
+/* stagger */
+.comercial-wrapper:nth-child(1) { animation-delay: 0.1s; }
+.comercial-wrapper:nth-child(2) { animation-delay: 0.25s; }
+.comercial-wrapper:nth-child(3) { animation-delay: 0.4s; }
+.comercial-wrapper:nth-child(4) { animation-delay: 0.55s; }
+
 /* ===============================
-   CARD ORIGINAL (NO TOCADA)
+   CARD
 ================================ */
 .comercial {
   width: 300px;
@@ -77,6 +90,9 @@ body.comercial-page .custom-navbar {
   transform: scale(1.1);
 }
 
+/* ===============================
+   TÍTULO
+================================ */
 .comercial h3 {
   position: absolute;
   top: 20px;
@@ -89,7 +105,7 @@ body.comercial-page .custom-navbar {
 }
 
 /* ===============================
-   FLECHA (IGUAL)
+   FLECHA
 ================================ */
 .arrow {
   position: absolute;
@@ -112,18 +128,21 @@ body.comercial-page .custom-navbar {
 }
 
 /* ===============================
-   PANEL (IGUAL AL CARD)
+   PANEL LATERAL
 ================================ */
 .comercial-panel {
-  width: 400px;
-  height: 542;
+  width: 600px;
+  height: 520px;
   background: #ffffff;
-  padding: 30px;
-  box-shadow: 12px 0 30px rgba(0,0,0,0.12);
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   opacity: 0;
-  transform: translateX(-20px);
+  transform: translateX(-30px);
   pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 .comercial-wrapper.open .comercial-panel {
@@ -136,38 +155,157 @@ body.comercial-page .custom-navbar {
    TEXTO PANEL
 ================================ */
 .comercial-panel h4 {
-  margin: 0 0 14px;
-  font-size: 1.4rem;
+  margin: 0;
+  font-size: 1.6rem;
   color: #111;
 }
 
 .comercial-panel p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #444;
 }
 
-.comercial-wrapper{
-  opacity: 0;
-  transform: translateX(-40px);
-  animation: comercialFadeLeft 0.9s ease-out forwards;
+/* ===============================
+   BOTÓN PANEL
+================================ */
+.comercial-panel .panel-button {
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(13, 110, 253);
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+  margin: 10px 0 30px;
 }
 
-/* Aparición escalonada */
-.comercial-wrapper:nth-child(1) { animation-delay: 0.1s; }
-.comercial-wrapper:nth-child(2) { animation-delay: 0.25s; }
-.comercial-wrapper:nth-child(3) { animation-delay: 0.4s; }
-.comercial-wrapper:nth-child(4) { animation-delay: 0.55s; }
-.comercial-wrapper:nth-child(5) { animation-delay: 0.7s; }
+/* ===============================
+   MINI CARDS
+================================ */
+.panel-cards {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
 
-/* Keyframes */
-@keyframes comercialFadeLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
+.panel-mini-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.panel-mini-card img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.panel-mini-card span {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #111;
+  text-align: center;
+}
+
+.panel-mini-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   MOBILE ≤ 768px
+================================ */
+@media (max-width: 768px) {
+
+  .comercial-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    transform: none !important;
+    justify-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
-  to {
+
+  .comercial-wrapper {
+    width: 100% !important;
+    max-width: 300px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .comercial {
+    width: 100%;
+    height: 450px;
+  }
+
+  .comercial-wrapper.open {
+    grid-column: 1 / -1;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .comercial-panel {
+    display: none;
+  }
+
+  .comercial-wrapper.open .comercial-panel {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto 0;
+    padding: 25px;
+    height: auto;
     opacity: 1;
-    transform: translateX(0);
+    transform: none;
+  }
+
+  .panel-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===============================
+   MOBILE PEQUEÑO ≤ 480px
+================================ */
+@media (max-width: 480px) {
+
+  .comercial-content {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+  }
+
+  .comercial {
+    height: 280px;
+  }
+
+  .comercial-wrapper.open .comercial-panel {
+    max-width: 320px;
+  }
+}
+
+/* ===============================
+   TABLET
+================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .comercial-content {
+    gap: 40px;
+  }
+
+  .comercial-wrapper {
+    width: 280px;
+  }
+
+  .comercial-wrapper.open {
+    width: 850px;
   }
 }

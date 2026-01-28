@@ -1,38 +1,14 @@
 /* ===============================
-   BODY
-================================ 
-body.card-page {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(
-    135deg,
-    #e29c56 0%,
-    #ebd6c1 0%,
-    #cca783 50%,
-    #cca783 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 80vh;
-}*/
-
-/* ===============================
    SECCIÓN CENTRADA
 ================================ */
 .cards-section {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow-x: hidden; /* 🔒 evita scroll lateral */
 }
 
-/* ===============================
-   SCROLL HORIZONTAL
-================================ */
-.cards-scroll{
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
+
 
 /* ===============================
    CONTENEDOR
@@ -41,8 +17,22 @@ body.card-page {
   display: flex;
   gap: 60px;
   width: max-content;
-  margin-top: 50px;
-  transition: transform 0.6s ease; /* movimiento suave */
+  margin: 50px auto 0; /* 🔥 CENTRADO REAL */
+  transition: transform 0.6s ease;
+}
+
+/* ===============================
+   ANIMACIÓN ENTRADA IZQ → DER
+================================ */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* ===============================
@@ -51,24 +41,26 @@ body.card-page {
 .card-wrapper {
   display: flex;
   height: 600px;
-  width: 250px; 
+  width: 250px;
   flex-shrink: 0;
+  opacity: 0;
+  animation: fadeInLeft 0.8s ease forwards;
   transition: width 0.6s ease;
 }
 
 /* espacio para el panel */
 .card-wrapper.open {
-  width: 920px; /* 300 card + 620 panel */
+  width: 920px;
 }
 
-/* stagger animación */
+/* stagger */
 .card-wrapper:nth-child(1) { animation-delay: 0.1s; }
 .card-wrapper:nth-child(2) { animation-delay: 0.25s; }
 .card-wrapper:nth-child(3) { animation-delay: 0.4s; }
 .card-wrapper:nth-child(4) { animation-delay: 0.55s; }
 
 /* ===============================
-   CARD PRINCIPAL (NO TOCAR)
+   CARD
 ================================ */
 .card {
   width: 300px;
@@ -129,14 +121,13 @@ body.card-page {
 }
 
 /* ===============================
-   PANEL LATERAL (GRANDE)
+   PANEL LATERAL
 ================================ */
 .card-panel {
   width: 600px;
   height: 520px;
   background: #ffffff;
   padding: 40px;
-  /*box-shadow: 14px 0 40px rgba(0,0,0,0.15);*/ 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   flex-direction: column;
@@ -169,7 +160,7 @@ body.card-page {
 }
 
 /* ===============================
-   BOTÓN (DEBAJO DEL TEXTO)
+   BOTÓN
 ================================ */
 .card-panel button {
   width: 180px;
@@ -184,16 +175,15 @@ body.card-page {
 }
 
 /* ===============================
-   MINI CARDS (TIPO LUTRON)
+   MINI CARDS
 ================================ */
 .panel-cards {
   margin-top: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px 20px; /* más espacio vertical */
+  gap: 30px 20px;
 }
 
-/* CONTENEDOR */
 .panel-mini-card {
   display: flex;
   flex-direction: column;
@@ -201,254 +191,112 @@ body.card-page {
   cursor: pointer;
 }
 
-/* IMAGEN = MINI CARD */
 .panel-mini-card img {
   width: 100%;
   height: 165px;
   object-fit: cover;
-  display: block;
   transition: transform 0.5s ease;
 }
 
-/* TEXTO FUERA, ABAJO */
 .panel-mini-card span {
   margin-top: 10px;
   font-size: 0.9rem;
   color: #111;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
-/* HOVER */
 .panel-mini-card:hover img {
   transform: scale(1.05);
 }
 
 /* ===============================
-   ANIMACIÓN ENTRADA
-================================ */
-@keyframes cardFadeLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* ===============================
-   RESPONSIVE MOBILE (≤768px) - CON CENTRADO
+   MOBILE ≤ 768px
 ================================ */
 @media (max-width: 768px) {
-  /* CENTRAR TODO EL CONTENIDO */
-  .cards-section {
-    padding: 0 15px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .cards-scroll {
-    overflow: visible;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Grid de 2 columnas CENTRADO */
+
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 700px; /* Limitar ancho máximo */
-    margin: 20px auto; /* ESTO CENTRA: auto en los lados */
+    max-width: 700px;
+    margin: 20px auto;
     transform: none !important;
-    transition: none;
-    justify-items: center; /* Centrar items dentro del grid */
+    justify-items: center;
     padding: 0 10px;
     box-sizing: border-box;
   }
-  
-  /* Cada carta mantiene sus proporciones pero centrada */
+
   .card-wrapper {
     width: 100% !important;
-    max-width: 300px; /* Ancho máximo para uniformidad */
+    max-width: 300px;
     height: auto;
-    min-height: 350px;
     flex-direction: column;
-    display: flex;
-    justify-content: center; /* Centrar contenido vertical */
   }
-  
-  /* Card mantiene su aspecto */
+
   .card {
     width: 100%;
     height: 450px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    flex-shrink: 0;
   }
-  
-  /* Título mantiene estilo */
-  .card h3 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    color: white;
-    font-size: 1.1rem;
-    z-index: 2;
-    text-shadow: 0 2px 8px rgba(0,0,0,.6);
-  }
-  
-  /* Flecha mantiene estilo */
-  .arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.5rem;
-    color: white;
-    opacity: 0.7;
-  }
-  
-  /* Cuando se abre en mobile - CENTRADO */
+
   .card-wrapper.open {
-    width: 100% !important;
-    max-width: 700px; /* Ancho máximo cuando está abierto */
-    grid-column: 1 / -1; /* Ocupa ambas columnas */
-    height: auto;
-    margin: 0 auto; /* Centrar */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrar contenido */
+    grid-column: 1 / -1;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center;
   }
-  
-  /* Panel DEBAJO de la card en mobile - CENTRADO */
-  .card-wrapper.open .card-panel {
-    width: 100%;
-    max-width: 650px; /* Ancho controlado */
-    margin: 20px auto 0; /* Centrar */
-    padding: 25px;
-    height: auto;
-    min-height: 400px;
-    position: relative;
-    left: 0;
-    transform: none;
-    opacity: 1;
-    pointer-events: auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  }
-  
-  /* Panel normalmente oculto */
+
   .card-panel {
     display: none;
-    width: 100% !important;
   }
-  
+
   .card-wrapper.open .card-panel {
     display: flex;
-  }
-  
-  /* Título del panel */
-  .card-panel h4 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-  }
-  
-  /* Texto del panel */
-  .card-panel p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  /* Botón */
-  .card-panel button {
     width: 100%;
-    padding: 12px;
-    border-radius: 20px;
-    border: none;
-    background-color: rgb(13, 110, 253);
-    color: white;
-    cursor: pointer;
-    margin: 10px 0 25px;
+    max-width: 650px;
+    margin: 20px auto 0;
+    padding: 25px;
+    height: auto;
+    opacity: 1;
+    transform: none;
   }
-  
-  /* Mini cards - 2 por fila en mobile */
+
   .panel-cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 10px;
-  }
-  
-  .panel-mini-card img {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .panel-mini-card span {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    text-align: center;
   }
 }
 
 /* ===============================
-   RESPONSIVE PARA MÓVILES MÁS PEQUEÑOS - CON CENTRADO
+   MOBILE PEQUEÑO ≤ 480px
 ================================ */
 @media (max-width: 480px) {
+
   .cards-container {
-    grid-template-columns: 1fr; /* 1 carta por fila */
-    gap: 25px;
-    max-width: 350px; /* Más estrecho */
-    justify-items: center; /* Centrar */
+    grid-template-columns: 1fr;
+    max-width: 350px;
   }
-  
-  .card-wrapper {
-    max-width: 320px; /* Un poco menos ancho */
-  }
-  
+
   .card {
     height: 280px;
   }
-  
-  .card-wrapper.open {
-    max-width: 350px;
-  }
-  
+
   .card-wrapper.open .card-panel {
     max-width: 320px;
-  }
-  
-  .panel-cards {
-    grid-template-columns: repeat(2, 1fr); /* Mantiene 2 mini cards */
-    gap: 15px;
-  }
-  
-  .panel-mini-card img {
-    height: 130px;
   }
 }
 
 /* ===============================
-   PARA TABLETS (769px - 1024px)
+   TABLET
 ================================ */
 @media (min-width: 769px) and (max-width: 1024px) {
   .cards-container {
     gap: 40px;
   }
-  
+
   .card-wrapper {
     width: 280px;
   }
-  
+
   .card-wrapper.open {
     width: 850px;
   }
