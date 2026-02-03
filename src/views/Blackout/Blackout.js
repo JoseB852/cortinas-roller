@@ -91,7 +91,7 @@ export default function Blackout() {
       </div>
 
 
-      {/* Título Explorer */}
+      
       <div className="explorer-title">
         <h1>{product.explorer?.title || "Explore the Portfolio"}</h1>
       </div>
@@ -104,7 +104,7 @@ export default function Blackout() {
             className={`content-explorer ${index % 2 !== 0 ? "reverse" : ""}`}
           >
             <div className="explorer">
-              <h2>{section.title}</h2>
+             {/* <h2>{section.title}</h2> */}
               {section.text && <p>{section.text}</p>}
             </div>
             <div
