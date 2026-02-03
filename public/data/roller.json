@@ -10,7 +10,7 @@
         "description": "Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno.",
         "miniCards": [
           { "id": 1, "image": "/images/cortina-blackout-1.jpg", "label": "Blackout" },
-          { "id": 2, "image": "/images/cortina-blackout-2.jpg", "label": "Blackout Térmico" },
+          { "id": 2, "image": "/images/cortina-blackout-2.jpg", "label": "Blackout Dark Roller" },
           { "id": 3, "image": "/images/cortina-blackout-3.jpg", "label": "Blackout Acústico" },
           { "id": 4, "image": "/images/cortina-blackout-4.jpg", "label": "Blackout Premium" }
         ]
@@ -174,6 +174,39 @@
             "title": "Minimal Design",
             "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.",
             "image": "/images/blackout-image-3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "slug": "roller-blackout",
+      "banner": { "type": "image", "src": "/images/banner-blackout-1.jpg" },
+      "titleBlock": {
+        "h1": "Blackout Dark Roller",
+        "p": "Diseñadas para mejorar su privacidad y proporcionar un bloqueo óptimo de la luz, los rieles laterales actúan como guías para el enrollado de las cortinas, garantizando que no queden huecos entre los laterales y la ventana."
+      },
+      
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Transforma cualquier habitación en un santuario de descanso. Nuestras cortinas blackout ofrecen oscuridad absoluta, privacidad total y un diseño que se adapta perfectamente a tu estilo de vida.",
+            "image": "/images/blackout-dark.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Estas cortinas también ofrecen protección contra los dañinos rayos UV, protegiendo su hogar y muebles de posibles daños.",
+            "image": "/images/blackout-dark-1.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Aísla temperatura. Mantén fresco en verano, cálido en invierno. Reduce costos.",
+            "image": "/images/blackout-dark-2.jpg"
           }
         ]
       }
