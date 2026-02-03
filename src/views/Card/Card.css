@@ -5,9 +5,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow-x: hidden; /* 🔒 evita scroll lateral */
+  overflow-x: hidden; 
 }
-
 
 
 /* ===============================
@@ -17,7 +16,7 @@
   display: flex;
   gap: 60px;
   width: max-content;
-  margin: 50px auto 0; /* 🔥 CENTRADO REAL */
+  margin: 50px auto 0; 
   transition: transform 0.6s ease;
 }
 
@@ -48,7 +47,6 @@
   transition: width 0.6s ease;
 }
 
-/* espacio para el panel */
 .card-wrapper.open {
   width: 920px;
 }
@@ -125,7 +123,7 @@
 ================================ */
 .card-panel {
   width: 600px;
-  height: 520px;
+  max-height: 520px; 
   background: #ffffff;
   padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -136,7 +134,9 @@
   transform: translateX(-30px);
   pointer-events: none;
   transition: opacity 0.45s ease, transform 0.45s ease;
+  overflow: hidden; 
 }
+
 
 .card-wrapper.open .card-panel {
   opacity: 1;

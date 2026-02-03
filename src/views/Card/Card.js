@@ -17,14 +17,11 @@ export default function Card() {
   const toggleCard = (id, index) => {
     if (openId === id) {
       setOpenId(null);
-      // Solo para desktop
       if (window.innerWidth > 768) {
         document.querySelector(".cards-container").style.transform = "translateX(0)";
       }
     } else {
       setOpenId(id);
-      
-      // Solo para desktop
       if (window.innerWidth > 768) {
         const container = document.querySelector(".cards-container");
         const wrapper = container.children[index];
@@ -33,9 +30,8 @@ export default function Card() {
         const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
 
         if (wrapperRight + panelWidth > containerWidth) {
-          container.style.transform = `translateX(-${
-            wrapperRight + panelWidth - containerWidth + 30
-          }px)`;
+          container.style.transform = `translateX(-${wrapperRight + panelWidth - containerWidth + 30
+            }px)`;
         } else {
           container.style.transform = "translateX(0)";
         }
@@ -53,9 +49,8 @@ export default function Card() {
             {roller.map((product, index) => (
               <div
                 key={product.id}
-                className={`card-wrapper ${
-                  openId === product.id ? "open" : ""
-                }`}
+                className={`card-wrapper ${openId === product.id ? "open" : ""
+                  }`}
               >
                 {/* CARD (igual que antes) */}
                 <div
@@ -82,12 +77,18 @@ export default function Card() {
 
                   <div className="panel-cards">
                     {product.panel.miniCards.map((item) => (
-                      <div className="panel-mini-card" key={item.id}>
+                      <Link
+                        key={item.id}
+                        to={`/blackout/${item.id}`}
+                        className="panel-mini-card"
+                        onClick={(e) => e.stopPropagation()} // 👈 CLAVE
+                      >
                         <img src={item.image} alt={item.label} />
                         <span>{item.label}</span>
-                      </div>
+                      </Link>
                     ))}
                   </div>
+
                 </div>
               </div>
             ))}

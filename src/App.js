@@ -10,6 +10,7 @@ import Home from './views/Home';
 import Card from './views/Card/Card';
 import Comercial from './views/Comercial/Comercial';
 import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
+import Blackout from './views/Blackout/Blackout';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/card" element={<Card />} />
           <Route path="/comercial" element={<Comercial />} />
           <Route path="/productoDetalle/:id" element={<ProductoDetalle />} />
+          <Route path="/blackout/:id" element={<Blackout/>} />
         </Routes>
       </main>
 

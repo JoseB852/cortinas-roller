@@ -9,7 +9,7 @@
         "title": "Cortina Blackout",
         "description": "Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno.",
         "miniCards": [
-          { "id": 1, "image": "/images/cortina-blackout-1.jpg", "label": "Blackout Total" },
+          { "id": 1, "image": "/images/cortina-blackout-1.jpg", "label": "Blackout" },
           { "id": 2, "image": "/images/cortina-blackout-2.jpg", "label": "Blackout Térmico" },
           { "id": 3, "image": "/images/cortina-blackout-3.jpg", "label": "Blackout Acústico" },
           { "id": 4, "image": "/images/cortina-blackout-4.jpg", "label": "Blackout Premium" }
@@ -141,51 +141,40 @@
           { "id": 3, "name": "Ketra", "text": "Our most innovative lighting technology for high-craft lamps and luminaires." }
         ]
       }
-    },
+    }
+  ],
+
+  "blackoutVista": [
     {
-      "id": 2,
-      "slug": "roller-dual",
-      "hero": { "type": "video", "src": "/videos/dual.mp4" },
-      "intro": {
-        "title": "Flexible Lighting",
-        "subtitle": "Cortina Roller Dual",
-        "description": "Combina privacidad y control de luz natural en un solo sistema."
+      "id": 1,
+      "slug": "roller-blackout",
+      "banner": { "type": "image", "src": "/images/banner-blackout.jpg" },
+      "titleBlock": {
+        "h1": "Blackout",
+        "p": "Crea una experiencia incomparable con luz natural combinando telas de alto rendimiento o textiles personalizados con accionamientos motorizados y sistemas de control inteligente."
       },
-      "sections": [
-        { "id": 1, "title": "Day & Night Control", "text": "Permite alternar entre luz natural y privacidad total con suavidad.", "image": "/images/imagen-dual-1.jpg" },
-        { "id": 2, "title": "Modern Aesthetic", "text": "Un diseño contemporáneo pensado para hogares y espacios corporativos.", "image": "/images/imagen-dual-2.jpg" }
-      ],
-      "explore": {
-        "title": "Explore Intelligent Lighting",
-        "description": "Flexible lighting solutions designed to adapt to every moment of the day.",
-        "items": [
-          { "id": 1, "name": "Dynamic Light", "text": "Adaptive light that follows your daily rhythm." },
-          { "id": 2, "name": "Balanced Control", "text": "Perfect harmony between light and privacy." },
-          { "id": 3, "name": "Smart Integration", "text": "Compatible with modern smart home systems." }
-        ]
-      }
-    },
-    {
-      "id": 3,
-      "slug": "roller-duo",
-      "hero": { "type": "video", "src": "/videos/duo.mp4" },
-      "intro": {
-        "title": "Design Meets Function",
-        "subtitle": "Cortina Roller Duo",
-        "description": "La combinación perfecta entre estética, funcionalidad y fácil instalación."
-      },
-      "sections": [
-        { "id": 1, "title": "Elegant Finishes", "text": "Acabados premium que elevan la estética de cualquier ambiente.", "image": "/images/imagen-duo-1.jpg" },
-        { "id": 2, "title": "Smooth Operation", "text": "Sistema de accionamiento suave y silencioso.", "image": "/images/imagen-duo-2.jpg" },
-        { "id": 3, "title": "Versatile Spaces", "text": "Perfecta para salas, oficinas y dormitorios modernos.", "image": "/images/imagen-duo-3.jpg" }
-      ],
-      "explore": {
-        "title": "Explore Intelligent Lighting",
-        "description": "Innovative lighting concepts created for modern living.",
-        "items": [
-          { "id": 1, "name": "Precision Light", "text": "Exact control over brightness and ambiance." },
-          { "id": 2, "name": "Soft Transitions", "text": "Smooth changes between lighting scenarios." },
-          { "id": 3, "name": "Architectural Design", "text": "Lighting designed to enhance architectural spaces." }
+      
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Conéctate con el exterior y gestione la ganancia de calor solar con telas enrollables de alto rendimiento.",
+            "image": "/images/blackout-image-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Materiales de alta calidad que aseguran durabilidad, fácil mantenimiento y una caída perfecta.",
+            "image": "/images/blackout-image-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.",
+            "image": "/images/blackout-image-3.jpg"
+          }
         ]
       }
     }
