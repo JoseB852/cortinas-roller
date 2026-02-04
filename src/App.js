@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-
+import './index.css';
 import Nabvar from './components/Nabvar/Nabvar';
 import Footer from './components/Nabvar/Footer/Footer';
 import SectionInfo from './components/Nabvar/SectionInfo/SectionInfo';
