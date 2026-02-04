@@ -12,7 +12,7 @@
           { "id": 1, "image": "/images/cortina-blackout-1.jpg", "label": "Blackout" },
           { "id": 2, "image": "/images/cortina-blackout-2.jpg", "label": "Blackout Dark Roller" },
           { "id": 3, "image": "/images/cortina-blackout-3.jpg", "label": "Blackout Dual" },
-          { "id": 4, "image": "/images/cortina-blackout-4.jpg", "label": "Motorizadas" }
+          { "id": 4, "image": "/images/cortina-motorizada-4.jpg", "label": "Motorizadas" }
         ]
       }
     },
@@ -240,6 +240,39 @@
             "title": "Minimal Design",
             "text": "Son una solución práctica, elegante y funcional, pensada para quienes buscan diseño y máximo control de luz en un solo sistema.",
             "image": "/images/black-dual-2.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "slug": "roller-blackout",
+      "banner": { "type": "image", "src": "/images/banner-motorizado.jpg" },
+      "titleBlock": {
+        "h1": "Motorizado",
+        "p": "Descubra lo último en innovación con las cortinas motorizadas Combinando tecnología de vanguardia y un diseño refinado, nuestras cortinas redefinen la elegancia y la comodidad."
+      },
+      
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Disfrute de un control y una precisión inigualables con nuestras cortinas motorizadas, que ajustan fácilmente la iluminación y la privacidad con un solo toque.",
+            "image": "/images/cortina-motorizada-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Equilibre la luz natural y la privacidad con ajustes de persianas sencillos. Con un solo toque, convierta su espacio en un remanso de comodidad, estilo y serenidad.",
+            "image": "/images/cortina-motorizada-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Gracias a su sistema motorizado, se accionan de forma práctica y silenciosa mediante control remoto, interruptor o sistemas inteligentes, eliminando el esfuerzo manual y aportando un toque de domótica al hogar u oficina.",
+            "image": "/images/cortina-motorizada-3.jpg"
           }
         ]
       }
