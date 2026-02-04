@@ -12,7 +12,7 @@
           { "id": 1, "image": "/images/cortina-blackout-1.jpg", "label": "Blackout" },
           { "id": 2, "image": "/images/cortina-blackout-2.jpg", "label": "Blackout Dark Roller" },
           { "id": 3, "image": "/images/cortina-blackout-3.jpg", "label": "Blackout Dual" },
-          { "id": 4, "image": "/images/cortina-blackout-4.jpg", "label": "Blackout Premium" }
+          { "id": 4, "image": "/images/cortina-blackout-4.jpg", "label": "Motorizadas" }
         ]
       }
     },
@@ -233,7 +233,7 @@
             "id": 2,
             "title": "Premium Fabrics",
             "text": "Las cortinas de doble capa permiten un control total de la luz, combinando transparencia y oscuridad para adaptarse a cada momento.",
-            "image": "/images/black-dual-1.jpg"
+            "image": "/images/imagen-blackout-3.jpg"
           },
           {
             "id": 3,
