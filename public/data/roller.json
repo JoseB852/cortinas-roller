@@ -226,20 +226,20 @@
           {
             "id": 1,
             "title": "Titulo pendiente",
-            "text": "Transforma cualquier habitación en un santuario de descanso. Nuestras cortinas blackout ofrecen oscuridad absoluta, privacidad total y un diseño que se adapta perfectamente a tu estilo de vida.",
-            "image": "/images/blackout-dark.jpg"
+            "text": "Las cortinas enrollables dobles son una solución elegante y práctica para el tratamiento de ventanas. Al combinar dos tipos diferentes de cortinas, ofrecen un excelente control de la luz, privacidad y eficiencia energética",
+            "image": "/images/black-dual.jpg"
           },
           {
             "id": 2,
             "title": "Premium Fabrics",
-            "text": "Estas cortinas también ofrecen protección contra los dañinos rayos UV, protegiendo su hogar y muebles de posibles daños.",
-            "image": "/images/blackout-dark-1.jpg"
+            "text": "Las cortinas de doble capa permiten un control total de la luz, combinando transparencia y oscuridad para adaptarse a cada momento.",
+            "image": "/images/black-dual-1.jpg"
           },
           {
             "id": 3,
             "title": "Minimal Design",
-            "text": "Aísla temperatura. Mantén fresco en verano, cálido en invierno. Reduce costos.",
-            "image": "/images/blackout-dark-2.jpg"
+            "text": "Son una solución práctica, elegante y funcional, pensada para quienes buscan diseño y máximo control de luz en un solo sistema.",
+            "image": "/images/black-dual-2.jpg"
           }
         ]
       }
