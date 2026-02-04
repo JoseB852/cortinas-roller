@@ -110,10 +110,7 @@ export default function Blackout() {
             <div
               className="explorer-imagen"
               style={{ 
-                backgroundImage: `url(${section.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}
+                backgroundImage: `url(${section.image})`}}
             />
           </div>
         ))
