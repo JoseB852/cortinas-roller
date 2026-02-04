@@ -210,6 +210,39 @@
           }
         ]
       }
+    },
+    {
+      "id": 3,
+      "slug": "roller-blackout",
+      "banner": { "type": "image", "src": "/images/banner-black-dual.jpg" },
+      "titleBlock": {
+        "h1": "Blackout Dual",
+        "p": "El sistema doble combina cortinas Blackout y Sunscreen para un control total de la luz, ofreciendo oscurecimiento completo y privacidad, ideal para dormitorios, salas de reuniones y diversos espacios del hogar."
+      },
+      
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Transforma cualquier habitación en un santuario de descanso. Nuestras cortinas blackout ofrecen oscuridad absoluta, privacidad total y un diseño que se adapta perfectamente a tu estilo de vida.",
+            "image": "/images/blackout-dark.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Estas cortinas también ofrecen protección contra los dañinos rayos UV, protegiendo su hogar y muebles de posibles daños.",
+            "image": "/images/blackout-dark-1.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Aísla temperatura. Mantén fresco en verano, cálido en invierno. Reduce costos.",
+            "image": "/images/blackout-dark-2.jpg"
+          }
+        ]
+      }
     }
   ]
 }
