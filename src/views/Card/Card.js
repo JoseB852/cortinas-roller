@@ -107,20 +107,15 @@ export default function Card() {
 
                   <div className="panel-cards">
                     {product.panel.miniCards.map((item) => (
-                      <Link
-                        key={item.id}
-                        to={`/blackout/${item.id}`}
-                        className="panel-mini-card"
-                        onClick={(e) =>
-                          e.stopPropagation()
-                        }
-                      >
-                        <img
-                          src={item.image}
-                          alt={item.label}
-                        />
-                        <span>{item.label}</span>
-                      </Link>
+                     <Link
+                     key={item.id}
+                     to={`/blackout/${item.viewId}`}  // ← CAMBIADO: item.viewId en lugar de item.id
+                     className="panel-mini-card"
+                     onClick={(e) => e.stopPropagation()}
+                   >
+                     <img src={item.image} alt={item.label} />
+                     <span>{item.label}</span>
+                   </Link>
                     ))}
                   </div>
                 </div>

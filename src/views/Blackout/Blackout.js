@@ -6,7 +6,7 @@ export default function Blackout() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { id } = useParams(); // id de la URL
+  const { id } = useParams(); // id de la URL (ahora es string: "blackout-basic", etc.)
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,12 +32,8 @@ export default function Blackout() {
       });
   }, []);
 
-  // Buscamos el producto por ID numérico
-  const product = products.find((item) => {
-    const itemId = Number(item.id);
-    const paramId = Number(id);
-    return itemId === paramId;
-  });
+  // Buscamos el producto por ID (ahora string, no número)
+  const product = products.find((item) => item.id === id);
 
   // Si hay error
   if (error) {
@@ -65,7 +61,7 @@ export default function Blackout() {
     return (
       <div className="not-found-container">
         <h2>Producto no encontrado</h2>
-        <p>No se encontró un producto con el ID: {id}</p>
+        <p>No se encontró un producto con el identificador: "{id}"</p>
         <button onClick={() => navigate("/")}>Volver al inicio</button>
       </div>
     );
@@ -90,8 +86,6 @@ export default function Blackout() {
         <p>{product.titleBlock?.p || "Descripción no disponible"}</p>
       </div>
 
-
-      
       <div className="explorer-title">
         <h1>{product.explorer?.title || "Explore the Portfolio"}</h1>
       </div>
@@ -104,7 +98,6 @@ export default function Blackout() {
             className={`content-explorer ${index % 2 !== 0 ? "reverse" : ""}`}
           >
             <div className="explorer">
-             {/* <h2>{section.title}</h2> */}
               {section.text && <p>{section.text}</p>}
             </div>
             <div
