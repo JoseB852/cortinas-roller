@@ -48,13 +48,13 @@
           { 
             "id": 1, 
             "image": "/images/cortinadual-1.jpg", 
-            "label": "Día y Noche",
+            "label": "Roller Dual",
             "viewId": "dual-dia-noche" 
           },
           { 
             "id": 2, 
             "image": "/images/cortinadual-2.jpg", 
-            "label": "Control de Luz",
+            "label": "Motorizadas",
             "viewId": "dual-control-luz"  
           },
           { 
@@ -450,8 +450,8 @@
     "slug": "roller-dual-control-luz",
     "banner": { "type": "image", "src": "/images/banner-dual-control-luz.jpg" },
     "titleBlock": {
-      "h1": "Control Preciso de Luz",
-      "p": "Ajusta milimétricamente la entrada de luz natural para crear ambientes perfectamente iluminados según cada actividad."
+      "h1": "Motorizado",
+      "p": "Impulsadas por motores avanzados, las cortinas se deslizan suavemente y funcionan con un mínimo ruido. De diseño duradero, están diseñadas para el uso diario y requieren poco mantenimiento."
     },
     "explorer": {
       "title": "Precisión Lumínica",
@@ -459,19 +459,19 @@
         {
           "id": 1,
           "title": "Ajuste Gradual",
-          "text": "Controla desde luz tenue hasta iluminación completa con un sistema de posicionamiento preciso.",
+          "text": "Diseñado para la seguridad infantil, incorpora un motor silencioso y automático que elimina el uso de cadenas o cordones, reduciendo riesgos y brindando mayor tranquilidad a los padres.",
           "image": "/images/dual-control-luz-1.jpg"
         },
         {
           "id": 2,
           "title": "Protección Solar",
-          "text": "Filtra los rayos UV dañinos mientras mantienes la luminosidad y calidez natural en tu espacio.",
+          "text": "Permite controlar las persianas inteligentes fácilmente mediante un control remoto multicanal, que ofrece ajustes precisos e instantáneos, con opción de manejar varias persianas a la vez o de forma independiente.",
           "image": "/images/dual-control-luz-2.jpg"
         },
         {
           "id": 3,
           "title": "Confort Visual",
-          "text": "Elimina reflejos en pantallas y reduce la fatiga ocular en espacios de trabajo y lectura.",
+          "text": "Diseño moderno de dos capas que permite un control flexible de la luz, con opciones de privacidad, tamaños personalizados y telas variadas, combinando funcionalidad y estilo.",
           "image": "/images/dual-control-luz-3.jpg"
         }
       ]
