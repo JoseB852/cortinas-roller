@@ -60,7 +60,7 @@
 
 .content-explorer {
   width: 100%;
-  height: 550px;
+  min-height: 550px; 
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@
 
 .explorer {
   width: 40%;
-  height: 100%;
+  height: 550px;
 }
 
 .explorer p {
@@ -89,12 +89,12 @@
 
 .explorer-imagen {
   width: 60%;
-  height: 100%;
-  background-size: cover;
+  min-height: 500px;
   background-position: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  animation: zoomIn 5s ease-out;
+  animation: zoomIn 1.5s ease-out;
 }
+
 
 
 
