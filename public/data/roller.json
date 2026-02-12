@@ -53,14 +53,14 @@
           },
           { 
             "id": 2, 
-            "image": "/images/cortinadual-2.jpg", 
+            "image": "/images/cortina-motorizada-10.jpg", 
             "label": "Motorizadas",
             "viewId": "dual-control-luz"  
           },
           { 
             "id": 3, 
-            "image": "/images/cortinadual-3.jpg", 
-            "label": "Diseño Moderno",
+            "image": "/images/cortina-dark-roller.jpg", 
+            "label": "Dual Dark Roller",
             "viewId": "dual-diseno-moderno"  
           },
           { 
@@ -450,7 +450,7 @@
     "slug": "roller-dual-control-luz",
     "banner": { "type": "image", "src": "/images/banner-dual-control-luz.jpg" },
     "titleBlock": {
-      "h1": "Motorizado",
+      "h1": "Motorizadas",
       "p": "Impulsadas por motores avanzados, las cortinas se deslizan suavemente y funcionan con un mínimo ruido. De diseño duradero, están diseñadas para el uso diario y requieren poco mantenimiento."
     },
     "explorer": {
