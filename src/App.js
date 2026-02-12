@@ -11,6 +11,7 @@ import Card from './views/Card/Card';
 import Comercial from './views/Comercial/Comercial';
 import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
 import Blackout from './views/Blackout/Blackout';
+import Contact from './views/Contact/Contact';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/card" element={<Card />} />
           <Route path="/comercial" element={<Comercial />} />
           <Route path="/productoDetalle/:id" element={<ProductoDetalle />} />
