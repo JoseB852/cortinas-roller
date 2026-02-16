@@ -38,7 +38,7 @@ const Nabvar = () => {
         <ul className="navbar-nav">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/features">Features</Link></li>
-          <li><Link to="/pricing">Nosotros</Link></li>
+          <li><Link to="/us">Nosotros</Link></li>
           <li><Link to="/contact">Contacto</Link></li>
         </ul>
 
@@ -64,7 +64,7 @@ const Nabvar = () => {
       <div className="mobile-menu">
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/features" onClick={() => setMenuOpen(false)}>Features</Link>
-        <Link to="/pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
+        <Link to="/us" onClick={() => setMenuOpen(false)}>Nosotros</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
 

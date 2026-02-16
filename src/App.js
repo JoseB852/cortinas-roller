@@ -5,13 +5,13 @@ import Nabvar from './components/Nabvar/Nabvar';
 import Footer from './components/Nabvar/Footer/Footer';
 import SectionInfo from './components/Nabvar/SectionInfo/SectionInfo';
 import Whatsapp from './components/Nabvar/Whatsapp/Whatsapp';
-
 import Home from './views/Home';
 import Card from './views/Card/Card';
 import Comercial from './views/Comercial/Comercial';
 import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
 import Blackout from './views/Blackout/Blackout';
 import Contact from './views/Contact/Contact';
+import Us from './views/Us/Us';
 
 export default function App() {
   return (
@@ -26,6 +26,7 @@ export default function App() {
           <Route path="/comercial" element={<Comercial />} />
           <Route path="/productoDetalle/:id" element={<ProductoDetalle />} />
           <Route path="/blackout/:id" element={<Blackout/>} />
+          <Route path="/us" element={<Us />} />
         </Routes>
       </main>
 

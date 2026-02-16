@@ -9,29 +9,29 @@
         "title": "Cortina Blackout",
         "description": "Son una solución innovadora y efectiva ofrecen total privacidad y oscuridad al impedir la entrada de luz a las ventanas que cubren. Creando una barrera entre el interior y el exterior, estas cortinas se encuentran comúnmente en dormitorios y salas de estar, son un gran aislador térmico manteniendo en verano el ambiente fresco y conservando la calefacción en invierno.",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortina-blackout-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortina-blackout-1.jpg",
             "label": "Blackout",
-            "viewId": "blackout-basic" 
+            "viewId": "blackout-basic"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortina-blackout-2.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortina-blackout-2.jpg",
             "label": "Blackout Dark Roller",
-            "viewId": "blackout-dark"  
+            "viewId": "blackout-dark"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortina-blackout-3.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortina-blackout-3.jpg",
             "label": "Blackout Dual",
-            "viewId": "blackout-dual"  
+            "viewId": "blackout-dual"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortina-motorizada-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortina-motorizada-4.jpg",
             "label": "Motorizadas",
-            "viewId": "blackout-motorizado" 
+            "viewId": "blackout-motorizado"
           }
         ]
       }
@@ -45,29 +45,29 @@
         "title": "Cortinas Roller Dual",
         "description": "Las persianas enrollables dobles son un complemento elegante y funcional para cualquier hogar. Ya sea que busques controlar la luz, mejorar la privacidad o añadir un toque elegante a tus ventanas, ¡son la solución perfecta!",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortinadual-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortinadual-1.jpg",
             "label": "Roller Dual",
-            "viewId": "dual-dia-noche" 
+            "viewId": "dual-dia-noche"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortina-motorizada-10.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortina-motorizada-10.jpg",
             "label": "Motorizadas",
-            "viewId": "dual-control-luz"  
+            "viewId": "dual-control-luz"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortina-dark-roller.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortina-dark-roller.jpg",
             "label": "Dual Dark Roller",
-            "viewId": "dual-diseno-moderno"  
+            "viewId": "dual-diseno-moderno"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortinadual-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortinadual-4.jpg",
             "label": "Diseño Moderno",
-            "viewId": "dual-diseno-moderno-2" 
+            "viewId": "dual-diseno-moderno-2"
           }
         ]
       }
@@ -81,29 +81,29 @@
         "title": "Cortinas Roller Dúo",
         "description": "Esas rayas modernas, clásicas y elegantes que permiten la entrada de luz natural y brindan privacidad por la noche. Las Cortinas Roller Duo vienen en una amplia selección de tonos neutros.",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortinaduo-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortinaduo-1.jpg",
             "label": "Rayas Elegantes",
-            "viewId": "duo-rayas-elegantes" 
+            "viewId": "duo-rayas-elegantes"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortinaduo-2.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortinaduo-2.jpg",
             "label": "Luz Natural",
-            "viewId": "duo-luz-natural" 
+            "viewId": "duo-luz-natural"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortinaduo-3.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortinaduo-3.jpg",
             "label": "Privacidad Nocturna",
-            "viewId": "duo-privacidad-nocturna" 
+            "viewId": "duo-privacidad-nocturna"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortinaduo-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortinaduo-4.jpg",
             "label": "Privacidad Nocturna",
-            "viewId": "duo-privacidad-nocturna-2"  
+            "viewId": "duo-privacidad-nocturna-2"
           }
         ]
       }
@@ -117,35 +117,35 @@
         "title": "Cortinas Verticales",
         "description": "Nuestras cortinas verticales brindan privacidad total cuando están cerradas y se pueden apilar fácilmente a los lados, lo que le brinda vistas ininterrumpidas. Las cortinas verticales se pueden fabricar a partir de una amplia gama de tejidos que filtran y bloquean la luz.",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortinavertical-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortinavertical-1.jpg",
             "label": "Privacidad Total",
-            "viewId": "vertical-privacidad-total" 
+            "viewId": "vertical-privacidad-total"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortinavertical-2.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortinavertical-2.jpg",
             "label": "Apertura Lateral",
-            "viewId": "vertical-apertura-lateral"  
+            "viewId": "vertical-apertura-lateral"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortinavertical-3.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortinavertical-3.jpg",
             "label": "Control Lumínico",
-            "viewId": "vertical-control-luminico"  
+            "viewId": "vertical-control-luminico"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortinavertical-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortinavertical-4.jpg",
             "label": "Control Lumínico",
-            "viewId": "vertical-control-luminico-2"  
+            "viewId": "vertical-control-luminico-2"
           }
         ]
       }
     }
   ],
-
+  
   "comercial": [
     {
       "id": 1,
@@ -156,29 +156,29 @@
         "title": "Blackout Comercial",
         "description": "Soluciones blackout diseñadas para oficinas, hoteles y espacios corporativos.",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortina-blackout-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortina-blackout-1.jpg",
             "label": "Oscurecimiento Total",
-            "viewId": "comercial-blackout-total"  
+            "viewId": "comercial-blackout-total"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortina-blackout-2.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortina-blackout-2.jpg",
             "label": "Aislación Térmica",
-            "viewId": "comercial-blackout-termico" 
+            "viewId": "comercial-blackout-termico"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortina-blackout-3.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortina-blackout-3.jpg",
             "label": "Uso Corporativo",
-            "viewId": "comercial-blackout-corporativo" 
+            "viewId": "comercial-blackout-corporativo"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortina-blackout-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortina-blackout-4.jpg",
             "label": "Alta Durabilidad",
-            "viewId": "comercial-blackout-durabilidad"  
+            "viewId": "comercial-blackout-durabilidad"
           }
         ]
       }
@@ -192,29 +192,29 @@
         "title": "Dual Comercial",
         "description": "Control de luz flexible y diseño moderno para ambientes profesionales.",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortinadual-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortinadual-1.jpg",
             "label": "Día / Noche",
-            "viewId": "comercial-dual-dia-noche"  
+            "viewId": "comercial-dual-dia-noche"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortinadual-2.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortinadual-2.jpg",
             "label": "Privacidad",
-            "viewId": "comercial-dual-privacidad"  
+            "viewId": "comercial-dual-privacidad"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortinadual-3.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortinadual-3.jpg",
             "label": "Diseño Corporativo",
-            "viewId": "comercial-dual-corporativo"  
+            "viewId": "comercial-dual-corporativo"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortinadual-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortinadual-4.jpg",
             "label": "Control Solar",
-            "viewId": "comercial-dual-solar" 
+            "viewId": "comercial-dual-solar"
           }
         ]
       }
@@ -228,478 +228,580 @@
         "title": "Duo Comercial",
         "description": "Equilibrio perfecto entre luz natural y privacidad en espacios comerciales.",
         "miniCards": [
-          { 
-            "id": 1, 
-            "image": "/images/cortinaduo-1.jpg", 
+          {
+            "id": 1,
+            "image": "/images/cortinaduo-1.jpg",
             "label": "Rayas Elegantes",
-            "viewId": "comercial-duo-rayas"  
+            "viewId": "comercial-duo-rayas"
           },
-          { 
-            "id": 2, 
-            "image": "/images/cortinaduo-2.jpg", 
+          {
+            "id": 2,
+            "image": "/images/cortinaduo-2.jpg",
             "label": "Luz Natural",
-            "viewId": "comercial-duo-luz" 
+            "viewId": "comercial-duo-luz"
           },
-          { 
-            "id": 3, 
-            "image": "/images/cortinaduo-3.jpg", 
+          {
+            "id": 3,
+            "image": "/images/cortinaduo-3.jpg",
             "label": "Privacidad",
-            "viewId": "comercial-duo-privacidad" 
+            "viewId": "comercial-duo-privacidad"
           },
-          { 
-            "id": 4, 
-            "image": "/images/cortinaduo-4.jpg", 
+          {
+            "id": 4,
+            "image": "/images/cortinaduo-4.jpg",
             "label": "Diseño Premium",
-            "viewId": "comercial-duo-premium" 
+            "viewId": "comercial-duo-premium"
           }
         ]
       }
     }
   ],
-
   "rollerDetalle": [
     {
       "id": 1,
       "slug": "roller-blackout",
-      "hero": { "type": "video", "src": "/videos/CortinaBlackout.mp4" },
+      "hero": {
+        "type": "video",
+        "src": "/videos/CortinaBlackout.mp4"
+      },
       "intro": {
         "title": "Built for Brilliance",
         "subtitle": "Cortina Roller Blackout",
         "description": "Oscurecimiento total con diseño elegante para crear ambientes confortables y modernos."
       },
       "sections": [
-        { "id": 1, "title": "Total Light Control", "text": "Bloquea completamente la entrada de luz, ideal para dormitorios, salas de cine y oficinas.", "image": "/images/imagen-blackout-1.jpg" },
-        { "id": 2, "title": "Premium Fabrics", "text": "Materiales de alta calidad que aseguran durabilidad, fácil mantenimiento y una caída perfecta.", "image": "/images/imagen-blackout-2.jpg" },
-        { "id": 3, "title": "Minimal Design", "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.", "image": "/images/imagen-blackout-3.jpg" }
-      ],
-      "explore": {
-        "title": "Explore Intelligent Lighting",
-        "description": "Find the light source best suited to a project based on the desired range of color temperatures, budget, and system compatibility.",
-        "items": [
-          { "id": 1, "name": "Lumaris", "text": "Tunable white and warm dim from one light source." },
-          { "id": 2, "name": "Rania", "text": "Exceptional natural light for high-craft lamps and luminaires." },
-          { "id": 3, "name": "Ketra", "text": "Our most innovative lighting technology for high-craft lamps and luminaires." }
-        ]
-      }
-    }
-  ],
-
- "blackoutVista": [
-  {
-    "id": "blackout-basic",
-    "slug": "roller-blackout",
-    "banner": { "type": "image", "src": "/images/banner-blackout.jpg" },
-    "titleBlock": {
-      "h1": "Blackout",
-      "p": "Crea una experiencia incomparable con luz natural combinando telas de alto rendimiento o textiles personalizados con accionamientos motorizados y sistemas de control inteligente."
-    },
-    "explorer": {
-      "title": "Explore the Portfolio",
-      "sections": [
         {
           "id": 1,
-          "title": "Titulo pendiente",
-          "text": "Conéctate con el exterior y gestione la ganancia de calor solar con telas enrollables de alto rendimiento.",
-          "image": "/images/blackout-image-1.jpg"
+          "title": "Total Light Control",
+          "text": "Bloquea completamente la entrada de luz, ideal para dormitorios, salas de cine y oficinas.",
+          "image": "/images/imagen-blackout-1.jpg"
         },
         {
           "id": 2,
           "title": "Premium Fabrics",
           "text": "Materiales de alta calidad que aseguran durabilidad, fácil mantenimiento y una caída perfecta.",
-          "image": "/images/blackout-image-2.jpg"
+          "image": "/images/imagen-blackout-2.jpg"
         },
         {
           "id": 3,
           "title": "Minimal Design",
           "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.",
-          "image": "/images/blackout-image-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "blackout-dark",
-    "slug": "roller-blackout",
-    "banner": { "type": "image", "src": "/images/banner-blackout-1.jpg" },
-    "titleBlock": {
-      "h1": "Blackout Dark Roller",
-      "p": "Diseñadas para mejorar su privacidad y proporcionar un bloqueo óptimo de la luz, los rieles laterales actúan como guías para el enrollado de las cortinas, garantizando que no queden huecos entre los laterales y la ventana."
-    },
-    "explorer": {
-      "title": "Explore the Portfolio",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Titulo pendiente",
-          "text": "Transforma cualquier habitación en un santuario de descanso. Nuestras cortinas blackout ofrecen oscuridad absoluta, privacidad total y un diseño que se adapta perfectamente a tu estilo de vida.",
-          "image": "/images/blackout-dark.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Premium Fabrics",
-          "text": "Estas cortinas también ofrecen protección contra los dañinos rayos UV, protegiendo su hogar y muebles de posibles daños.",
-          "image": "/images/blackout-dark-1.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Minimal Design",
-          "text": "Aísla temperatura. Mantén fresco en verano, cálido en invierno. Reduce costos.",
-          "image": "/images/blackout-dark-2.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "blackout-dual",
-    "slug": "roller-blackout",
-    "banner": { "type": "image", "src": "/images/banner-black-dual.jpg" },
-    "titleBlock": {
-      "h1": "Blackout Dual",
-      "p": "El sistema doble combina cortinas Blackout y Sunscreen para un control total de la luz, ofreciendo oscurecimiento completo y privacidad, ideal para dormitorios, salas de reuniones y diversos espacios del hogar."
-    },
-    "explorer": {
-      "title": "Explore the Portfolio",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Titulo pendiente",
-          "text": "Las cortinas enrollables dobles son una solución elegante y práctica para el tratamiento de ventanas. Al combinar dos tipos diferentes de cortinas, ofrecen un excelente control de la luz, privacidad y eficiencia energética",
-          "image": "/images/black-dual.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Premium Fabrics",
-          "text": "Las cortinas de doble capa permiten un control total de la luz, combinando transparencia y oscuridad para adaptarse a cada momento.",
           "image": "/images/imagen-blackout-3.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Minimal Design",
-          "text": "Son una solución práctica, elegante y funcional, pensada para quienes buscan diseño y máximo control de luz en un solo sistema.",
-          "image": "/images/black-dual-2.jpg"
         }
-      ]
+      ],
+      "explore": {
+        "title": "Explore Intelligent Lighting",
+        "description": "Find the light source best suited to a project based on the desired range of color temperatures, budget, and system compatibility.",
+        "items": [
+          {
+            "id": 1,
+            "name": "Lumaris",
+            "text": "Tunable white and warm dim from one light source."
+          },
+          {
+            "id": 2,
+            "name": "Rania",
+            "text": "Exceptional natural light for high-craft lamps and luminaires."
+          },
+          {
+            "id": 3,
+            "name": "Ketra",
+            "text": "Our most innovative lighting technology for high-craft lamps and luminaires."
+          }
+        ]
+      }
     }
-  },
-  {
-    "id": "blackout-motorizado",
-    "slug": "roller-blackout",
-    "banner": { "type": "image", "src": "/images/banner-motorizado.jpg" },
-    "titleBlock": {
-      "h1": "Motorizado",
-      "p": "Descubra lo último en innovación con las cortinas motorizadas Combinando tecnología de vanguardia y un diseño refinado, nuestras cortinas redefinen la elegancia y la comodidad."
+  ],
+  "blackoutVista": [
+    {
+      "id": "blackout-basic",
+      "slug": "roller-blackout",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-blackout.jpg"
+      },
+      "titleBlock": {
+        "h1": "Blackout",
+        "p": "Crea una experiencia incomparable con luz natural combinando telas de alto rendimiento o textiles personalizados con accionamientos motorizados y sistemas de control inteligente."
+      },
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Conéctate con el exterior y gestione la ganancia de calor solar con telas enrollables de alto rendimiento.",
+            "image": "/images/blackout-image-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Materiales de alta calidad que aseguran durabilidad, fácil mantenimiento y una caída perfecta.",
+            "image": "/images/blackout-image-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.",
+            "image": "/images/blackout-image-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Explore the Portfolio",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Titulo pendiente",
-          "text": "Disfrute de un control y una precisión inigualables con nuestras cortinas motorizadas, que ajustan fácilmente la iluminación y la privacidad con un solo toque.",
-          "image": "/images/cortina-motorizada-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Premium Fabrics",
-          "text": "Equilibre la luz natural y la privacidad con ajustes de persianas sencillos. Con un solo toque, convierta su espacio en un remanso de comodidad, estilo y serenidad.",
-          "image": "/images/cortina-motorizada-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Minimal Design",
-          "text": "Gracias a su sistema motorizado, se accionan de forma práctica y silenciosa mediante control remoto, interruptor o sistemas inteligentes, eliminando el esfuerzo manual y aportando un toque de domótica al hogar u oficina.",
-          "image": "/images/cortina-motorizada-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "dual-dia-noche",
-    "slug": "roller-dual-dia-noche",
-    "banner": { "type": "image", "src": "/images/banner-dual-dia-noche.jpg" },
-    "titleBlock": {
-      "h1": "Sistema Día y Noche",
-      "p": "Combina dos tipos de tela en una misma cortina: una translúcida para el día que deja pasar la luz natural y una opaca para la noche que brinda privacidad total."
+    {
+      "id": "blackout-dark",
+      "slug": "roller-blackout",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-blackout-1.jpg"
+      },
+      "titleBlock": {
+        "h1": "Blackout Dark Roller",
+        "p": "Diseñadas para mejorar su privacidad y proporcionar un bloqueo óptimo de la luz, los rieles laterales actúan como guías para el enrollado de las cortinas, garantizando que no queden huecos entre los laterales y la ventana."
+      },
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Transforma cualquier habitación en un santuario de descanso. Nuestras cortinas blackout ofrecen oscuridad absoluta, privacidad total y un diseño que se adapta perfectamente a tu estilo de vida.",
+            "image": "/images/blackout-dark.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Estas cortinas también ofrecen protección contra los dañinos rayos UV, protegiendo su hogar y muebles de posibles daños.",
+            "image": "/images/blackout-dark-1.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Aísla temperatura. Mantén fresco en verano, cálido en invierno. Reduce costos.",
+            "image": "/images/blackout-dark-2.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Control Dual Inteligente",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Adaptabilidad Total",
-          "text": "Son una de las opciones más populares para cubrir ventanas, y por muchas razones. Son increíblemente funcionales, ya que bloquean la luz, el calor y el deslumbramiento, y son un tratamiento minimalista.",
-          "image": "/images/dual-dia-noche-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Diseño Integrado",
-          "text": "Ya sea que desee bloquear el sol por completo o filtrar suavemente la luz, las Cortinas roller  son una solución versátil que combina función y estilo.",
-          "image": "/images/dual-dia-noche-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Eficiencia Energética",
-          "text": "Regula la temperatura interior reduciendo el uso de aire acondicionado en verano y calefacción en invierno.",
-          "image": "/images/dual-dia-noche-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "dual-control-luz",
-    "slug": "roller-dual-control-luz",
-    "banner": { "type": "image", "src": "/images/banner-dual-control-luz.jpg" },
-    "titleBlock": {
-      "h1": "Motorizadas",
-      "p": "Impulsadas por motores avanzados, las cortinas se deslizan suavemente y funcionan con un mínimo ruido. De diseño duradero, están diseñadas para el uso diario y requieren poco mantenimiento."
+    {
+      "id": "blackout-dual",
+      "slug": "roller-blackout",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-black-dual.jpg"
+      },
+      "titleBlock": {
+        "h1": "Blackout Dual",
+        "p": "El sistema doble combina cortinas Blackout y Sunscreen para un control total de la luz, ofreciendo oscurecimiento completo y privacidad, ideal para dormitorios, salas de reuniones y diversos espacios del hogar."
+      },
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Las cortinas enrollables dobles son una solución elegante y práctica para el tratamiento de ventanas. Al combinar dos tipos diferentes de cortinas, ofrecen un excelente control de la luz, privacidad y eficiencia energética",
+            "image": "/images/black-dual.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Las cortinas de doble capa permiten un control total de la luz, combinando transparencia y oscuridad para adaptarse a cada momento.",
+            "image": "/images/imagen-blackout-3.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Son una solución práctica, elegante y funcional, pensada para quienes buscan diseño y máximo control de luz en un solo sistema.",
+            "image": "/images/black-dual-2.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Precisión Lumínica",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Ajuste Gradual",
-          "text": "Diseñado para la seguridad infantil, incorpora un motor silencioso y automático que elimina el uso de cadenas o cordones, reduciendo riesgos y brindando mayor tranquilidad a los padres.",
-          "image": "/images/dual-control-luz-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Protección Solar",
-          "text": "Permite controlar las persianas inteligentes fácilmente mediante un control remoto multicanal, que ofrece ajustes precisos e instantáneos, con opción de manejar varias persianas a la vez o de forma independiente.",
-          "image": "/images/dual-control-luz-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Confort Visual",
-          "text": "Diseño moderno de dos capas que permite un control flexible de la luz, con opciones de privacidad, tamaños personalizados y telas variadas, combinando funcionalidad y estilo.",
-          "image": "/images/dual-control-luz-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "dual-diseno-moderno",
-    "slug": "roller-dual-diseno-moderno",
-    "banner": { "type": "image", "src": "/images/banner-dual-diseno.jpg" },
-    "titleBlock": {
-      "h1": "Diseño Moderno Dual",
-      "p": "Líneas limpias, mecanismos ocultos y acabados premium que se integran perfectamente en la arquitectura contemporánea."
+    {
+      "id": "blackout-motorizado",
+      "slug": "roller-blackout",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-motorizado.jpg"
+      },
+      "titleBlock": {
+        "h1": "Motorizado",
+        "p": "Descubra lo último en innovación con las cortinas motorizadas Combinando tecnología de vanguardia y un diseño refinado, nuestras cortinas redefinen la elegancia y la comodidad."
+      },
+      "explorer": {
+        "title": "Explore the Portfolio",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Titulo pendiente",
+            "text": "Disfrute de un control y una precisión inigualables con nuestras cortinas motorizadas, que ajustan fácilmente la iluminación y la privacidad con un solo toque.",
+            "image": "/images/cortina-motorizada-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Premium Fabrics",
+            "text": "Equilibre la luz natural y la privacidad con ajustes de persianas sencillos. Con un solo toque, convierta su espacio en un remanso de comodidad, estilo y serenidad.",
+            "image": "/images/cortina-motorizada-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Minimal Design",
+            "text": "Gracias a su sistema motorizado, se accionan de forma práctica y silenciosa mediante control remoto, interruptor o sistemas inteligentes, eliminando el esfuerzo manual y aportando un toque de domótica al hogar u oficina.",
+            "image": "/images/cortina-motorizada-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Estética Contemporánea",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Minimalismo Funcional",
-          "text": "Diseño que prioriza la funcionalidad sin sacrificar la estética, ideal para espacios modernos.",
-          "image": "/images/dual-diseno-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Materiales Premium",
-          "text": "Aluminio anodizado, telas técnicas y mecanismos suizos de alta durabilidad.",
-          "image": "/images/dual-diseno-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Personalización Total",
-          "text": "Elige entre más de 100 colores y texturas para combinar con tu paleta de diseño.",
-          "image": "/images/dual-diseno-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "duo-rayas-elegantes",
-    "slug": "roller-duo-rayas",
-    "banner": { "type": "image", "src": "/images/banner-duo-rayas.jpg" },
-    "titleBlock": {
-      "h1": "Rayas de Diseño",
-      "p": "Patrones de rayas verticales u horizontales que añaden dinamismo y estilo contemporáneo a cualquier espacio."
+    {
+      "id": "dual-dia-noche",
+      "slug": "roller-dual-dia-noche",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-dual-dia-noche.jpg"
+      },
+      "titleBlock": {
+        "h1": "Sistema Día y Noche",
+        "p": "Combina dos tipos de tela en una misma cortina: una translúcida para el día que deja pasar la luz natural y una opaca para la noche que brinda privacidad total."
+      },
+      "explorer": {
+        "title": "Control Dual Inteligente",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Adaptabilidad Total",
+            "text": "Son una de las opciones más populares para cubrir ventanas, y por muchas razones. Son increíblemente funcionales, ya que bloquean la luz, el calor y el deslumbramiento, y son un tratamiento minimalista.",
+            "image": "/images/dual-dia-noche-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Diseño Integrado",
+            "text": "Ya sea que desee bloquear el sol por completo o filtrar suavemente la luz, las Cortinas roller  son una solución versátil que combina función y estilo.",
+            "image": "/images/dual-dia-noche-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Eficiencia Energética",
+            "text": "Regula la temperatura interior reduciendo el uso de aire acondicionado en verano y calefacción en invierno.",
+            "image": "/images/dual-dia-noche-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Patrones Arquitectónicos",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Óptica Expandida",
-          "text": "Las rayas verticales crean ilusión de altura, perfectas para techos bajos.",
-          "image": "/images/duo-rayas-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Ritmo Visual",
-          "text": "Patrones que guían la mirada y añaden movimiento a espacios estáticos.",
-          "image": "/images/duo-rayas-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Personalización de Ancho",
-          "text": "Elige el grosor y espaciado de rayas según el efecto deseado.",
-          "image": "/images/duo-rayas-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "duo-luz-natural",
-    "slug": "roller-duo-luz",
-    "banner": { "type": "image", "src": "/images/banner-duo-luz.jpg" },
-    "titleBlock": {
-      "h1": "Luz Natural Difusa",
-      "p": "Filtra la luz solar directa creando una iluminación suave y uniforme que protege sin oscurecer."
+    {
+      "id": "dual-control-luz",
+      "slug": "roller-dual-control-luz",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-dual-control-luz.jpg"
+      },
+      "titleBlock": {
+        "h1": "Motorizadas",
+        "p": "Impulsadas por motores avanzados, las cortinas se deslizan suavemente y funcionan con un mínimo ruido. De diseño duradero, están diseñadas para el uso diario y requieren poco mantenimiento."
+      },
+      "explorer": {
+        "title": "Precisión Lumínica",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Ajuste Gradual",
+            "text": "Diseñado para la seguridad infantil, incorpora un motor silencioso y automático que elimina el uso de cadenas o cordones, reduciendo riesgos y brindando mayor tranquilidad a los padres.",
+            "image": "/images/dual-control-luz-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Protección Solar",
+            "text": "Permite controlar las persianas inteligentes fácilmente mediante un control remoto multicanal, que ofrece ajustes precisos e instantáneos, con opción de manejar varias persianas a la vez o de forma independiente.",
+            "image": "/images/dual-control-luz-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Confort Visual",
+            "text": "Diseño moderno de dos capas que permite un control flexible de la luz, con opciones de privacidad, tamaños personalizados y telas variadas, combinando funcionalidad y estilo.",
+            "image": "/images/dual-control-luz-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Iluminación Perfecta",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Difusión Uniforme",
-          "text": "Elimina puntos de luz intensos creando ambientes luminosos sin deslumbramientos.",
-          "image": "/images/duo-luz-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Ahorro Energético",
-          "text": "Aprovecha al máximo la luz natural reduciendo el consumo eléctrico diurno.",
-          "image": "/images/duo-luz-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Salud Visual",
-          "text": "Luz filtrada que reduce la fatiga ocular en espacios de trabajo y estudio.",
-          "image": "/images/duo-luz-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "vertical-privacidad-total",
-    "slug": "vertical-privacidad",
-    "banner": { "type": "image", "src": "/images/banner-vertical-privacidad.jpg" },
-    "titleBlock": {
-      "h1": "Privacidad Completa",
-      "p": "Láminas verticales que se superponen perfectamente creando una barrera visual completa cuando están cerradas."
+    {
+      "id": "dual-diseno-moderno",
+      "slug": "roller-dual-diseno-moderno",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-dual-diseno.jpg"
+      },
+      "titleBlock": {
+        "h1": "Diseño Moderno Dual",
+        "p": "Líneas limpias, mecanismos ocultos y acabados premium que se integran perfectamente en la arquitectura contemporánea."
+      },
+      "explorer": {
+        "title": "Estética Contemporánea",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Minimalismo Funcional",
+            "text": "Diseño que prioriza la funcionalidad sin sacrificar la estética, ideal para espacios modernos.",
+            "image": "/images/dual-diseno-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Materiales Premium",
+            "text": "Aluminio anodizado, telas técnicas y mecanismos suizos de alta durabilidad.",
+            "image": "/images/dual-diseno-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Personalización Total",
+            "text": "Elige entre más de 100 colores y texturas para combinar con tu paleta de diseño.",
+            "image": "/images/dual-diseno-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Intimidad Garantizada",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Sellado Perfecto",
-          "text": "Sistema de guías laterales que evita espacios entre láminas para privacidad absoluta.",
-          "image": "/images/vertical-privacidad-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Versatilidad de Uso",
-          "text": "Ideal para divisiones de oficinas, salas de conferencia y áreas comunes.",
-          "image": "/images/vertical-privacidad-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Control Individual",
-          "text": "Cada lámina puede ajustarse independientemente para control preciso.",
-          "image": "/images/vertical-privacidad-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "vertical-apertura-lateral",
-    "slug": "vertical-apertura",
-    "banner": { "type": "image", "src": "/images/banner-vertical-apertura.jpg" },
-    "titleBlock": {
-      "h1": "Apertura Lateral Total",
-      "p": "Las láminas se desplazan suavemente a los costados liberando completamente la vista y el acceso a ventanales."
+    {
+      "id": "duo-rayas-elegantes",
+      "slug": "roller-duo-rayas",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-duo-rayas.jpg"
+      },
+      "titleBlock": {
+        "h1": "Rayas de Diseño",
+        "p": "Patrones de rayas verticales u horizontales que añaden dinamismo y estilo contemporáneo a cualquier espacio."
+      },
+      "explorer": {
+        "title": "Patrones Arquitectónicos",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Óptica Expandida",
+            "text": "Las rayas verticales crean ilusión de altura, perfectas para techos bajos.",
+            "image": "/images/duo-rayas-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Ritmo Visual",
+            "text": "Patrones que guían la mirada y añaden movimiento a espacios estáticos.",
+            "image": "/images/duo-rayas-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Personalización de Ancho",
+            "text": "Elige el grosor y espaciado de rayas según el efecto deseado.",
+            "image": "/images/duo-rayas-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Espacio Recuperado",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Vistas Despejadas",
-          "text": "Cuando están abiertas, desaparecen por completo manteniendo la conexión visual exterior.",
-          "image": "/images/vertical-apertura-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Acceso Completo",
-          "text": "Ideal para puertas ventana y accesos a terrazas que requieren apertura total.",
-          "image": "/images/vertical-apertura-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Diseño Compacto",
-          "text": "Sistema de recogida lateral que ocupa mínimo espacio cuando no está en uso.",
-          "image": "/images/vertical-apertura-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "comercial-blackout-total",
-    "slug": "comercial-blackout-total",
-    "banner": { "type": "image", "src": "/images/banner-comercial-blackout.jpg" },
-    "titleBlock": {
-      "h1": "Blackout Corporativo",
-      "p": "Soluciones profesionales de oscurecimiento total para salas de proyección, laboratorios y espacios que requieren control lumínico absoluto."
+    {
+      "id": "duo-luz-natural",
+      "slug": "roller-duo-luz",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-duo-luz.jpg"
+      },
+      "titleBlock": {
+        "h1": "Luz Natural Difusa",
+        "p": "Filtra la luz solar directa creando una iluminación suave y uniforme que protege sin oscurecer."
+      },
+      "explorer": {
+        "title": "Iluminación Perfecta",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Difusión Uniforme",
+            "text": "Elimina puntos de luz intensos creando ambientes luminosos sin deslumbramientos.",
+            "image": "/images/duo-luz-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Ahorro Energético",
+            "text": "Aprovecha al máximo la luz natural reduciendo el consumo eléctrico diurno.",
+            "image": "/images/duo-luz-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Salud Visual",
+            "text": "Luz filtrada que reduce la fatiga ocular en espacios de trabajo y estudio.",
+            "image": "/images/duo-luz-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Soluciones Profesionales",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Certificación Técnica",
-          "text": "Cumple con normativas internacionales para salas de cine y laboratorios.",
-          "image": "/images/comercial-blackout-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Instalación Profesional",
-          "text": "Sistemas diseñados para grandes superficies y ventanales corporativos.",
-          "image": "/images/comercial-blackout-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Durabilidad Extrema",
-          "text": "Materiales resistentes a uso intensivo en hoteles, oficinas y espacios públicos.",
-          "image": "/images/comercial-blackout-3.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": "comercial-dual-corporativo",
-    "slug": "comercial-dual-corporativo",
-    "banner": { "type": "image", "src": "/images/banner-comercial-dual.jpg" },
-    "titleBlock": {
-      "h1": "Dual para Oficinas",
-      "p": "Sistemas duales motorizados con control centralizado para gestionar la iluminación de toda una planta oficina."
+    {
+      "id": "vertical-privacidad-total",
+      "slug": "vertical-privacidad",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-vertical-privacidad.jpg"
+      },
+      "titleBlock": {
+        "h1": "Privacidad Completa",
+        "p": "Láminas verticales que se superponen perfectamente creando una barrera visual completa cuando están cerradas."
+      },
+      "explorer": {
+        "title": "Intimidad Garantizada",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Sellado Perfecto",
+            "text": "Sistema de guías laterales que evita espacios entre láminas para privacidad absoluta.",
+            "image": "/images/vertical-privacidad-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Versatilidad de Uso",
+            "text": "Ideal para divisiones de oficinas, salas de conferencia y áreas comunes.",
+            "image": "/images/vertical-privacidad-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Control Individual",
+            "text": "Cada lámina puede ajustarse independientemente para control preciso.",
+            "image": "/images/vertical-privacidad-3.jpg"
+          }
+        ]
+      }
     },
-    "explorer": {
-      "title": "Gestión Corporativa",
-      "sections": [
-        {
-          "id": 1,
-          "title": "Control Centralizado",
-          "text": "Gestiona todas las cortinas de un edificio desde un solo panel o app.",
-          "image": "/images/comercial-dual-1.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Automatización",
-          "text": "Programa aperturas y cierres según horarios laborales y ocupación.",
-          "image": "/images/comercial-dual-2.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Integración BMS",
-          "text": "Conecta con sistemas de gestión de edificios inteligentes.",
-          "image": "/images/comercial-dual-3.jpg"
-        }
-      ]
+    {
+      "id": "vertical-apertura-lateral",
+      "slug": "vertical-apertura",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-vertical-apertura.jpg"
+      },
+      "titleBlock": {
+        "h1": "Apertura Lateral Total",
+        "p": "Las láminas se desplazan suavemente a los costados liberando completamente la vista y el acceso a ventanales."
+      },
+      "explorer": {
+        "title": "Espacio Recuperado",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Vistas Despejadas",
+            "text": "Cuando están abiertas, desaparecen por completo manteniendo la conexión visual exterior.",
+            "image": "/images/vertical-apertura-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Acceso Completo",
+            "text": "Ideal para puertas ventana y accesos a terrazas que requieren apertura total.",
+            "image": "/images/vertical-apertura-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Diseño Compacto",
+            "text": "Sistema de recogida lateral que ocupa mínimo espacio cuando no está en uso.",
+            "image": "/images/vertical-apertura-3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comercial-blackout-total",
+      "slug": "comercial-blackout-total",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-comercial-blackout.jpg"
+      },
+      "titleBlock": {
+        "h1": "Blackout Corporativo",
+        "p": "Soluciones profesionales de oscurecimiento total para salas de proyección, laboratorios y espacios que requieren control lumínico absoluto."
+      },
+      "explorer": {
+        "title": "Soluciones Profesionales",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Certificación Técnica",
+            "text": "Cumple con normativas internacionales para salas de cine y laboratorios.",
+            "image": "/images/comercial-blackout-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Instalación Profesional",
+            "text": "Sistemas diseñados para grandes superficies y ventanales corporativos.",
+            "image": "/images/comercial-blackout-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Durabilidad Extrema",
+            "text": "Materiales resistentes a uso intensivo en hoteles, oficinas y espacios públicos.",
+            "image": "/images/comercial-blackout-3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comercial-dual-corporativo",
+      "slug": "comercial-dual-corporativo",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-comercial-dual.jpg"
+      },
+      "titleBlock": {
+        "h1": "Dual para Oficinas",
+        "p": "Sistemas duales motorizados con control centralizado para gestionar la iluminación de toda una planta oficina."
+      },
+      "explorer": {
+        "title": "Gestión Corporativa",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Control Centralizado",
+            "text": "Gestiona todas las cortinas de un edificio desde un solo panel o app.",
+            "image": "/images/comercial-dual-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Automatización",
+            "text": "Programa aperturas y cierres según horarios laborales y ocupación.",
+            "image": "/images/comercial-dual-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Integración BMS",
+            "text": "Conecta con sistemas de gestión de edificios inteligentes.",
+            "image": "/images/comercial-dual-3.jpg"
+          }
+        ]
+      }
     }
-  }
-]
+    
+  ],
+
+  "intro": {
+    "title": "¿Qué buscas en una cortina?",
+    "subtitle": "Te orientamos en todo momento para que tomes la mejor decisión.",
+    "text": "Contamos con una amplia variedad de telas de excelente calidad, diseños modernos y diferentes niveles de luz y privacidad para cada ambiente. Revisa nuestra guía rápida y descubre la cortina roller o vertical ideal para tu espacio. Estamos aquí para acompañarte en cada paso de tu elección."
+  },
+  
+  "services": [
+    
+    {
+      "id": 1,
+      "title": "Asesoria Personalizada",
+      "imgFront": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/05/marquee-customer-service-seo.webp?w=1024",
+      "description": "Te guiamos paso a paso para encontrar la mejor solución adaptada a tus necesidades."
+    },
+    {
+      "id": 2,
+      "title": "Garantia",
+      "imgFront": "https://previews.123rf.com/images/arcady31/arcady311501/arcady31150100067/35872630-quality-guarantee-icon.jpg",
+      "description": "Respaldamos nuestros servicios con garantía total y compromiso de calidad."
+    },
+    {
+      "id": 3,
+      "title": "Instalacion Profesional",
+      "imgFront": "https://tiomaestro.cl/wp-content/uploads/2024/06/20260626_installing-courtains.jpeg",
+      "description": "Instalaciones realizadas por expertos certificados con máxima precisión."
+    },
+    {
+      "id": 4,
+      "title": "Despacho",
+      "imgFront": "https://media.istockphoto.com/id/1221101939/es/foto/concepto-de-entrega-asian-man-mano-aceptando-una-entrega-de-cajas-de-reparto-de-repartidor.jpg?s=612x612&w=0&k=20&c=PmIkuzTsEg8B_d7mROP1ocLY-CE-yFeJGpyWgkl9gCg=",
+      "description": "Despacho rápida y eficiente para resolver cualquier inconveniente."
+    }
+  ]
 }
