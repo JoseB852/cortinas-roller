@@ -99,9 +99,9 @@ export default function Card() {
                     <Link
                       to={`/productoDetalle/${product.id}`}
                     >
-                      <button className="panel-button">
+                 {/* <button className="panel-button">
                         Ver más
-                      </button>
+                      </button> */}
                     </Link>
                   </div>
 
