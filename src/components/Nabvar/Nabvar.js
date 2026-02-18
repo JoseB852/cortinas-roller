@@ -64,7 +64,7 @@ const Nabvar = () => {
       <div className="mobile-menu">
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/features" onClick={() => setMenuOpen(false)}>Features</Link>
-        <Link to="/us" onClick={() => setMenuOpen(false)}>Nosotros</Link>
+        <Link to="/us" onClick={() => setMenuOpen(false)}>Contacto</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
 

@@ -90,7 +90,10 @@
 .explorer-imagen {
   width: 60%;
   min-height: 500px;
-  background-position: center;
+  background-size: cover;       /* hace que la imagen cubra el contenedor */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
+
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   animation: zoomIn 1.5s ease-out;
 }
