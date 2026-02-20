@@ -6,7 +6,7 @@ export default function Blackout() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { id } = useParams(); // id de la URL (ahora es string: "blackout-basic", etc.)
+  const { id } = useParams(); 
   const navigate = useNavigate();
 
   useEffect(() => {

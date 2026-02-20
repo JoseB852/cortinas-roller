@@ -83,7 +83,7 @@
           },
           {
             "id": 2,
-            "image": "/images/cortinaduo-2.jpg",
+            "image": "/images/cortinaduo-1.jpg",
             "label": "Roller Duo Blackout",
             "viewId": "duo-luz-natural"
           },
@@ -92,16 +92,11 @@
             "image": "/images/cortinaduo-3.jpg",
             "label": "Motorizada",
             "viewId": "duo-privacidad-nocturna"
-          },
-          {
-            "id": 4,
-            "image": "/images/cortinaduo-4.jpg",
-            "label": "Privacidad Nocturna",
-            "viewId": "duo-privacidad-nocturna-2"
           }
         ]
       }
     },
+
     {
       "id": 4,
       "slug": "cortina-vertical",
@@ -560,8 +555,8 @@
         "src": "/images/banner-duo-rayas.jpg"
       },
       "titleBlock": {
-        "h1": "Rayas de Diseño",
-        "p": "Patrones de rayas verticales u horizontales que añaden dinamismo y estilo contemporáneo a cualquier espacio."
+        "h1": "Roller Duo",
+        "p": "Las cortinas Duo son una versión moderna de las clásicas, que combinan estilo y funcionalidad. Permiten regular fácilmente la luz, la privacidad y el ambiente en cualquier momento del día, adaptándose a diferentes necesidades y transformando los espacios con versatilidad y elegancia."
       },
       "explorer": {
         "title": "Patrones Arquitectónicos",
@@ -569,19 +564,19 @@
           {
             "id": 1,
             "title": "Óptica Expandida",
-            "text": "Las rayas verticales crean ilusión de altura, perfectas para techos bajos.",
+            "text": "Incorporan dos capas de tela que se mueven de forma independiente. Abiertas, permiten el paso de la luz y la vista hacia el exterior; cerradas, brindan total privacidad.",
             "image": "/images/duo-rayas-1.jpg"
           },
           {
             "id": 2,
             "title": "Ritmo Visual",
-            "text": "Patrones que guían la mirada y añaden movimiento a espacios estáticos.",
+            "text": "Diseñada para cubrir espacios con mayor versatilidad y control solar, logrará potenciar cada habitación de tu hogar.",
             "image": "/images/duo-rayas-2.jpg"
           },
           {
             "id": 3,
             "title": "Personalización de Ancho",
-            "text": "Elige el grosor y espaciado de rayas según el efecto deseado.",
+            "text": "Las cortinas dúo son un sistema moderno de persianas enrollables compuesto por dos capas de tela con franjas alternadas translúcidas y opacas. Su diseño permite regular fácilmente la entrada de luz y el nivel de privacidad.",
             "image": "/images/duo-rayas-3.jpg"
           }
         ]
@@ -596,7 +591,7 @@
       },
       "titleBlock": {
         "h1": "Luz Natural Difusa",
-        "p": "Filtra la luz solar directa creando una iluminación suave y uniforme que protege sin oscurecer."
+        "p": "La tela rayada en doble capa genera un práctico efecto de apertura y cierre que permite regular fácilmente la entrada de luz y el nivel de privacidad. Su diseño en tonos suaves aporta un estilo moderno y armonioso, mientras ayuda a controlar el calor y deja pasar una luz agradable, creando un ambiente más cómodo y acogedor."
       },
       "explorer": {
         "title": "Iluminación Perfecta",
@@ -604,20 +599,55 @@
           {
             "id": 1,
             "title": "Difusión Uniforme",
-            "text": "Elimina puntos de luz intensos creando ambientes luminosos sin deslumbramientos.",
+            "text": "Este diseño permite regular fácilmente la entrada de luz y el nivel de privacidad, adaptándose a diferentes momentos del día.",
             "image": "/images/duo-luz-1.jpg"
           },
           {
             "id": 2,
             "title": "Ahorro Energético",
-            "text": "Aprovecha al máximo la luz natural reduciendo el consumo eléctrico diurno.",
+            "text": "Las cortinas dúo ofrecen un diseño moderno y permiten regular la luz y la privacidad. Sus paneles translúcidos y opacos brindan visibilidad hacia el exterior sin perder intimidad, y pueden ajustarse para lograr mayor oscuridad cuando se requiera.",
             "image": "/images/duo-luz-2.jpg"
           },
           {
             "id": 3,
             "title": "Salud Visual",
-            "text": "Luz filtrada que reduce la fatiga ocular en espacios de trabajo y estudio.",
+            "text": "Sus franjas translúcidas y opacas se regulan para permitir el ingreso de luz natural según se desee.",
             "image": "/images/duo-luz-3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "duo-privacidad-nocturna",
+      "slug": "roller-duo-motorizada",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-duo-motorizada.jpg"
+      },
+      "titleBlock": {
+        "h1": "Roller Duo Motorizada",
+        "p": "Las cortinas dúo motorizadas incorporan un motor eléctrico que permite ajustar fácilmente las franjas mediante control remoto o app, ofreciendo un control preciso de luz y privacidad sin esfuerzo manual."
+      },
+      "explorer": {
+        "title": "Tecnología y Confort",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Control Remoto",
+            "text": "La automatización se han diseñado para ofrecer mayor flexibilidad y comodidad para usted y su hogar.",
+            "image": "/images/duo-motor-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Movimiento Silencioso",
+            "text": "Las cortinas motorizadas dúo Magic combinan estilo, flexibilidad y funcionalidad, convirtiéndolas  más versátiles para la vida moderna.",
+            "image": "/images/duo-motor-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Automatización",
+            "text": "Estas cortinas se integran con sistemas de hogar inteligente, permitiendo controlarlas a distancia, programar horarios y operarlas mediante comandos de voz de manera sencilla y práctica.",
+            "image": "/images/duo-motor-3.jpg"
           }
         ]
       }
