@@ -8,7 +8,12 @@
 
 .banner-blackout {
   width: 100%;
-  height: 700px;
+  aspect-ratio: 21 / 9; 
+  min-height: 400px;    
+  max-height: 650px;    
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title-blackout {

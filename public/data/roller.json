@@ -109,26 +109,20 @@
           {
             "id": 1,
             "image": "/images/cortinavertical-1.jpg",
-            "label": "Privacidad Total",
+            "label": "Cortinas Verticales",
             "viewId": "vertical-privacidad-total"
           },
           {
             "id": 2,
             "image": "/images/cortinavertical-2.jpg",
-            "label": "Apertura Lateral",
+            "label": "Verticales Black Out",
             "viewId": "vertical-apertura-lateral"
           },
           {
             "id": 3,
             "image": "/images/cortinavertical-3.jpg",
-            "label": "Control Lumínico",
+            "label": "Motorizadas",
             "viewId": "vertical-control-luminico"
-          },
-          {
-            "id": 4,
-            "image": "/images/cortinavertical-4.jpg",
-            "label": "Control Lumínico",
-            "viewId": "vertical-control-luminico-2"
           }
         ]
       }
@@ -669,19 +663,19 @@
           {
             "id": 1,
             "title": "Sellado Perfecto",
-            "text": "Sistema de guías laterales que evita espacios entre láminas para privacidad absoluta.",
+            "text": "Las persianas verticales son una solución ideal para cubrir ventanas y puertas corredizas grandes, ofreciendo un excelente control de luz y privacidad en el hogar.",
             "image": "/images/vertical-privacidad-1.jpg"
           },
           {
             "id": 2,
             "title": "Versatilidad de Uso",
-            "text": "Ideal para divisiones de oficinas, salas de conferencia y áreas comunes.",
+            "text": "Las cortinas verticales son ideales para puertas corredizas de vidrio porque se deslizan lateralmente, facilitando su uso. Al elegir el estilo adecuado, se puede optimizar tanto la funcionalidad como la estética del espacio.",
             "image": "/images/vertical-privacidad-2.jpg"
           },
           {
             "id": 3,
             "title": "Control Individual",
-            "text": "Cada lámina puede ajustarse independientemente para control preciso.",
+            "text": "Las cortinas verticales combinan practicidad y estilo, permitiendo regular luz y privacidad en ventanas y puertas grandes, adaptándose a cualquier decoración.",
             "image": "/images/vertical-privacidad-3.jpg"
           }
         ]
@@ -704,20 +698,55 @@
           {
             "id": 1,
             "title": "Vistas Despejadas",
-            "text": "Cuando están abiertas, desaparecen por completo manteniendo la conexión visual exterior.",
+            "text": "La cortina vertical Black out en color carbón ofrece privacidad total y bloqueo de luz, con un acabado suave y diseño discreto, siendo una opción versátil y accesible para cualquier espacio.",
             "image": "/images/vertical-apertura-1.jpg"
           },
           {
             "id": 2,
             "title": "Acceso Completo",
-            "text": "Ideal para puertas ventana y accesos a terrazas que requieren apertura total.",
+            "text": "Son populares por su versatilidad. Los paneles verticales ofrecen una gran cobertura, mejorando la privacidad y la filtración de la luz.",
             "image": "/images/vertical-apertura-2.jpg"
           },
           {
             "id": 3,
             "title": "Diseño Compacto",
-            "text": "Sistema de recogida lateral que ocupa mínimo espacio cuando no está en uso.",
+            "text": "Las persianas verticales son una opción elegante y versátil que permite abrir, cerrar o inclinar los paneles para controlar la luz y la privacidad en hogares y oficinas.",
             "image": "/images/vertical-apertura-3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vertical-control-luminico",
+      "slug": "vertical-control-luminico",
+      "banner": {
+        "type": "image",
+        "src": "/images/banner-vertical-control.jpg"
+      },
+      "titleBlock": {
+        "h1": "Control Lumínico Vertical",
+        "p": "Regula la entrada de luz de forma precisa con láminas verticales ajustables que combinan diseño moderno y funcionalidad superior."
+      },
+      "explorer": {
+        "title": "Gestión Inteligente de Luz",
+        "sections": [
+          {
+            "id": 1,
+            "title": "Rotación Precisa",
+            "text": "Las láminas giran hasta 180° permitiendo un control exacto de la luz natural sin perder visibilidad exterior.",
+            "image": "/images/vertical-control-1.jpg"
+          },
+          {
+            "id": 2,
+            "title": "Ambiente Personalizado",
+            "text": "Ajusta la intensidad lumínica según el momento del día, reduciendo reflejos y mejorando el confort visual.",
+            "image": "/images/vertical-control-2.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Eficiencia Energética",
+            "text": "Optimiza el uso de luz natural disminuyendo el consumo eléctrico y mejorando el aislamiento térmico del espacio.",
+            "image": "/images/vertical-control-3.jpg"
           }
         ]
       }
