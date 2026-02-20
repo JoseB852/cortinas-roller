@@ -53,21 +53,15 @@
           },
           {
             "id": 2,
-            "image": "/images/cortina-motorizada-10.jpg",
-            "label": "Motorizadas",
-            "viewId": "dual-control-luz"
-          },
-          {
-            "id": 3,
             "image": "/images/cortina-dark-roller.jpg",
             "label": "Dual Dark Roller",
             "viewId": "dual-diseno-moderno"
           },
           {
-            "id": 4,
-            "image": "/images/cortinadual-4.jpg",
-            "label": "Diseño Moderno",
-            "viewId": "dual-diseno-moderno-2"
+            "id": 3,
+            "image": "/images/cortina-motorizada-10.jpg",
+            "label": "Motorizadas",
+            "viewId": "dual-control-luz"
           }
         ]
       }
@@ -83,20 +77,20 @@
         "miniCards": [
           {
             "id": 1,
-            "image": "/images/cortinaduo-1.jpg",
-            "label": "Rayas Elegantes",
+            "image": "/images/cortinaduo-2.jpg",
+            "label": "Roller Duo",
             "viewId": "duo-rayas-elegantes"
           },
           {
             "id": 2,
             "image": "/images/cortinaduo-2.jpg",
-            "label": "Luz Natural",
+            "label": "Roller Duo Blackout",
             "viewId": "duo-luz-natural"
           },
           {
             "id": 3,
             "image": "/images/cortinaduo-3.jpg",
-            "label": "Privacidad Nocturna",
+            "label": "Motorizada",
             "viewId": "duo-privacidad-nocturna"
           },
           {
@@ -531,8 +525,8 @@
         "src": "/images/banner-dual-diseno.jpg"
       },
       "titleBlock": {
-        "h1": "Diseño Moderno Dual",
-        "p": "Líneas limpias, mecanismos ocultos y acabados premium que se integran perfectamente en la arquitectura contemporánea."
+        "h1": "Dual Dark Roller",
+        "p": "Las cortinas roller dual  son versátiles y adecuadas para cualquier estancia (incluyendo puertas si se elige la longitud correcta), y su diseño puede aportar desde un toque discreto hasta un efecto decorativo más llamativo."
       },
       "explorer": {
         "title": "Estética Contemporánea",
@@ -540,19 +534,19 @@
           {
             "id": 1,
             "title": "Minimalismo Funcional",
-            "text": "Diseño que prioriza la funcionalidad sin sacrificar la estética, ideal para espacios modernos.",
+            "text": "La cortina roller dual ofrece un diseño elegante y sofisticado que combina estética y funcionalidad, proporcionando sombreado personalizado y un funcionamiento suave y fiable.",
             "image": "/images/dual-diseno-1.jpg"
           },
           {
             "id": 2,
             "title": "Materiales Premium",
-            "text": "Aluminio anodizado, telas técnicas y mecanismos suizos de alta durabilidad.",
+            "text": "Solo baja la persiana opaca para oscurecer la habitación y conservar tu privacidad.",
             "image": "/images/dual-diseno-2.jpg"
           },
           {
             "id": 3,
             "title": "Personalización Total",
-            "text": "Elige entre más de 100 colores y texturas para combinar con tu paleta de diseño.",
+            "text": "Disfrute de la flexibilidad de una luz suave y difusa con vistas durante el día y un bloqueo total para mayor privacidad por la noche.",
             "image": "/images/dual-diseno-3.jpg"
           }
         ]
