@@ -12,6 +12,7 @@ import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
 import Blackout from './views/Blackout/Blackout';
 import Contact from './views/Contact/Contact';
 import Us from './views/Us/Us';
+import Catalog from './views/ Catalog/ Catalog';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/productoDetalle/:id" element={<ProductoDetalle />} />
           <Route path="/blackout/:id" element={<Blackout/>} />
           <Route path="/us" element={<Us />} />
+          <Route path='/catalog' element={<Catalog/>} />
         </Routes>
       </main>
 
