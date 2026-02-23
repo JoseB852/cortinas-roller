@@ -12,7 +12,7 @@ import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
 import Blackout from './views/Blackout/Blackout';
 import Contact from './views/Contact/Contact';
 import Us from './views/Us/Us';
-import Catalog from './views/ Catalog/ Catalog';
+import Catalog from './views/ Catalog/Catalog';
 
 export default function App() {
   return (
