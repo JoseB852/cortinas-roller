@@ -7,7 +7,7 @@
   z-index: 1000;
   width: 1300px; /* tamaño nabvar*/
   margin: 50px auto 0;
-  background: rgba(30,30,30,0.75);
+  background: rgba(46, 50, 56); /*background: rgba(30,30,30,0.75);*/
   backdrop-filter: blur(12px);
   border-radius: 8px;
   overflow: hidden;
@@ -58,12 +58,14 @@
    LOGO
 ============================== */
 .navbar-container > a {
+  margin-top: 2%;
   margin-left: -10px; /* 👈 CAMBIO: acerca logo al borde */
+  
 }
 
 .navbar-logo {
-  width: 50px;
-  height: 50px;
+  width: 63px;
+  height: 60px;
   transform: scale(2);
 }
 

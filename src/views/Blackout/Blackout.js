@@ -74,8 +74,7 @@ export default function Blackout() {
         className="banner-blackout"
         style={{ 
           backgroundImage: `url(${product.banner?.src || '/images/default-banner.jpg'})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+
         }}>
     
       </div>
@@ -87,7 +86,7 @@ export default function Blackout() {
       </div>
 
       <div className="explorer-title">
-        <h1>{product.explorer?.title || "Explore the Portfolio"}</h1>
+        <h1>{product.explorer?.title || ""}</h1>
       </div>
 
       {/* Secciones del explorador */}

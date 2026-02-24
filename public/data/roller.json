@@ -42,7 +42,7 @@
       "title": "Cortina Roller Dual",
       "image": "/images/imagen-2.jpg",
       "panel": {
-        "title": "Cortinas Roller Dual",
+        "title": "Cortina Roller Dual",
         "description": "Las persianas enrollables dobles son un complemento elegante y funcional para cualquier hogar. Ya sea que busques controlar la luz, mejorar la privacidad o añadir un toque elegante a tus ventanas, ¡son la solución perfecta!",
         "miniCards": [
           {
@@ -54,7 +54,7 @@
           {
             "id": 2,
             "image": "/images/cortina-dark-roller.jpg",
-            "label": "Dual Dark Roller",
+            "label": "Roller Dark Dual",
             "viewId": "dual-diseno-moderno"
           },
           {
@@ -69,28 +69,28 @@
     {
       "id": 3,
       "slug": "roller-duo",
-      "title": "Cortina Roller Duo",
+      "title": "Cortina Roller Dúo",
       "image": "/images/imagen-3.jpg",
       "panel": {
-        "title": "Cortinas Roller Dúo",
+        "title": "Cortina Roller Dúo",
         "description": "Esas rayas modernas, clásicas y elegantes que permiten la entrada de luz natural y brindan privacidad por la noche. Las Cortinas Roller Duo vienen en una amplia selección de tonos neutros.",
         "miniCards": [
           {
             "id": 1,
             "image": "/images/cortinaduo-2.jpg",
-            "label": "Roller Duo",
+            "label": "Roller Dúo",
             "viewId": "duo-rayas-elegantes"
           },
           {
             "id": 2,
             "image": "/images/cortinaduo-1.jpg",
-            "label": "Roller Duo Blackout",
+            "label": "Roller Dúo Blackout",
             "viewId": "duo-luz-natural"
           },
           {
             "id": 3,
             "image": "/images/cortinaduo-3.jpg",
-            "label": "Motorizada",
+            "label": "Motorizadas",
             "viewId": "duo-privacidad-nocturna"
           }
         ]
@@ -102,7 +102,7 @@
       "title": "Cortina Vertical",
       "image": "/images/imagen-3.1.jpg",
       "panel": {
-        "title": "Cortinas Verticales",
+        "title": "Cortina Verticales",
         "description": "Nuestras cortinas verticales brindan privacidad total cuando están cerradas y se pueden apilar fácilmente a los lados, lo que le brinda vistas ininterrumpidas. Las cortinas verticales se pueden fabricar a partir de una amplia gama de tejidos que filtran y bloquean la luz.",
         "miniCards": [
           {
@@ -306,7 +306,7 @@
         "p": "Crea una experiencia incomparable con luz natural combinando telas de alto rendimiento o textiles personalizados con accionamientos motorizados y sistemas de control inteligente."
       },
       "explorer": {
-        "title": "Explore the Portfolio",
+        
         "sections": [
           {
             "id": 1,
@@ -341,7 +341,7 @@
         "p": "Diseñadas para mejorar su privacidad y proporcionar un bloqueo óptimo de la luz, los rieles laterales actúan como guías para el enrollado de las cortinas, garantizando que no queden huecos entre los laterales y la ventana."
       },
       "explorer": {
-        "title": "Explore the Portfolio",
+        
         "sections": [
           {
             "id": 1,
@@ -376,12 +376,12 @@
         "p": "El sistema doble combina cortinas Blackout y Sunscreen para un control total de la luz, ofreciendo oscurecimiento completo y privacidad, ideal para dormitorios, salas de reuniones y diversos espacios del hogar."
       },
       "explorer": {
-        "title": "Explore the Portfolio",
+    
         "sections": [
           {
             "id": 1,
             "title": "Titulo pendiente",
-            "text": "Las cortinas enrollables dobles son una solución elegante y práctica para el tratamiento de ventanas. Al combinar dos tipos diferentes de cortinas, ofrecen un excelente control de la luz, privacidad y eficiencia energética",
+            "text": "Las Cortinas Dual son una solución elegante y práctica para el tratamiento de ventanas. Al combinar dos tipos diferentes de cortinas, ofrecen un excelente control de la luz, privacidad y eficiencia energética.",
             "image": "/images/black-dual.jpg"
           },
           {
@@ -407,11 +407,11 @@
         "src": "/images/banner-motorizado.jpg"
       },
       "titleBlock": {
-        "h1": "Motorizado",
+        "h1": "Motorizadas",
         "p": "Descubra lo último en innovación con las cortinas motorizadas Combinando tecnología de vanguardia y un diseño refinado, nuestras cortinas redefinen la elegancia y la comodidad."
       },
       "explorer": {
-        "title": "Explore the Portfolio",
+     
         "sections": [
           {
             "id": 1,
@@ -442,11 +442,11 @@
         "src": "/images/banner-dual-dia-noche.jpg"
       },
       "titleBlock": {
-        "h1": "Sistema Día y Noche",
+        "h1": "Roller Dual",
         "p": "Combina dos tipos de tela en una misma cortina: una translúcida para el día que deja pasar la luz natural y una opaca para la noche que brinda privacidad total."
       },
       "explorer": {
-        "title": "Control Dual Inteligente",
+        "title": "",
         "sections": [
           {
             "id": 1,
@@ -512,11 +512,11 @@
         "src": "/images/banner-dual-diseno.jpg"
       },
       "titleBlock": {
-        "h1": "Dual Dark Roller",
+        "h1": "Roller Dark Dual",
         "p": "Las cortinas roller dual  son versátiles y adecuadas para cualquier estancia (incluyendo puertas si se elige la longitud correcta), y su diseño puede aportar desde un toque discreto hasta un efecto decorativo más llamativo."
       },
       "explorer": {
-        "title": "Estética Contemporánea",
+        "title": "",
         "sections": [
           {
             "id": 1,
@@ -547,8 +547,8 @@
         "src": "/images/banner-duo-rayas.jpg"
       },
       "titleBlock": {
-        "h1": "Roller Duo",
-        "p": "Las cortinas Duo son una versión moderna de las clásicas, que combinan estilo y funcionalidad. Permiten regular fácilmente la luz, la privacidad y el ambiente en cualquier momento del día, adaptándose a diferentes necesidades y transformando los espacios con versatilidad y elegancia."
+        "h1": "Roller Dúo",
+        "p": "Las cortinas Dúo son una versión moderna de las clásicas, que combinan estilo y funcionalidad. Permiten regular fácilmente la luz, la privacidad y el ambiente en cualquier momento del día, adaptándose a diferentes necesidades y transformando los espacios con versatilidad y elegancia."
       },
       "explorer": {
         "title": "Patrones Arquitectónicos",
@@ -582,11 +582,11 @@
         "src": "/images/banner-duo-luz.jpg"
       },
       "titleBlock": {
-        "h1": "Luz Natural Difusa",
+        "h1": "Roller Dúo Blackout" ,
         "p": "La tela rayada en doble capa genera un práctico efecto de apertura y cierre que permite regular fácilmente la entrada de luz y el nivel de privacidad. Su diseño en tonos suaves aporta un estilo moderno y armonioso, mientras ayuda a controlar el calor y deja pasar una luz agradable, creando un ambiente más cómodo y acogedor."
       },
       "explorer": {
-        "title": "Iluminación Perfecta",
+        "title": "",
         "sections": [
           {
             "id": 1,
@@ -617,11 +617,11 @@
         "src": "/images/banner-duo-motorizada.jpg"
       },
       "titleBlock": {
-        "h1": "Roller Duo Motorizada",
+        "h1": "Motorizadas",
         "p": "Las cortinas dúo motorizadas incorporan un motor eléctrico que permite ajustar fácilmente las franjas mediante control remoto o app, ofreciendo un control preciso de luz y privacidad sin esfuerzo manual."
       },
       "explorer": {
-        "title": "Tecnología y Confort",
+        "title": "",
         "sections": [
           {
             "id": 1,
@@ -632,7 +632,7 @@
           {
             "id": 2,
             "title": "Movimiento Silencioso",
-            "text": "Las cortinas motorizadas dúo Magic combinan estilo, flexibilidad y funcionalidad, convirtiéndolas  más versátiles para la vida moderna.",
+            "text": "Son un sistema moderno de cortinas compuesto por dos capas de tela con franjas alternadas translúcidas y opacas. Su diseño permite regular fácilmente la entrada de luz y el nivel de privacidad.",
             "image": "/images/duo-motor-2.jpg"
           },
           {
@@ -652,7 +652,7 @@
         "src": "/images/banner-vertical-privacidad.jpg"
       },
       "titleBlock": {
-        "h1": "Privacidad Completa",
+        "h1": "Cortinas Verticales",
         "p": "Láminas verticales que se superponen perfectamente creando una barrera visual completa cuando están cerradas."
       },
       "explorer": {
@@ -661,7 +661,7 @@
           {
             "id": 1,
             "title": "Sellado Perfecto",
-            "text": "Las persianas verticales son una solución ideal para cubrir ventanas y puertas corredizas grandes, ofreciendo un excelente control de luz y privacidad en el hogar.",
+            "text": "Las cortinas verticales son una solución ideal para cubrir ventanas y puertas corredizas grandes, ofreciendo un excelente control de luz y privacidad en el hogar.",
             "image": "/images/vertical-privacidad-1.jpg"
           },
           {
@@ -687,16 +687,16 @@
         "src": "/images/banner-vertical-apertura.jpg"
       },
       "titleBlock": {
-        "h1": "Apertura Lateral Total",
+        "h1": "Verticales Blackout",
         "p": "Las láminas se desplazan suavemente a los costados liberando completamente la vista y el acceso a ventanales."
       },
       "explorer": {
-        "title": "Espacio Recuperado",
+        "title": "",
         "sections": [
           {
             "id": 1,
             "title": "Vistas Despejadas",
-            "text": "La cortina vertical Black out en color carbón ofrece privacidad total y bloqueo de luz, con un acabado suave y diseño discreto, siendo una opción versátil y accesible para cualquier espacio.",
+            "text": "La cortina vertical Blackout en color carbón ofrece privacidad total y bloqueo de luz, con un acabado suave y diseño discreto, siendo una opción versátil y accesible para cualquier espacio.",
             "image": "/images/vertical-apertura-1.jpg"
           },
           {
@@ -708,7 +708,7 @@
           {
             "id": 3,
             "title": "Diseño Compacto",
-            "text": "Las persianas verticales son una opción elegante y versátil que permite abrir, cerrar o inclinar los paneles para controlar la luz y la privacidad en hogares y oficinas.",
+            "text": "Las cortinas verticales son una opción elegante y versátil que permite abrir, cerrar o inclinar los paneles para controlar la luz y la privacidad en hogares y oficinas.",
             "image": "/images/vertical-apertura-3.jpg"
           }
         ]
@@ -722,11 +722,11 @@
         "src": "/images/banner-vertical-control.jpg"
       },
       "titleBlock": {
-        "h1": "Control Lumínico Vertical",
+        "h1": "Motorizadas",
         "p": "Regula la entrada de luz de forma precisa con láminas verticales ajustables que combinan diseño moderno y funcionalidad superior."
       },
       "explorer": {
-        "title": "Gestión Inteligente de Luz",
+        "title": "",
         "sections": [
           {
             "id": 1,
