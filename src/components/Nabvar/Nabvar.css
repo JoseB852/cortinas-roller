@@ -21,8 +21,8 @@
 /* OTRAS VISTAS */
 .navbar-glass {
   background: rgba(30, 30, 30, 0.25);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 /* ==============================
