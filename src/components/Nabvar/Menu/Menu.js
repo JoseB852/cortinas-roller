@@ -70,7 +70,7 @@ export default function Menu() {
 
             <li className="submenu-item">
               <NavLink 
-                to="/hospitality" 
+                to="/infantil" 
                 className={({ isActive }) => isActive ? "active" : ""}
                 onClick={() => setOpen(false)}
               >

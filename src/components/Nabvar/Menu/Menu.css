@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   z-index: 1000;
-  isolation: isolate; /* stacking context */
+  isolation: isolate;
 }
 
 /* ================= MOBILE ================= */
@@ -31,17 +31,19 @@
   padding: 0;
   border-radius: 50px;
   color: white;
-  background: rgba(30, 30, 30, 0.75);
+  background: rgba(30, 30, 30, 0.18);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255,255,255,0.08);
   margin: 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 1001;
 }
 
 .menu-list:hover {
-  background: rgba(40, 40, 40, 0.85);
+  background: rgba(30, 30, 30, 0.28);
 }
 
 .menu-main {
@@ -74,6 +76,7 @@
 .chevron-icon.closed { transform: rotate(90deg); }
 .chevron-icon.open { transform: rotate(-90deg); }
 
+/* ================= SUBMENU ================= */
 .submenu-panel {
   width: 200px;
   position: absolute;
@@ -86,11 +89,13 @@
               transform 0.3s ease;
   opacity: 0;
   transform: translateY(-10px);
-  background: rgba(40, 40, 40, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(30, 30, 30, 0.20);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
   border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.08);
   z-index: 1002;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .submenu-panel.open {
@@ -148,7 +153,10 @@
   margin-left: 30px;
   border-radius: 50px;
   color: white;
-  background: rgba(30, 30, 30, 0.75);
+  background: rgba(30, 30, 30, 0.18);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255,255,255,0.08);
   position: relative;
   overflow: hidden;
 }
@@ -158,7 +166,7 @@
   text-align: center;
   cursor: pointer;
   position: relative;
-  z-index: 1; /* sobre el slider */
+  z-index: 1;
 }
 
 .menu-item a {
@@ -168,13 +176,13 @@
   border-radius: 20px;
   display: inline-block;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .menu-item a.active {
   color: black;
 }
 
-/* Hover estilo anterior: mover ligeramente el link */
 .menu-item a:hover {
   color: black;
   background-color: rgba(255, 255, 255, 0.15);
@@ -184,13 +192,13 @@
 /* ================= SLIDER FONDO BLANCO ================= */
 .menu-slider {
   position: absolute;
-  top: 50%;           
-  transform: translateY(-50%); 
+  top: 50%;
+  transform: translateY(-50%);
   height: 70%;
   background-color: white;
   border-radius: 25px;
-  transition: all 0.6s ease; /* más lenta para ver el movimiento */
-  z-index: 0; /* debajo de los items */
+  transition: all 0.6s ease;
+  z-index: 0;
 }
 
 /* ================= MEDIA QUERIES ================= */
