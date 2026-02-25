@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from "react-router-dom";
 import './Footer.css';
 
 export default function Footer() {
@@ -29,10 +30,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-center">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookies</a>
-          <a href="#">Legal</a>
-          <a href="#">Site Map</a>
+          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Cookies</Link>
+          <Link to="/">Legal</Link>
+          <Link to="/">Site Map</Link>
         </div>
 
         <div className="footer-right">
