@@ -1,65 +1,102 @@
+/* =============================
+   FOOTER BASE
+============================= */
+
 .footer {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(15, 15, 15, 0.85);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  z-index: 999;
+}
+
+/* SHOW / HIDE */
+.footer.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.footer.hide {
+  transform: translateY(80px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =============================
+   CONTAINER
+============================= */
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+/* =============================
+   LINKS
+============================= */
+
+.footer-center {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-center a {
+  text-decoration: none;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.footer-center a:hover {
+  color: white;
+}
+
+/* =============================
+   ICONOS
+============================= */
+
+.footer-right {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-right i {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #aaa;
+}
+
+.footer-right i:hover {
+  transform: translateY(-3px);
+  color: white;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-center {
+    flex-wrap: wrap;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
   }
-  
-  .footer-content {
-    width: 100%;
-    max-width: 1200px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    border-top: 2px solid rgb(237, 237, 237);
-    padding: 20px 0;
-    font-size: 0.85rem;
-    color: #111;
-  }
-  
-  /* 👉 CENTRAR TEXTO */
-  .footer-content li {
-    margin-right: 40px;
-    white-space: nowrap;
-  }
-  
-  /* 👉 empujar iconos a la derecha */
-  .footer-content li:nth-last-child(3) {
-    margin-left: auto;
-  }
-  
-  /* iconos juntos */
-  .footer-content li:nth-last-child(-n+3) {
-    margin-right: 18px;
-  }
-  
-  /* iconos hover */
-  .footer-content i {
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .footer-content i:hover {
-    transform: translateY(-2px);
-    opacity: 0.7;
-  }
-  
-  /* show / hide */
-  .footer.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .footer.hide {
-    opacity: 0;
-    transform: translateY(40px);
-    pointer-events: none;
-  }
-  
+
+}

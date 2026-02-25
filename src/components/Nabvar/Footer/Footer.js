@@ -7,11 +7,9 @@ export default function Footer() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY < lastScrollY.current) {
-     
+      if (window.scrollY > lastScrollY.current) {
         setVisible(false);
       } else {
-
         setVisible(true);
       }
 
@@ -24,17 +22,22 @@ export default function Footer() {
 
   return (
     <footer className={`footer ${visible ? 'show' : 'hide'}`}>
-      <ul className="footer-content">
-        <li>2026 Roller.</li>
-        <li>Privacy Policy</li>
-        <li>Cookie Preferences</li>
-        <li>Legal</li>
-        <li>Site Map</li>
-        <li>Site Feedback</li>
+      <div className="footer-container">
 
-        <li><i className="fa-brands fa-facebook"></i></li>
+        <div className="footer-left">
+          <p>© 2026 Cortina Lenox</p>
+        </div>
 
-        <li>
+        <div className="footer-center">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Legal</a>
+          <a href="#">Site Map</a>
+        </div>
+
+        <div className="footer-right">
+          <i className="fa-brands fa-facebook"></i>
+
           <a
             href="https://www.instagram.com/cortinaslenox?igsh=MW11dnpzdWdnbnp2bQ=="
             target="_blank"
@@ -42,10 +45,11 @@ export default function Footer() {
           >
             <i className="fa-brands fa-instagram"></i>
           </a>
-        </li>
 
-        <li><i className="fa-brands fa-whatsapp"></i></li>
-      </ul>
+          <i className="fa-brands fa-whatsapp"></i>
+        </div>
+
+      </div>
     </footer>
   );
 }

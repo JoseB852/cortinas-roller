@@ -1,29 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Nabvar.css';
 
 const Nabvar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+
+  const lastScrollY = useRef(0);
 
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+
+
   useEffect(() => {
-    const controlNavbar = () => {
-      if (window.scrollY > lastScrollY && window.scrollY > 100) {
+    lastScrollY.current = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current) {
+        // Bajando
         setIsVisible(false);
       } else {
+        // Subiendo
         setIsVisible(true);
       }
-      setLastScrollY(window.scrollY);
+
+      lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', controlNavbar);
-    return () => window.removeEventListener('scroll', controlNavbar);
-  }, [lastScrollY]);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
@@ -35,7 +48,7 @@ const Nabvar = () => {
     >
       <div className="navbar-container">
         <Link to="/">
-          <img src="/images/logo.jpg" alt="Roller" className="navbar-logo" />
+          <img src="/images/logo2.jpg" alt="Roller" className="navbar-logo" />
         </Link>
 
         <ul className="navbar-nav">
@@ -72,10 +85,7 @@ const Nabvar = () => {
       </div>
 
       <div className="navbar-search">
-        <input
-          type="text"
-          placeholder="What can we help you find?"
-        />
+        <input type="text" placeholder="What can we help you find?" />
       </div>
     </nav>
   );
