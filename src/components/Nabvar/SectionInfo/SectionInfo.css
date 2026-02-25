@@ -56,5 +56,11 @@
     color: #666;
     font-size: 0.85rem;
   }
+
+  .footer-logo {
+    height: 8em; /* mismo tamaño que h3 */
+    width: auto;
+   
+  }
   
   
