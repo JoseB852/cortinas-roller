@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Nabvar.css';
 
 const Nabvar = () => {
@@ -7,6 +7,9 @@ const Nabvar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -25,11 +28,11 @@ const Nabvar = () => {
   return (
     <nav
       className={`custom-navbar 
+      ${isHome ? 'navbar-solid' : 'navbar-glass'}
       ${isVisible ? '' : 'navbar-hidden'} 
       ${searchOpen ? 'expanded' : ''}
       ${menuOpen ? 'menu-open' : ''}`}
     >
-      {/* HEADER */}
       <div className="navbar-container">
         <Link to="/">
           <img src="/images/logo.jpg" alt="Roller" className="navbar-logo" />
@@ -47,7 +50,7 @@ const Nabvar = () => {
             className="search-btn"
             onClick={() => setSearchOpen(!searchOpen)}
           >
-            <i className="fa-solid fa-magnifying-glass "></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </button>
 
           <button
@@ -64,8 +67,8 @@ const Nabvar = () => {
       <div className="mobile-menu">
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/catalog" onClick={() => setMenuOpen(false)}>Catalogo</Link>
-        <Link to="/us" onClick={() => setMenuOpen(false)}>Contacto</Link>
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        <Link to="/us" onClick={() => setMenuOpen(false)}>Nosotros</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contacto</Link>
       </div>
 
       <div className="navbar-search">
