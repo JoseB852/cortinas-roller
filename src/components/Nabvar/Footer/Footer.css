@@ -1,102 +1,86 @@
-/* =============================
-   FOOTER BASE
-============================= */
-
+/* ===== FOOTER GENERAL ===== */
 .footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  background: rgba(15, 15, 15, 0.85);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  z-index: 999;
+  background-color: #111;
+  color: #fff;
+  padding-top: 3rem;
 }
 
-/* SHOW / HIDE */
-.footer.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.footer.hide {
-  transform: translateY(80px);
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* =============================
-   CONTAINER
-============================= */
-
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .footer-container {
   max-width: 1200px;
   margin: auto;
-  padding: 18px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  padding: 0 2rem 3rem 2rem;
+}
+
+/* ===== COLUMNAS ===== */
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
   color: #ccc;
-  font-size: 0.85rem;
 }
 
-/* =============================
-   LINKS
-============================= */
-
-.footer-center {
-  display: flex;
-  gap: 25px;
-}
-
-.footer-center a {
+/* ===== LINKS ===== */
+.footer-column a {
+  display: block;
   text-decoration: none;
-  color: #aaa;
-  transition: color 0.3s ease;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 0.6rem;
+  transition: all 0.3s ease;
 }
 
-.footer-center a:hover {
-  color: white;
+.footer-column a:hover {
+  color: #ff3c00;
+  padding-left: 5px;
 }
 
-/* =============================
-   ICONOS
-============================= */
-
-.footer-right {
+/* ===== REDES SOCIALES ===== */
+.social-icons {
   display: flex;
-  gap: 18px;
+  gap: 1.2rem;
+  font-size: 20px;
+  margin-top: 1rem;
 }
 
-.footer-right i {
-  font-size: 1.1rem;
+.social-icons i {
   cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  color: #ff3c00;
+}
+
+/* ===== SECCIÓN INFERIOR ===== */
+.footer-bottom {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #0a0a0a;
+  font-size: 14px;
+  border-top: 1px solid #222;
   color: #aaa;
+  letter-spacing: 0.5px;
 }
 
-.footer-right i:hover {
-  transform: translateY(-3px);
-  color: white;
-}
-
-/* =============================
-   RESPONSIVE
-============================= */
-
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-
   .footer-container {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+      text-align: center;
   }
 
-  .footer-center {
-    flex-wrap: wrap;
-    justify-content: center;
+  .social-icons {
+      justify-content: center;
   }
-
 }

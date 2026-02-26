@@ -13,7 +13,6 @@ export default function Footer() {
       } else {
         setVisible(true);
       }
-
       lastScrollY.current = window.scrollY;
     };
 
@@ -25,31 +24,58 @@ export default function Footer() {
     <footer className={`footer ${visible ? 'show' : 'hide'}`}>
       <div className="footer-container">
 
-        <div className="footer-left">
-          <p>© 2026 Cortina Lenox</p>
+        {/* COLUMNA 1 */}
+        <div className="footer-column">
+          <h3>Cortinas Lenox</h3>
+          <p>
+            Especialistas en cortinas Roller, Blackout, Dúo y soluciones
+            motorizadas de alta calidad para tu hogar y oficina.
+          </p>
         </div>
 
-        <div className="footer-center">
-          <Link to="/">Privacy Policy</Link>
-          <Link to="/">Cookies</Link>
-          <Link to="/">Legal</Link>
-          <Link to="/">Site Map</Link>
+        {/* COLUMNA 2 */}
+        <div className="footer-column">
+          <h4>Productos</h4>
+          <Link to="/">Roller Blackout</Link>
+          <Link to="/">Roller Dual</Link>
+          <Link to="/">Roller Dúo</Link>
+          <Link to="/">Motorizadas</Link>
+          <Link to="/">Cortina Vertical</Link>
         </div>
 
-        <div className="footer-right">
-          <i className="fa-brands fa-facebook"></i>
-
-          <a
-            href="https://www.instagram.com/cortinaslenox?igsh=MW11dnpzdWdnbnp2bQ=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-
-          <i className="fa-brands fa-whatsapp"></i>
+        {/* COLUMNA 3 */}
+        <div className="footer-column">
+          <h4>Información</h4>
+          <Link to="/">Términos y Condiciones</Link>
+          <Link to="/">Política de Privacidad</Link>
+          <Link to="/">Contacto</Link>
+          <Link to="/">Mapa del Sitio</Link>
         </div>
 
+        {/* COLUMNA 4 */}
+        <div className="footer-column social">
+          <h4>Síguenos</h4>
+
+          <div className="social-icons">
+            <i className="fa-brands fa-facebook"></i>
+
+            <a
+              href="https://www.instagram.com/cortinaslenox?igsh=MW11dnpzdWdnbnp2bQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+
+            <i className="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+
+      </div>
+
+      {/* PARTE INFERIOR */}
+      <div className="footer-bottom">
+        © 2026 Cortinas Lenox — Todos los derechos reservados.
       </div>
     </footer>
   );

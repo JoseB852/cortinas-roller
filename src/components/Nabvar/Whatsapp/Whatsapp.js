@@ -26,7 +26,7 @@ export default function Whatsapp() {
 
           <div className="popup-body">
             <div className="message">
-              Hola, cortinas Rollex 🤗 <br />
+              Hola, Soy Cata 🤗 <br />
               ¿En qué podemos ayudarte?
             </div>
           </div>
