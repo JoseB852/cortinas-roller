@@ -41,7 +41,7 @@
 }
 
 .footer-column a:hover {
-  color: #ff3c00;
+  
   padding-left: 5px;
 }
 
@@ -60,7 +60,7 @@
 
 .social-icons i:hover {
   transform: scale(1.2);
-  color: #ff3c00;
+
 }
 
 /* ===== SECCIÓN INFERIOR ===== */

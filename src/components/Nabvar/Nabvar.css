@@ -15,7 +15,8 @@
 
 /* HOME */
 .navbar-solid {
-  background: rgba(30, 30, 30, 0.25);
+ /* background: rgba(30, 30, 30, 0.25);*/
+ background: black !important;
 }
 
 /* OTRAS VISTAS */

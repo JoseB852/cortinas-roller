@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="footer-column">
           <h3>Cortinas Lenox</h3>
           <p>
-            Especialistas en cortinas Roller, Blackout, Dúo y soluciones
+            Especialistas en Cortinas Roller, Blackout, Dúo y soluciones
             motorizadas de alta calidad para tu hogar y oficina.
           </p>
         </div>
