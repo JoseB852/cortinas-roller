@@ -10,7 +10,17 @@ const Nabvar = () => {
   const lastScrollY = useRef(0);
 
   const location = useLocation();
-  const isHome = location.pathname === "/";
+  const solidRoutes = [
+    "/",
+    "/catalog",
+    "/us",
+    "/contact",
+    "/comercial",
+    "/residencial",
+    "/card"
+  ];
+  
+  const isSolid = solidRoutes.includes(location.pathname);
 
 
 
@@ -39,13 +49,14 @@ const Nabvar = () => {
   }, []);
 
   return (
+    
     <nav
-      className={`custom-navbar 
-      ${isHome ? 'navbar-solid' : 'navbar-glass'}
-      ${isVisible ? '' : 'navbar-hidden'} 
-      ${searchOpen ? 'expanded' : ''}
-      ${menuOpen ? 'menu-open' : ''}`}
-    >
+    className={`custom-navbar 
+    ${isSolid ? 'navbar-solid' : 'navbar-glass'}
+    ${isVisible ? '' : 'navbar-hidden'} 
+    ${searchOpen ? 'expanded' : ''}
+    ${menuOpen ? 'menu-open' : ''}`}
+  >
       <div className="navbar-container">
         <Link to="/">
           <img src="/images/logo2.jpg" alt="Roller" className="navbar-logo" />
