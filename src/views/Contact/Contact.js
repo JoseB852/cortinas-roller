@@ -1,12 +1,12 @@
 import React from 'react'
 import './Contact.css'
+
 export default function Contact() {
-
-
 
   return (
     <div className='content-form'>
       
+      {/* PANEL IZQUIERDO */}
       <div className='form-description'>
         <div className='contact'>
           <i className="fa-brands fa-whatsapp"></i>
@@ -20,7 +20,7 @@ export default function Contact() {
 
         <div className='schedule'>
           <i className="fa-solid fa-clock"></i>
-          <h5>Atendemos de Lunes a Viernes: 09:00 - 18.00HRS</h5>
+          <h5>Atendemos de Lunes a Viernes: 09:00 - 18:00 HRS</h5>
         </div>
 
         <div className='shipment'>
@@ -29,8 +29,19 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* FORM COTIZADOR */}
-      
+      {/* PANEL DERECHO - FORMULARIO */}
+      <div className='contact-form'>
+
+        <h3>Envíanos un Mensaje</h3>
+
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Correo Electrónico" />
+        <input type="tel" placeholder="Teléfono" />
+        <textarea placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+
+        <button>Enviar Mensaje</button>
+
+      </div>
 
     </div>
   )
