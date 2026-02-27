@@ -17,7 +17,8 @@ const Nabvar = () => {
     "/contact",
     "/comercial",
     "/residencial",
-    "/card"
+    "/card",
+    "/privacy"
   ];
   
   const isSolid = solidRoutes.includes(location.pathname);

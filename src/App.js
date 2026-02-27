@@ -3,7 +3,7 @@ import './App.css';
 import './index.css';
 import Nabvar from './components/Nabvar/Nabvar';
 import Footer from './components/Nabvar/Footer/Footer';
-import SectionInfo from './components/Nabvar/SectionInfo/SectionInfo';
+
 import Whatsapp from './components/Nabvar/Whatsapp/Whatsapp';
 import Home from './views/Home';
 import Card from './views/Card/Card';
@@ -13,6 +13,7 @@ import Blackout from './views/Blackout/Blackout';
 import Contact from './views/Contact/Contact';
 import Us from './views/Us/Us';
 import Catalog from './views/ Catalog/Catalog';
+import Privacy from './views/Privacy/Privacy';
 
 export default function App() {
   return (
@@ -29,10 +30,11 @@ export default function App() {
           <Route path="/blackout/:id" element={<Blackout/>} />
           <Route path="/us" element={<Us />} />
           <Route path='/catalog' element={<Catalog/>} />
+          <Route path='/privacy' element={<Privacy/>} />
         </Routes>
       </main>
 
-      <SectionInfo />
+      
       <Whatsapp />
       <Footer />
     </BrowserRouter>

@@ -46,9 +46,10 @@ export default function Footer() {
         {/* COLUMNA 3 */}
         <div className="footer-column">
           <h4>Información</h4>
+          <Link to="/">Home</Link>
           <Link to="/">Términos y Condiciones</Link>
-          <Link to="/">Política de Privacidad</Link>
-          <Link to="/">Contacto</Link>
+          <Link to="/privacy">Política de Privacidad</Link>
+          <Link to="/contact">Contacto</Link>
           <Link to="/">Mapa del Sitio</Link>
         </div>
 
