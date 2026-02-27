@@ -1,14 +1,14 @@
-/* ================= SECCIÓN EXTERNA 100% ================= */
+
 
 .form{
     width: 100%;
     padding: 80px 20px;
 }
 
-/* ================= CONTENEDOR INTERNO CON SOMBRA ================= */
+
 
 .form-wrapper{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 60px 6%;
     background: white;
@@ -16,7 +16,7 @@
     box-shadow: 0 6px 25px rgba(0,0,0,0.05);
 }
 
-/* ================= TITULO ================= */
+
 
 .form-wrapper h3{
     text-align: center;
@@ -25,7 +25,7 @@
     font-weight: 600;
 }
 
-/* ================= CONTENEDOR HORIZONTAL ================= */
+
 
 .quoter-container{
     display: flex;
@@ -34,7 +34,6 @@
     gap: 60px;
 }
 
-/* ================= LADO IZQUIERDO ================= */
 
 .quoter-inputs{
     flex: 1;
@@ -69,7 +68,7 @@
     border: 1px solid black;
 }
 
-/* ================= BOTÓN ================= */
+
 
 .download-btn{
     text-decoration: none;
@@ -86,7 +85,7 @@
     border: 1px solid black;
 }
 
-/* ================= RESULTADOS ================= */
+
 
 .result{
     flex: 1;
@@ -116,7 +115,6 @@
     text-align: center;
 }
 
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1100px){
 

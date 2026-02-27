@@ -1,0 +1,33 @@
+.content-terms{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 2%;
+    padding: 60px 20px;
+}
+
+.terms{
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.terms h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.terms p{
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.terms strong{
+    font-weight: 700;
+}
+
+@media (max-width: 950px){
+    .terms{
+        width: 95%;
+    }
+}

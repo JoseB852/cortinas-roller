@@ -1,0 +1,26 @@
+.content-privacy{
+    width: 100%;
+    min-height: 100vh;   /* ocupa al menos toda la pantalla */
+    margin-top: 2%;
+    padding: 60px 20px;
+}
+
+.privacy{
+    margin: 5% auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.privacy h3{
+    text-align: center;
+}
+
+.privacy p{
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .privacy strong{
+    font-weight: 700;
+  }

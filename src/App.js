@@ -14,6 +14,7 @@ import Contact from './views/Contact/Contact';
 import Us from './views/Us/Us';
 import Catalog from './views/ Catalog/Catalog';
 import Privacy from './views/Privacy/Privacy';
+import Condition from './views/Condition/Condition';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/us" element={<Us />} />
           <Route path='/catalog' element={<Catalog/>} />
           <Route path='/privacy' element={<Privacy/>} />
+          <Route path='/condition' element={<Condition/>} />
         </Routes>
       </main>
 
