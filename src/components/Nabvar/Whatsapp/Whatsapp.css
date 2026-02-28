@@ -1,22 +1,27 @@
-/* BOTÓN */
+/* ================= BOTÓN FLOTANTE ================= */
+
 .whatsapp-button {
   position: fixed;
   bottom: 30px;
   right: 30px;
   width: 65px;
   height: 65px;
-  background: #25D366;
+  background: #25D366; /* verde original */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.08);
 }
 
 .whatsapp-inner {
-  
   width: 48px;
   height: 48px;
   background: #25D366;
@@ -28,28 +33,31 @@
 
 .whatsapp-inner i {
   color: white;
-  font-size: 36px;
-  
+  font-size: 34px;
 }
 
-/* PANEL */
+
+/* ================= POPUP ================= */
+
 .whatsapp-popup {
-  
   position: fixed;
-  bottom: 30px;   /* misma posición del botón */
+  bottom: 30px;
   right: 30px;
   width: 340px;
   border-radius: 20px;
   overflow: hidden;
-  background: #0b141a;
- 
+  background: #111; /* igual que footer */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
   z-index: 1000;
   animation: fadeUp 0.25s ease;
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
+
 .popup-header {
-  background: linear-gradient(90deg, #25D366, #128C7E);
+  background: #1a1a1a; /* gris oscuro elegante */
+  border-bottom: 2px solid white; /* línea verde sutil */
   padding: 18px;
   display: flex;
   justify-content: space-between;
@@ -66,37 +74,51 @@
 
 .popup-header i {
   font-size: 20px;
+  color: #1f8f5f; /* ícono verde elegante */
 }
 
 .popup-header button {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
   border: none;
   color: white;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-/* BODY */
+.popup-header button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+
+/* ================= BODY ================= */
+
 .popup-body {
   padding: 20px;
-  background: #111b21;
+  background: #111;
 }
 
+
+/* ================= MENSAJE ================= */
+
 .message {
-  background: #202c33;
+  background: #222;
   padding: 15px 18px;
   border-radius: 18px;
   color: #e9edef;
   font-size: 14px;
+  line-height: 1.5;
   max-width: 85%;
 }
 
-/* BOTÓN ABRIR CHAT */
+
+/* ================= BOTÓN ABRIR CHAT ================= */
+
 .open-chat {
   display: block;
-  background: #25D366;
+  background: #1f8f5f; /* verde acento */
   color: white;
   text-align: center;
   padding: 16px;
@@ -104,14 +126,17 @@
   font-weight: 600;
   border-radius: 30px;
   margin: 20px;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
 }
 
 .open-chat:hover {
-  background: #1ebe5d;
+  background: #166f49;
+  transform: translateY(-2px);
 }
 
-/* Animación */
+
+/* ================= ANIMACIÓN ================= */
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -123,10 +148,18 @@
   }
 }
 
-/* Responsive */
+
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
+
   .whatsapp-popup {
     width: 92%;
     right: 4%;
+  }
+
+  .whatsapp-button {
+    right: 20px;
+    bottom: 20px;
   }
 }
