@@ -1,3 +1,5 @@
+/* ================= CONTENEDOR PRINCIPAL ================= */
+
 .content-terms{
     width: 100%;
     min-height: 100vh;
@@ -5,10 +7,17 @@
     padding: 60px 20px;
 }
 
+/* ================= CONTENIDO ================= */
+
 .terms{
     margin: 0 auto;
     max-width: 900px;
     width: 100%;
+
+    /* ANIMACIÓN */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1.2s ease forwards;
 }
 
 .terms h3{
@@ -25,6 +34,17 @@
 .terms strong{
     font-weight: 700;
 }
+
+/* ================= ANIMACION ================= */
+
+@keyframes fadeUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 950px){
     .terms{

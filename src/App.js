@@ -15,10 +15,12 @@ import Us from './views/Us/Us';
 import Catalog from './views/ Catalog/Catalog';
 import Privacy from './views/Privacy/Privacy';
 import Condition from './views/Condition/Condition';
+import ScrollToTop from './components/Nabvar/ScrollToTop/ScrollToTop';
 
 export default function App() {
   return (
     <BrowserRouter>
+     <ScrollToTop />
       <Nabvar />
 
       <main>

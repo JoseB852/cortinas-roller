@@ -20,6 +20,13 @@ export default function Footer() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const handleHomeClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className={`footer ${visible ? 'show' : 'hide'}`}>
       <div className="footer-container">
@@ -46,7 +53,9 @@ export default function Footer() {
         {/* COLUMNA 3 */}
         <div className="footer-column">
           <h4>Información</h4>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={handleHomeClick}>
+            Home
+          </Link>
           <Link to="/condition">Términos y Condiciones</Link>
           <Link to="/privacy">Política de Privacidad</Link>
           <Link to="/contact">Contacto</Link>
