@@ -48,7 +48,7 @@
 ================================ */
 .comercial-wrapper {
   display: flex;
-  height: 600px;
+  height: 700px;
   width: 250px;
   flex-shrink: 0;
   opacity: 0;
@@ -132,13 +132,13 @@
 ================================ */
 .comercial-panel {
   width: 600px;
-  height: 520px;
+  height: 600px;
   background: #ffffff;
   padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   opacity: 0;
   transform: translateX(-30px);
   pointer-events: none;
@@ -272,6 +272,35 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* BOTÓN CERRAR PANEL CON UNA VUELTA 360°  ANIMACION*/
+.panel-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s ease;
+}
+
+/* Hover: color + animación de giro */
+.panel-close:hover {
+  animation: spin 0.6s ease;
+}
+
+/* Animación de giro 360° */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* ===============================
    MOBILE PEQUEÑO ≤ 480px
