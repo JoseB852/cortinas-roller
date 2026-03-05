@@ -8,11 +8,12 @@ import Whatsapp from './components/Nabvar/Whatsapp/Whatsapp';
 import Home from './views/Home';
 import Card from './views/Card/Card';
 import Comercial from './views/Comercial/Comercial';
+import ComercialDetalle from "./views/ComercialDetalle/ComercialDetalle";
 import ProductoDetalle from './views/ProductoDetalle/ProductoDetalle';
 import Blackout from './views/Blackout/Blackout';
 import Contact from './views/Contact/Contact';
 import Us from './views/Us/Us';
-import Catalog from './views/ Catalog/Catalog';
+import Catalog from './views/Catalog/Catalog';
 import Privacy from './views/Privacy/Privacy';
 import Condition from './views/Condition/Condition';
 import ScrollToTop from './components/Nabvar/ScrollToTop/ScrollToTop';
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/card" element={<Card />} />
           <Route path="/comercial" element={<Comercial />} />
+          <Route path="/comercial/:id" element={<ComercialDetalle />} />
           <Route path="/productoDetalle/:id" element={<ProductoDetalle />} />
           <Route path="/blackout/:id" element={<Blackout/>} />
           <Route path="/us" element={<Us />} />
