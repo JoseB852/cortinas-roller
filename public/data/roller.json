@@ -175,9 +175,9 @@
         "miniCards": [
           {
             "id": 1,
-            "image": "/images/cortinadual-1.jpg",
-            "label": "Día / Noche",
-            "viewId": "comercial-dual-dia-noche"
+            "image": "/images/cortina-comercial-dual-1.jpg",
+            "label": "Dual Comercial",
+            "viewId": "comercial-dual"
           },
           {
             "id": 2,
@@ -238,7 +238,7 @@
     },
     {
       "id": 3,
-      "slug": "comercial-duo",
+      "slug": "dual-comercial",
       "title": "Cortina Comercial Duo",
       "image": "/images/comercial-cortina-3.jpg",
       "panel": {
@@ -817,8 +817,8 @@
       }
     },
     {
-      "id": "comercial-dual-corporativo",
-      "slug": "comercial-dual-corporativo",
+      "id": "comercial-dual",
+      "slug": "comercial-dual",
       "banner": {
         "type": "image",
         "src": "/images/banner-comercial-dual.jpg"
@@ -853,158 +853,154 @@
     }
   ],
   "comercialVista": [
-    {
-      "id": "comercial-blackout-total",
-      "slug": "comercial-blackout-total",
-      "imagen": "",
-      "nombre": "Blackout Comercial Total",
-      "descripcion": "Bloqueo total de luz para ambientes comerciales.",
-      "banner": {
-        "type": "image",
-        "src": "/images/banner-comercial-blackout.jpg"
-      },
-      "titleBlock": {
-        "h1": "Oscuridad Total",
-        "p": "Las cortinas para oficinas ayudan a regular la luz natural, mejorar la comodidad visual y crear un ambiente profesional. Son ideales para salas de reuniones, áreas de trabajo y espacios corporativos."
-      },
-      "explorer": {
-        "sections": [
-          {
-            "id": 1,
-            "title": "Bloqueo de Luz",
-            "text": "Este tipo de instalación permite que entre una cantidad moderada de luz natural.",
-            "image": "/images/comercial-total-1.jpg"
-          },
-          {
-            "id": 2,
-            "title": "Privacidad",
-            "text": "Permiten controlar la iluminación del aula, facilitando el uso de proyectores y pantallas mientras los estudiantes pueden tomar notas con comodidad.",
-            "image": "/images/comercial-total-2.jpg"
-          },
-          {
-            "id": 3,
-            "title": "Ambientes Controlados",
-            "text": "Son una solución elegante y funcional para controlar la luz en cualquier espacio. Su diseño minimalista se adapta perfectamente a hogares, oficinas y comercios, ofreciendo estilo, privacidad y comodidad.",
-            "image": "/images/comercial-total-3.jpg"
-          }
-        ]
-      }
+  {
+    "id": "comercial-blackout-total",
+    "slug": "comercial-blackout-total",
+    "nombre": "Blackout Comercial Total",
+    "descripcion": "Bloqueo total de luz para ambientes comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-blackout.jpg"
     },
-    {
-      "id": "comercial-blackout-termico",
-      "slug": "comercial-blackout-termico",
-      "imagen": "/images/banner-comercial-termico.jpg",
-      "nombre": "Blackout Comercial Térmico",
-      "descripcion": "Aislación térmica para oficinas y edificios corporativos.",
-      "precio": "Consultar",
-      "banner": {
-        "type": "image",
-        "src": "/images/banner-comercial-blackout-1.jpg"
-      },
-      "titleBlock": {
-        "h1": "Aislación Térmica",
-        "p": "Las cortinas blackout dark permiten bloquear la entrada de luz y ofrecen un desplazamiento suave y silencioso, siendo ideales para salas de reuniones, presentaciones y videoconferencias."
-      },
-      "explorer": {
-        "sections": [
-          {
-            "id": 1,
-            "title": "Control de Temperatura",
-            "text": "permiten controlar la luz y crear un ambiente cómodo y acogedor para los clientes.",
-            "image": "/images/comercial-dark-1.jpg"
-          },
-          {
-            "id": 2,
-            "title": "Eficiencia Energética",
-            "text": "ayudan a bloquear la luz exterior, mejorando la visibilidad en pantallas y proyectores, además de aportar privacidad y confort en el espacio de trabajo.",
-            "image": "/images/comercial-dark-2.jpg"
-          },
-          {
-            "id": 3,
-            "title": "Confort Interior",
-            "text": "Mantiene ambientes agradables para trabajadores.",
-            "image": "/images/comercial-termico-3.jpg"
-          }
-        ]
-      }
+    "titleBlock": {
+      "h1": "Oscuridad Total",
+      "p": "Las cortinas para oficinas ayudan a regular la luz natural, mejorar la comodidad visual y crear un ambiente profesional."
     },
-    {
-      "id": "comercial-blackout-corporativo",
-      "slug": "comercial-blackout-corporativo",
-      "imagen": "/images/banner-comercial-corporativo.jpg",
-      "nombre": "Blackout Corporativo",
-      "descripcion": "Diseñado para entornos empresariales.",
-      "precio": "Consultar",
-      "banner": {
-        "type": "image",
-        "src": "/images/banner-comercial-corporativo.jpg"
-      },
-      "titleBlock": {
-        "h1": "Uso Corporativo",
-        "p": "Diseñadas para entornos empresariales que requieren control de luz."
-      },
-      "explorer": {
-        "sections": [
-          {
-            "id": 1,
-            "title": "Ambientes Profesionales",
-            "text": "Ideales para oficinas y auditorios.",
-            "image": "/images/comercial-corporativo-1.jpg"
-          },
-          {
-            "id": 2,
-            "title": "Diseño Elegante",
-            "text": "Aporta estética moderna.",
-            "image": "/images/comercial-corporativo-2.jpg"
-          },
-          {
-            "id": 3,
-            "title": "Privacidad Total",
-            "text": "Garantiza privacidad en reuniones.",
-            "image": "/images/comercial-corporativo-3.jpg"
-          }
-        ]
-      }
-    },
-    {
-      "id": "comercial-blackout-durabilidad",
-      "slug": "comercial-blackout-durabilidad",
-      "imagen": "/images/banner-comercial-durabilidad.jpg",
-      "nombre": "Blackout Alta Durabilidad",
-      "descripcion": "Sistemas diseñados para uso intensivo.",
-      "precio": "Consultar",
-      "banner": {
-        "type": "image",
-        "src": "/images/banner-comercial-durabilidad.jpg"
-      },
-      "titleBlock": {
-        "h1": "Alta Durabilidad",
-        "p": "Sistemas diseñados para soportar uso intensivo."
-      },
-      "explorer": {
-        "sections": [
-          {
-            "id": 1,
-            "title": "Materiales Resistentes",
-            "text": "Fabricadas con telas de alta resistencia.",
-            "image": "/images/comercial-durabilidad-1.jpg"
-          },
-          {
-            "id": 2,
-            "title": "Uso Intensivo",
-            "text": "Ideales para hoteles y clínicas.",
-            "image": "/images/comercial-durabilidad-2.jpg"
-          },
-          {
-            "id": 3,
-            "title": "Larga Vida Útil",
-            "text": "Mantienen su rendimiento durante años.",
-            "image": "/images/comercial-durabilidad-3.jpg"
-          }
-        ]
-      }
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Bloqueo de Luz",
+          "text": "Este tipo de instalación permite que entre una cantidad moderada de luz natural.",
+          "image": "/images/comercial-total-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Privacidad",
+          "text": "Permiten controlar la iluminación del aula o sala de reuniones.",
+          "image": "/images/comercial-total-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Ambientes Controlados",
+          "text": "Son una solución elegante y funcional para controlar la luz en cualquier espacio.",
+          "image": "/images/comercial-total-3.jpg"
+        }
+      ]
     }
-  ],
+  },
+
+  {
+    "id": "comercial-blackout-termico",
+    "slug": "comercial-blackout-termico",
+    "nombre": "Blackout Comercial Térmico",
+    "descripcion": "Aislación térmica para oficinas y edificios corporativos.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-blackout-1.jpg"
+    },
+    "titleBlock": {
+      "h1": "Aislación Térmica",
+      "p": "Las cortinas blackout dark permiten bloquear la entrada de luz y ofrecen un desplazamiento suave y silencioso."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Control de Temperatura",
+          "text": "Permiten controlar la temperatura interior reduciendo el calor exterior.",
+          "image": "/images/comercial-dark-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Confort Visual",
+          "text": "Reducen reflejos en pantallas y mejoran la visibilidad en oficinas.",
+          "image": "/images/comercial-dark-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Diseño Corporativo",
+          "text": "Diseñadas para integrarse con ambientes modernos y profesionales.",
+          "image": "/images/comercial-dark-3.jpg"
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "comercial-dual",
+    "slug": "comercial-dual",
+    "nombre": "Dual Comercial",
+    "descripcion": "Control flexible de luz para oficinas.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-dual.jpg"
+    },
+    "titleBlock": {
+      "h1": "Dual Comercial",
+      "p": "Las cortinas dual permiten regular la entrada de luz natural combinando franjas translúcidas y opacas."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Control de Luz",
+          "text": "Las empresas a menudo necesitan mostrar información confidencial, por lo que la privacidad es esencial.",
+          "image": "/images/comercial-dual-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Privacidad",
+          "text": "Nuestras cortinas roller ofrecen opciones de privacidad y se adaptan a la perfección a entornos modernos.",
+          "image": "/images/comercial-dual-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Diseño Moderno",
+          "text": "Las cortinas roller en salas de conferencias ayudan a controlar la luz y crear un ambiente cómodo y profesional para presentaciones y reuniones.",
+          "image": "/images/comercial-dual-3.jpg"
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "comercial-dual-privacidad",
+    "slug": "comercial-dual-privacidad",
+    "nombre": "Dual Privacidad",
+    "descripcion": "Privacidad para espacios comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-dual.jpg"
+    },
+    "titleBlock": {
+      "h1": "Privacidad Comercial",
+      "p": "Diseñadas para mejorar la privacidad en espacios corporativos."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Ambiente Profesional",
+          "text": "Permite crear ambientes cómodos para trabajo.",
+          "image": "/images/comercial-privacidad-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Control Solar",
+          "text": "Reduce la entrada de calor y luz directa.",
+          "image": "/images/comercial-privacidad-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Diseño Moderno",
+          "text": "Se adapta a cualquier estilo de oficina.",
+          "image": "/images/comercial-privacidad-3.jpg"
+        }
+      ]
+    }
+  }
+],
   "products": [
     {
       "id": 1,

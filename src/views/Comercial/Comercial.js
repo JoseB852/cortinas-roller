@@ -105,13 +105,16 @@ export default function Comercial() {
                   <h4>{product.panel.title}</h4>
                   <p>{product.panel.description}</p>
 
+               
+
+                  {/* 
                   <div className="panel-header">
                     <button className="panel-button">
                       Ver más
                     </button>
                   </div>
-
-                  {/* MINI CARDS */}
+                  */}
+                  
                   <div className="panel-cards">
                     {product.panel.miniCards.map(item => (
                       <Link
