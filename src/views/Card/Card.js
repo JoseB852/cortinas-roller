@@ -12,7 +12,10 @@ export default function Card() {
   useEffect(() => {
     fetch("/data/roller.json")
       .then((res) => res.json())
-      .then((data) => setRoller(data.roller))
+      .then((data) => {
+        // data ahora es directamente el array de roller
+        setRoller(data);
+      })
       .catch((err) => console.error(err));
   }, []);
 

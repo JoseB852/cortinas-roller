@@ -35,13 +35,25 @@ export default function Catalog() {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [sortOption, setSortOption] = useState("");
+  const [loading, setLoading] = useState(true);
 
-  /* FETCH */
+  /* FETCH - CORREGIDO */
   useEffect(() => {
-    fetch("/data/roller.json")
-      .then(res => res.json())
-      .then(data => setProducts(data.products))
-      .catch(err => console.error("Error cargando productos:", err));
+    fetch("/data/products.json") // Cambiado a products.json
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then(data => {
+        setProducts(data); // data es directamente el array de productos
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Error cargando productos:", err);
+        setLoading(false);
+      });
   }, []);
 
   /* FILTRO CATEGORÍAS */
@@ -64,7 +76,6 @@ export default function Catalog() {
 
   /* FILTRAR */
   let filteredProducts = products.filter(product => {
-
     const matchCategory =
       selectedCategories.length === 0 ||
       selectedCategories.includes(product.category);
@@ -72,7 +83,7 @@ export default function Catalog() {
     const matchType =
       selectedTypes.length === 0 ||
       selectedTypes.some(type =>
-        product.category.includes(type)
+        product.category.toLowerCase().includes(type.toLowerCase())
       );
 
     return matchCategory && matchType;
@@ -80,16 +91,27 @@ export default function Catalog() {
 
   /* ORDENAR */
   if (sortOption === "precio-asc") {
-    filteredProducts.sort((a, b) => a.price - b.price);
+    filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
   }
 
   if (sortOption === "precio-desc") {
-    filteredProducts.sort((a, b) => b.price - a.price);
+    filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
   }
 
   if (sortOption === "az") {
-    filteredProducts.sort((a, b) =>
+    filteredProducts = [...filteredProducts].sort((a, b) =>
       a.name.localeCompare(b.name)
+    );
+  }
+
+  // Mostrar loading mientras carga
+  if (loading) {
+    return (
+      <section className="main-content">
+        <div className="loading-container">
+          <p>Cargando productos...</p>
+        </div>
+      </section>
     );
   }
 
@@ -173,35 +195,44 @@ export default function Catalog() {
       <main className="collections">
 
         <div className="option">
-          <h2>PRODUCTOS</h2>
+          <h2>PRODUCTOS ({filteredProducts.length})</h2>
 
           <div className="sort-options">
             <label>
               Ordenar por:
               <select
                 onChange={(e) => setSortOption(e.target.value)}
+                value={sortOption}
               >
                 <option value="">Seleccionar</option>
-                <option value="az">Alfabéticamente</option>
-                <option value="precio-asc">Precio menor a mayor</option>
-                <option value="precio-desc">Precio mayor a menor</option>
+                <option value="az">Alfabéticamente (A-Z)</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
               </select>
             </label>
           </div>
         </div>
 
         <div className="product-grid">
-          {filteredProducts.map(product => (
-            <div key={product.id} className="product-card">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="product-image"
-              />
-              <h4>{product.name}</h4>
-              <p>${product.price.toLocaleString("es-CL")}</p>
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map(product => (
+              <div key={product.id} className="product-card">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="product-image"
+                />
+                <h4>{product.name}</h4>
+                <p>${product.price.toLocaleString("es-CL")}</p>
+                <small>SKU: {product.sku}</small>
+                <small>Stock: {product.stock} unidades</small>
+              </div>
+            ))
+          ) : (
+            <div className="no-products">
+              <p>No hay productos que coincidan con los filtros seleccionados.</p>
             </div>
-          ))}
+          )}
         </div>
 
       </main>

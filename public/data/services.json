@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Asesoria Personalizada",
+      "imgFront": "/images/asesoriaPersonalizada.jpg",
+      "description": "Te guiamos paso a paso para encontrar la mejor solución adaptada a tus necesidades."
+    },
+    {
+      "id": 2,
+      "title": "Garantia",
+      "imgFront": "/images/garantia.jpg",
+      "description": "Respaldamos nuestros servicios con garantía total y compromiso de calidad."
+    },
+    {
+      "id": 3,
+      "title": "Instalacion Profesional",
+      "imgFront": "https://tiomaestro.cl/wp-content/uploads/2024/06/20260626_installing-courtains.jpeg",
+      "description": "Instalaciones realizadas por expertos certificados con máxima precisión."
+    },
+    {
+      "id": 4,
+      "title": "Despacho",
+      "imgFront": "https://media.istockphoto.com/id/1221101939/es/foto/concepto-de-entrega-asian-man-mano-aceptando-una-entrega-de-cajas-de-reparto-de-repartidor.jpg?s=612x612&w=0&k=20&c=PmIkuzTsEg8B_d7mROP1ocLY-CE-yFeJGpyWgkl9gCg=",
+      "description": "Despacho rápida y eficiente para resolver cualquier inconveniente."
+    }
+  ]

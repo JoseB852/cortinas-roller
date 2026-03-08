@@ -1,0 +1,578 @@
+[
+  {
+    "id": "comercial-blackout-total",
+    "slug": "comercial-blackout-total",
+    "nombre": "Blackout Comercial Total",
+    "descripcion": "Bloqueo total de luz para ambientes comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-blackout.jpg"
+    },
+    "titleBlock": {
+      "h1": "Oscuridad Total",
+      "p": "Las cortinas para oficinas ayudan a regular la luz natural, mejorar la comodidad visual y crear un ambiente profesional."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Bloqueo de Luz",
+          "text": "Este tipo de instalación permite que entre una cantidad moderada de luz natural.",
+          "image": "/images/comercial-total-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Privacidad",
+          "text": "Permiten controlar la iluminación del aula o sala de reuniones.",
+          "image": "/images/comercial-total-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Ambientes Controlados",
+          "text": "Son una solución elegante y funcional para controlar la luz en cualquier espacio.",
+          "image": "/images/comercial-total-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-blackout-termico",
+    "slug": "comercial-blackout-termico",
+    "nombre": "Blackout Comercial Térmico",
+    "descripcion": "Aislación térmica para oficinas y edificios corporativos.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-blackout-1.jpg"
+    },
+    "titleBlock": {
+      "h1": "Aislación Térmica",
+      "p": "Las cortinas blackout dark permiten bloquear la entrada de luz y ofrecen un desplazamiento suave y silencioso."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Control de Temperatura",
+          "text": "Permiten controlar la temperatura interior reduciendo el calor exterior.",
+          "image": "/images/comercial-dark-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Confort Visual",
+          "text": "Reducen reflejos en pantallas y mejoran la visibilidad en oficinas.",
+          "image": "/images/comercial-dark-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Diseño Corporativo",
+          "text": "Diseñadas para integrarse con ambientes modernos y profesionales.",
+          "image": "/images/comercial-dark-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-blackout-corporativo",
+    "slug": "comercial-blackout-corporativo",
+    "nombre": "Blackout Corporativo",
+    "descripcion": "Elegancia y profesionalismo para espacios ejecutivos.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-blackout-corporativo.jpg"
+    },
+    "titleBlock": {
+      "h1": "Blackout Corporativo",
+      "p": "Diseñadas para crear un ambiente profesional y sofisticado en salas de juntas y oficinas ejecutivas."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/blackout-corporativo-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/blackout-corporativo-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/blackout-corporativo-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-blackout-durabilidad",
+    "slug": "comercial-blackout-durabilidad",
+    "nombre": "Blackout Alta Durabilidad",
+    "descripcion": "Máxima resistencia para espacios de alto tráfico.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-blackout-durabilidad.jpg"
+    },
+    "titleBlock": {
+      "h1": "Blackout Alta Durabilidad",
+      "p": "Diseñadas para soportar el uso intensivo en hoteles, hospitales y espacios comerciales de alto tráfico."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/blackout-durabilidad-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/blackout-durabilidad-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/blackout-durabilidad-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-dual",
+    "slug": "comercial-dual",
+    "nombre": "Dual Comercial",
+    "descripcion": "Control flexible de luz para oficinas.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-dual.jpg"
+    },
+    "titleBlock": {
+      "h1": "Dual Comercial",
+      "p": "Las cortinas dual permiten regular la entrada de luz natural combinando franjas translúcidas y opacas."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Control de Luz",
+          "text": "Las empresas a menudo necesitan mostrar información confidencial, por lo que la privacidad es esencial.",
+          "image": "/images/comercial-dual-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Privacidad",
+          "text": "Nuestras cortinas roller ofrecen opciones de privacidad y se adaptan a la perfección a entornos modernos.",
+          "image": "/images/comercial-dual-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Diseño Moderno",
+          "text": "Las cortinas roller en salas de conferencias ayudan a controlar la luz y crear un ambiente cómodo y profesional para presentaciones y reuniones.",
+          "image": "/images/comercial-dual-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-dual-privacidad",
+    "slug": "comercial-dual-privacidad",
+    "nombre": "Dual Privacidad",
+    "descripcion": "Privacidad para espacios comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-comercial-dual.jpg"
+    },
+    "titleBlock": {
+      "h1": "Privacidad Comercial",
+      "p": "Diseñadas para mejorar la privacidad en espacios corporativos."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Ambiente Profesional",
+          "text": "Permite crear ambientes cómodos para trabajo.",
+          "image": "/images/comercial-privacidad-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Control Solar",
+          "text": "Reduce la entrada de calor y luz directa.",
+          "image": "/images/comercial-privacidad-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Diseño Moderno",
+          "text": "Se adapta a cualquier estilo de oficina.",
+          "image": "/images/comercial-privacidad-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-dual-corporativo",
+    "slug": "comercial-dual-corporativo",
+    "nombre": "Dual Corporativo",
+    "descripcion": "Diseño profesional para ambientes ejecutivos.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-dual-corporativo.jpg"
+    },
+    "titleBlock": {
+      "h1": "Dual Corporativo",
+      "p": "Elegancia y funcionalidad para salas de juntas y oficinas ejecutivas."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/dual-corporativo-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/dual-corporativo-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/dual-corporativo-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-dual-solar",
+    "slug": "comercial-dual-solar",
+    "nombre": "Dual Control Solar",
+    "descripcion": "Protección solar para espacios comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-dual-solar.jpg"
+    },
+    "titleBlock": {
+      "h1": "Control Solar Dual",
+      "p": "Máxima protección contra rayos UV y calor sin perder visibilidad."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/dual-solar-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/dual-solar-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/dual-solar-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-duo-rayas",
+    "slug": "comercial-duo-rayas",
+    "nombre": "Duo Rayas Elegantes",
+    "descripcion": "Diseño contemporáneo con rayas elegantes.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-duo-rayas.jpg"
+    },
+    "titleBlock": {
+      "h1": "Rayas Elegantes",
+      "p": "Diseño moderno que combina franjas para un acabado sofisticado."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/duo-rayas-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/duo-rayas-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/duo-rayas-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-duo-luz",
+    "slug": "comercial-duo-luz",
+    "nombre": "Duo Luz Natural",
+    "descripcion": "Control perfecto de iluminación natural.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-duo-luz.jpg"
+    },
+    "titleBlock": {
+      "h1": "Luz Natural Controlada",
+      "p": "Disfruta de la luz natural manteniendo la privacidad y el confort visual."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/duo-luz-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/duo-luz-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/duo-luz-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-duo-privacidad",
+    "slug": "comercial-duo-privacidad",
+    "nombre": "Duo Privacidad",
+    "descripcion": "Privacidad sin sacrificar estilo.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-duo-privacidad.jpg"
+    },
+    "titleBlock": {
+      "h1": "Privacidad con Estilo",
+      "p": "Máxima privacidad para espacios que requieren confidencialidad."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/duo-privacidad-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/duo-privacidad-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/duo-privacidad-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-duo-premium",
+    "slug": "comercial-duo-premium",
+    "nombre": "Duo Diseño Premium",
+    "descripcion": "La máxima expresión en diseño y funcionalidad.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-duo-premium.jpg"
+    },
+    "titleBlock": {
+      "h1": "Diseño Premium",
+      "p": "Materiales de alta gama y acabados exclusivos para espacios distinguidos."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/duo-premium-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/duo-premium-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/duo-premium-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-vertical-rayas",
+    "slug": "comercial-vertical-rayas",
+    "nombre": "Vertical Rayas Elegantes",
+    "descripcion": "Cortinas verticales con diseño de rayas elegantes.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-vertical-rayas.jpg"
+    },
+    "titleBlock": {
+      "h1": "Vertical Rayas Elegantes",
+      "p": "Descripción principal del producto - Complete aquí"
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/vertical-rayas-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/vertical-rayas-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/vertical-rayas-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-vertical-luz",
+    "slug": "comercial-vertical-luz",
+    "nombre": "Vertical Luz Natural",
+    "descripcion": "Control de iluminación natural para espacios amplios.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-vertical-luz.jpg"
+    },
+    "titleBlock": {
+      "h1": "Vertical Luz Natural",
+      "p": "Descripción principal del producto - Complete aquí"
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/vertical-luz-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/vertical-luz-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/vertical-luz-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-vertical-privacidad",
+    "slug": "comercial-vertical-privacidad",
+    "nombre": "Vertical Privacidad",
+    "descripcion": "Privacidad total para espacios comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-vertical-privacidad.jpg"
+    },
+    "titleBlock": {
+      "h1": "Vertical Privacidad",
+      "p": "Descripción principal del producto - Complete aquí"
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/vertical-privacidad-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/vertical-privacidad-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/vertical-privacidad-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-vertical-premium",
+    "slug": "comercial-vertical-premium",
+    "nombre": "Vertical Diseño Premium",
+    "descripcion": "Cortinas verticales de alta gama.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-vertical-premium.jpg"
+    },
+    "titleBlock": {
+      "h1": "Vertical Diseño Premium",
+      "p": "Descripción principal del producto - Complete aquí"
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Título sección 1",
+          "text": "Texto descriptivo de la sección 1 - Complete aquí",
+          "image": "/images/vertical-premium-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Título sección 2",
+          "text": "Texto descriptivo de la sección 2 - Complete aquí",
+          "image": "/images/vertical-premium-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Título sección 3",
+          "text": "Texto descriptivo de la sección 3 - Complete aquí",
+          "image": "/images/vertical-premium-3.jpg"
+        }
+      ]
+    }
+  }
+]

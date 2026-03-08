@@ -10,7 +10,8 @@ export default function Blackout() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/data/roller.json")
+    // Cargar directamente blackoutVista.json
+    fetch("/data/blackoutVista.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
@@ -18,10 +19,11 @@ export default function Blackout() {
         return res.json();
       })
       .then((data) => {
-        if (data.blackoutVista && Array.isArray(data.blackoutVista)) {
-          setProducts(data.blackoutVista);
+        // data ya es el array de blackoutVista
+        if (Array.isArray(data)) {
+          setProducts(data);
         } else {
-          throw new Error("No se encontró blackoutVista en los datos");
+          throw new Error("El formato de blackoutVista no es un array");
         }
         setLoading(false);
       })
@@ -32,7 +34,7 @@ export default function Blackout() {
       });
   }, []);
 
-  // Buscamos el producto por ID (ahora string, no número)
+  // Buscamos el producto por ID (ahora string)
   const product = products.find((item) => item.id === id);
 
   // Si hay error
@@ -74,9 +76,7 @@ export default function Blackout() {
         className="banner-blackout"
         style={{ 
           backgroundImage: `url(${product.banner?.src || '/images/default-banner.jpg'})`,
-
         }}>
-    
       </div>
 
       {/* Título y descripción usando titleBlock */}
@@ -102,7 +102,8 @@ export default function Blackout() {
             <div
               className="explorer-imagen"
               style={{ 
-                backgroundImage: `url(${section.image})`}}
+                backgroundImage: `url(${section.image})`
+              }}
             />
           </div>
         ))

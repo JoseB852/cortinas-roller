@@ -7,20 +7,28 @@ export default function Services() {
   const [introData, setIntroData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/roller.json")
+    // Cargar servicios desde services.json
+    fetch("/data/services.json")
       .then((res) => res.json())
       .then((data) => {
-        setServices(data.services);
-        setIntroData(data.intro); // Ahora viene del JSON
+        setServices(data); // services.json es directamente un array
       })
-      .catch((err) => console.error(err));
+      .catch((err) => console.error("Error cargando services:", err));
+
+    // Cargar intro desde intro.json
+    fetch("/data/intro.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setIntroData(data); // intro.json es directamente el objeto intro
+      })
+      .catch((err) => console.error("Error cargando intro:", err));
   }, []);
 
   return (
     <div className="content-services">
       <div className="services-inner">
         
-      <div className="description-services">
+        <div className="description-services">
           {introData && (
             <>
               <h2>{introData.title}</h2>
@@ -32,7 +40,7 @@ export default function Services() {
 
         <div className="cubes-container">
           {services.map((service, index) => (
-            <div className="cube-services" key={index} tabIndex="0">
+            <div className="cube-services" key={service.id || index} tabIndex="0">
               <img src={service.imgFront} alt={service.title} />
               <h3>{service.title}</h3>
 

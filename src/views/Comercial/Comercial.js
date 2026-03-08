@@ -11,9 +11,19 @@ export default function Comercial() {
   useEffect(() => {
     document.body.classList.add('comercial-page');
 
-    fetch('/data/roller.json')
-      .then(res => res.json())
-      .then(data => setComercial(data.comercial));
+    
+    fetch('/data/comercial.json')
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then(data => {
+   
+        setComercial(data);
+      })
+      .catch(err => console.error('Error cargando comercial:', err));
 
     return () => {
       document.body.classList.remove('comercial-page');
@@ -21,24 +31,29 @@ export default function Comercial() {
   }, []);
 
   const toggleComercial = (id, index) => {
-
     if (openId === id) {
-
       setOpenId(null);
 
       if (window.innerWidth > 768) {
-        document.querySelector('.comercial-content').style.transform = 'translateX(0)';
+        const content = document.querySelector('.comercial-content');
+        if (content) {
+          content.style.transform = 'translateX(0)';
+        }
       }
-
     } else {
-
       setOpenId(id);
 
       if (window.innerWidth > 768) {
-
         const container = document.querySelector('.comercial-content');
+        if (!container) return;
+        
         const wrapper = container.children[index];
-        const panelWidth = wrapper.querySelector('.comercial-panel').offsetWidth;
+        if (!wrapper) return;
+        
+        const panel = wrapper.querySelector('.comercial-panel');
+        if (!panel) return;
+        
+        const panelWidth = panel.offsetWidth;
         const containerWidth = container.offsetWidth;
         const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
 
@@ -49,11 +64,20 @@ export default function Comercial() {
         } else {
           container.style.transform = 'translateX(0)';
         }
-
       }
-
     }
+  };
 
+  const closePanel = (e) => {
+    e.stopPropagation();
+    setOpenId(null);
+
+    if (window.innerWidth > 768) {
+      const content = document.querySelector('.comercial-content');
+      if (content) {
+        content.style.transform = 'translateX(0)';
+      }
+    }
   };
 
   return (
@@ -91,32 +115,16 @@ export default function Comercial() {
                   {/* BOTÓN CERRAR */}
                   <button
                     className="panel-close"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setOpenId(null);
-                      if (window.innerWidth > 768) {
-                        document.querySelector('.comercial-content').style.transform = 'translateX(0)';
-                      }
-                    }}
+                    onClick={closePanel}
                   >
                     ×
                   </button>
 
-                  <h4>{product.panel.title}</h4>
-                  <p>{product.panel.description}</p>
+                  <h4>{product.panel?.title || 'Título no disponible'}</h4>
+                  <p>{product.panel?.description || 'Descripción no disponible'}</p>
 
-               
-
-                  {/* 
-                  <div className="panel-header">
-                    <button className="panel-button">
-                      Ver más
-                    </button>
-                  </div>
-                  */}
-                  
                   <div className="panel-cards">
-                    {product.panel.miniCards.map(item => (
+                    {product.panel?.miniCards?.map(item => (
                       <Link
                         key={item.id}
                         to={`/comercial/${item.viewId}`}
