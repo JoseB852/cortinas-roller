@@ -294,31 +294,31 @@
     "descripcion": "Diseño contemporáneo con rayas elegantes.",
     "banner": {
       "type": "image",
-      "src": "/images/banner-duo-rayas.jpg"
+      "src": "/images/banner-vertical-comercial.jpg"
     },
     "titleBlock": {
-      "h1": "Rayas Elegantes",
-      "p": "Diseño moderno que combina franjas para un acabado sofisticado."
+      "h1": "Vertical Comercial",
+      "p": "Gracias a su diseño funcional y moderno, son ideales para oficinas, clínicas, salas de reuniones y hogares, ya que permiten controlar la iluminación, mantener la privacidad y aportar una imagen profesional y ordenada al ambiente."
     },
     "explorer": {
       "sections": [
         {
           "id": 1,
           "title": "Título sección 1",
-          "text": "Texto descriptivo de la sección 1 - Complete aquí",
-          "image": "/images/duo-rayas-1.jpg"
+          "text": "Las cortinas verticales son ideales para cubrir ventanas grandes. Son prácticas y atractivas para ventanas altas o anchas, ya que se pliegan hacia un lado en lugar de levantarse",
+          "image": "/images/vertical-comercial-1.jpg"
         },
         {
           "id": 2,
           "title": "Título sección 2",
-          "text": "Texto descriptivo de la sección 2 - Complete aquí",
-          "image": "/images/duo-rayas-2.jpg"
+          "text": "Convirtiéndose en la opción ideal para renovar cualquier espacio.",
+          "image": "/images/vertical-comercial-2.jpg"
         },
         {
           "id": 3,
           "title": "Título sección 3",
-          "text": "Texto descriptivo de la sección 3 - Complete aquí",
-          "image": "/images/duo-rayas-3.jpg"
+          "text": "Su amplia variedad de tejidos y estilos permite adaptarlas a distintos espacios y necesidades, convirtiéndolas en un complemento atractivo y práctico para cualquier ambiente.",
+          "image": "/images/vertical-comercial-3.jpg"
         }
       ]
     }
@@ -330,10 +330,10 @@
     "descripcion": "Control perfecto de iluminación natural.",
     "banner": {
       "type": "image",
-      "src": "/images/banner-duo-luz.jpg"
+      "src": "/images/banner-vertical-comercial-blackout.jpg"
     },
     "titleBlock": {
-      "h1": "Luz Natural Controlada",
+      "h1": "Vertical Comercial Blackout",
       "p": "Disfruta de la luz natural manteniendo la privacidad y el confort visual."
     },
     "explorer": {
@@ -341,20 +341,20 @@
         {
           "id": 1,
           "title": "Título sección 1",
-          "text": "Texto descriptivo de la sección 1 - Complete aquí",
-          "image": "/images/duo-luz-1.jpg"
+          "text": "Puedes elegir entre persianas con cordón, que incluyen dispositivos de seguridad de serie, o persianas motorizadas, ideales para un manejo más cómodo y moderno. Ambas opciones ofrecen funcionalidad, seguridad y facilidad de uso, adaptándose perfectamente a tus necesidades y estilo de vida.",
+          "image": "/images/vertical-comercial-blackout-1.jpg"
         },
         {
           "id": 2,
           "title": "Título sección 2",
-          "text": "Texto descriptivo de la sección 2 - Complete aquí",
-          "image": "/images/duo-luz-2.jpg"
+          "text": "Ideal para cualquier habitación, ya que decoran y visten las ventanas con elegancia. Son muy populares gracias a su funcionalidad y versatilidad.",
+          "image": "/images/vertical-comercial-blackout-2.jpg"
         },
         {
           "id": 3,
           "title": "Título sección 3",
-          "text": "Texto descriptivo de la sección 3 - Complete aquí",
-          "image": "/images/duo-luz-3.jpg"
+          "text": "Son perfectas tanto para hogares como para espacios comerciales, adaptándose a oficinas, clínicas, salas de estudio y ambientes modernos",
+          "image": "/images/vertical-comercial-blackout-3.jpg"
         }
       ]
     }
