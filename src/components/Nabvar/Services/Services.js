@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import React from 'react';
 import './Services.css';
+import RotatingText from "../RotatingText/RotatingText";
 
 export default function Services() {
   const [services, setServices] = useState([]);
@@ -31,9 +32,29 @@ export default function Services() {
         <div className="description-services">
           {introData && (
             <>
-              <h2>{introData.title}</h2>
-              <h3>{introData.subtitle}</h3>
-              <p>{introData.text}</p>
+              <div className="description-services">
+  {introData && (
+    <>
+      <h2>
+        {introData.title}{" "}
+        <RotatingText
+          texts={[
+            "Privacidad",
+            "Oscuridad total",
+            "Control de luz",
+            "Diseño moderno",
+            "Aislamiento térmico"
+          ]}
+          mainClassName="rotating-highlight"
+          rotationInterval={3000}
+        />
+      </h2>
+
+      <h3>{introData.subtitle}</h3>
+      <p>{introData.text}</p>
+    </>
+  )}
+</div>
             </>
           )}
         </div>

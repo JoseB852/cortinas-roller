@@ -119,7 +119,7 @@ export default function Card() {
 
                   <p>{product.panel?.description}</p>
 
-                  {/* BOTON VER MAS */}
+                  {/* BOTON VER MAS 
 
                   <div className="panel-header">
                     <Link
@@ -130,7 +130,7 @@ export default function Card() {
                         Ver más
                       </button>
                     </Link>
-                  </div>
+                  </div>*/}
 
                   {/* MINI CARDS */}
 

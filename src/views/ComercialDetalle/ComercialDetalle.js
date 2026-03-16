@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../Blackout/Blackout.css";
+import { TextEffect } from "../../components/Nabvar/Text-Effect/TextEffect";
 
 export default function ComercialDetalle() {
   const [products, setProducts] = useState([]);
@@ -81,7 +82,12 @@ export default function ComercialDetalle() {
 
       {/* Título */}
       <div className="title-blackout">
-        <h1>{product.titleBlock?.h1 || "Título no disponible"}</h1>
+        <h1>
+          <TextEffect per="char" preset="fade">
+            {product.titleBlock?.h1 || "Título no disponible"}
+          </TextEffect>
+        </h1>
+
         <p>{product.titleBlock?.p || "Descripción no disponible"}</p>
       </div>
 
