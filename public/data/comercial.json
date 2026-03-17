@@ -19,18 +19,6 @@
           "image": "/images/cortina-blackout-comercial-1.jpg",
           "label": "Blackout Dark Comercial",
           "viewId": "comercial-blackout-termico"
-        },
-        {
-          "id": 3,
-          "image": "/images/cortina-blackout-3.jpg",
-          "label": "Uso Corporativo",
-          "viewId": "comercial-blackout-corporativo"
-        },
-        {
-          "id": 4,
-          "image": "/images/cortina-blackout-3.jpg",
-          "label": "Alta Durabilidad",
-          "viewId": "comercial-blackout-durabilidad"
         }
       ]
     }
@@ -55,54 +43,30 @@
           "image": "/images/cortinadual-2.jpg",
           "label": "Privacidad",
           "viewId": "comercial-dual-privacidad"
-        },
-        {
-          "id": 3,
-          "image": "/images/cortinadual-3.jpg",
-          "label": "Diseño Corporativo",
-          "viewId": "comercial-dual-corporativo"
-        },
-        {
-          "id": 4,
-          "image": "/images/cortinadual-4.jpg",
-          "label": "Control Solar",
-          "viewId": "comercial-dual-solar"
         }
       ]
     }
   },
   {
     "id": 3,
-    "slug": "comercial-duo",
-    "title": "Cortina Comercial Duo",
+    "slug": "comercial-screen",
+    "title": "Cortina Comercial Screen",
     "image": "/images/comercial-cortina-2.jpg",
     "panel": {
-      "title": "Duo Comercial",
+      "title": "Comercial Screen",
       "description": "Equilibrio perfecto entre luz natural y privacidad en espacios comerciales.",
       "miniCards": [
         {
           "id": 1,
-          "image": "/images/cortinaduo-1.jpg",
-          "label": "Rayas Elegantes",
-          "viewId": "comercial-duo-rayas"
+          "image": "/images/comercial-screen.jpg",
+          "label": "Comercial Screen",
+          "viewId": "comercial-screen-rayas"
         },
         {
           "id": 2,
-          "image": "/images/cortinaduo-2.jpg",
-          "label": "Luz Natural",
-          "viewId": "comercial-duo-luz"
-        },
-        {
-          "id": 3,
-          "image": "/images/cortinaduo-3.jpg",
-          "label": "Privacidad",
-          "viewId": "comercial-duo-privacidad"
-        },
-        {
-          "id": 4,
-          "image": "/images/cortinaduo-4.jpg",
-          "label": "Diseño Premium",
-          "viewId": "comercial-duo-premium"
+          "image": "/images/comercial-screen-2.jpg",
+          "label": "Screen Blackout Comercial",
+          "viewId": "comercial-screen-luz"
         }
       ]
     }
@@ -127,18 +91,6 @@
           "image": "/images/comercial-vertical-2.jpg",
           "label": "Comercial Vertical Blackout",
           "viewId": "comercial-duo-luz"
-        },
-        {
-          "id": 3,
-          "image": "/images/cortinaduo-3.jpg",
-          "label": "Privacidad",
-          "viewId": "comercial-duo-privacidad"
-        },
-        {
-          "id": 4,
-          "image": "/images/cortinaduo-4.jpg",
-          "label": "Diseño Premium",
-          "viewId": "comercial-duo-premium"
         }
       ]
     }

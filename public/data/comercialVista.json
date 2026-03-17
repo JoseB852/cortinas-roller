@@ -574,5 +574,77 @@
         }
       ]
     }
+  },
+  {
+    "id": "comercial-screen-rayas",
+    "slug": "comercial-screen-rayas",
+    "nombre": "Screen Rayas Elegantes",
+    "descripcion": "Cortina screen con diseño de rayas elegantes para espacios comerciales.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-screen.jpg"
+    },
+    "titleBlock": {
+      "h1": "Comercial Screen",
+      "p": "Satisfaga las necesidades específicas de su negocio con soluciones diseñadas a medida. Ofrecemos alternativas adaptadas a los requerimientos particulares de restaurantes, comercios, centros de salud, escuelas y hoteles, combinando funcionalidad, diseño y calidad para cada espacio."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Diseño Exclusivo",
+          "text": "Ofrecemos opciones personalizadas que se adaptan a la identidad de su empresa, creando espacios elegantes, eficientes y alineados con una imagen corporativa de alto nivel.",
+          "image": "/images/screen-comercial-one.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Control de Luz",
+          "text": "Optimizando el control de la luz y la privacidad en oficinas, salas de reuniones y espacios de trabajo.",
+          "image": "/images/screen-comercial-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Protección UV",
+          "text": "Nuestras soluciones aportan una imagen moderna y profesional, optimizando el control de la luz y la privacidad en oficinas, salas de reuniones y espacios de trabajo.",
+          "image": "/images/screen-comercial-3.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comercial-screen-luz",
+    "slug": "comercial-screen-luz",
+    "nombre": "Screen Blackout Comercial",
+    "descripcion": "Máximo bloqueo de luz con tecnología screen.",
+    "banner": {
+      "type": "image",
+      "src": "/images/banner-screen-blackout.jpg"
+    },
+    "titleBlock": {
+      "h1": "Screen Blackout Comercial",
+      "p": "Además de su estética moderna, ofrecen múltiples beneficios en términos de control de luz, privacidad y funcionalidad, convirtiéndose en una opción práctica y eficiente para todo tipo de ambientes comerciales."
+    },
+    "explorer": {
+      "sections": [
+        {
+          "id": 1,
+          "title": "Oscuridad Total",
+          "text": "Al amueblar o renovar una oficina, cada detalle influye en el resultado final. Elementos como las cortinas, aunque simples, pueden transformar de manera rápida y efectiva la estética y funcionalidad del espacio de trabajo.",
+          "image": "/images/black-out-comericla-1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Aislamiento Térmico",
+          "text": " Las persianas enrollables son una solución práctica y estética para oficinas, ya que unifican el espacio, permiten controlar la luz y pueden personalizarse con la identidad de la empresa.",
+          "image": "/images/black-out-comericla-2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Ambientes Profesionales",
+          "text": "Las cortinas enrollables son una de las soluciones más versátiles para cubrir las ventanas de su negocio. Su diseño elegante y discreto permite que se integren perfectamente al espacio, ocultándose en el riel superior al elevarse.",
+          "image": "/images/black-out-comericla-3.jpg"
+        }
+      ]
+    }
   }
 ]
