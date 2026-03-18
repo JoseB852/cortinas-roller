@@ -186,11 +186,11 @@
     "descripcion": "Privacidad para espacios comerciales.",
     "banner": {
       "type": "image",
-      "src": "/images/banner-comercial-dual.jpg"
+      "src": "/images/banner-dual-comercial-dark.jpg"
     },
     "titleBlock": {
-      "h1": "Privacidad Comercial",
-      "p": "Diseñadas para mejorar la privacidad en espacios corporativos."
+      "h1": "Dual Dark Comercial",
+      "p": "Un sistema integral diseñado para controlar el deslumbramiento, regular el calor, resguardar la privacidad y aportar calidez al espacio, logrando ambientes más confortables, equilibrados y funcionales."
     },
     "explorer": {
       "sections": [
@@ -198,19 +198,19 @@
           "id": 1,
           "title": "Ambiente Profesional",
           "text": "Permite crear ambientes cómodos para trabajo.",
-          "image": "/images/comercial-privacidad-1.jpg"
+          "image": "/images/comercial-dark-dual-1.jpg"
         },
         {
           "id": 2,
           "title": "Control Solar",
           "text": "Reduce la entrada de calor y luz directa.",
-          "image": "/images/comercial-privacidad-2.jpg"
+          "image": "/images/comercial-dark-dual-2.jpg"
         },
         {
           "id": 3,
           "title": "Diseño Moderno",
           "text": "Se adapta a cualquier estilo de oficina.",
-          "image": "/images/comercial-privacidad-3.jpg"
+          "image": "/images/comercial-dark-dual-3.jpg"
         }
       ]
     }
