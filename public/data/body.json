@@ -1,12 +1,26 @@
 [
-    {
-      "id": 1,
-      "titulo": "Consulte con nuestros expertos.",
-      "text": "Contáctanos y un experto te ayudará a elegir el producto perfecto para tu hogar."
-    },
-    {
-      "id": 2,
-      "titulo": "Mediciones profesionales",
-      "text": "Tras analizar todos los detalles de su proyecto, nuestros profesionales medirán sus ventanas y le proporcionarán un presupuesto."
-    }
-  ]
+  {
+    "id": 1,
+    "icon": "dollar",
+    "titulo": "Ahorra energía y reduce costos",
+    "text": "Nuestras cortinas eficientes energéticamente están diseñadas para reducir la ganancia de calor y los costos de enfriamiento al bloquear la luz solar antes de que entre en tu espacio."
+  },
+  {
+    "id": 2,
+    "icon": "sun",
+    "titulo": "Agrega privacidad y controla el deslumbramiento",
+    "text": "Desde oficinas privadas hasta ventanas orientadas a la calle, nuestras soluciones te permiten aumentar la privacidad mientras reducen el deslumbramiento que afecta la comodidad y productividad."
+  },
+  {
+    "id": 3,
+    "icon": "check",
+    "titulo": "Mejora la comodidad para clientes y empleados",
+    "text": "Mantén temperaturas constantes y reduce las distracciones causadas por la luz natural y los reflejos."
+  },
+  {
+    "id": 4,
+    "icon": "shield",
+    "titulo": "Control inteligente sin esfuerzo",
+    "text": "Muchos de nuestros productos pueden ser motorizados e integrados con sistemas inteligentes de control del edificio, facilitando los ajustes de luz y temperatura."
+  }
+]
