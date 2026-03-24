@@ -2,6 +2,7 @@ import './Comercial.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Menu from '../../components/Nabvar/Menu/Menu';
+import ComercialBody from '../../components/Nabvar/ComercialBody/ComercialBody';
 
 export default function Comercial() {
 
@@ -145,6 +146,8 @@ export default function Comercial() {
           </div>
         </div>
       </div>
+
+      <ComercialBody />
 
     </section>
   );
