@@ -1,51 +1,55 @@
 import React, { useEffect, useState } from 'react'
-import './ComercialBody.css'
-import { FaDollarSign, FaSun, FaCheckCircle, FaShieldAlt } from "react-icons/fa";
+import '../ComercialBody/ComercialBody.css'
+import { FaUserTie, FaHeadset } from "react-icons/fa";
+import Card from '../../../views/Card/Card';
 
-export default function ComercialBody() {
+export default function ResidencialBody() {
 
-    const [body, setBody] = useState([]);
+
 
     const iconMap = {
-        dollar: <FaDollarSign />,
-        sun: <FaSun />,
-        check: <FaCheckCircle />,
-        shield: <FaShieldAlt />
+        user: <FaUserTie />,
+        support: <FaHeadset />
     };
 
-    const getBody = () => {
-        return fetch('/data/body.json', {
+    const [residencial, setResidnecial] = useState([])
+
+    const getResidnecial = () => {
+        return fetch('/data/residencial.json', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             }
         })
             .then((response) => {
-                console.log(response);
-                return response.json();
+                console.log(response)
+                return response.json()
             })
             .then((data) => {
-                console.log(data);
-                return data;
+                console.log(data)
+                return data
             })
             .catch((error) => {
-                console.error("Error al obtener los datos", error);
-            });
-    };
+                console.error("Error al obtener los datos", error)
+            })
+
+    }
 
     useEffect(() => {
-        getBody().then(data => {
-            setBody(data);
+        getResidnecial().then(data => {
+            setResidnecial(data);
         });
-    }, []);
-
+    }, [])
     return (
         <>
-            <h1>¿POR QUÉ LAS EMPRESAS?</h1>
+            <Card />
 
+            <h1>DISEÑADO EXCLUSIVAMENTE PARA TI</h1>
             <div className='comercial-body'>
+
+
                 {
-                    body.map((content) => (
+                    residencial.map((content) => (
                         <div className='body-one' key={content.id}>
 
                             <div className="icon">
@@ -59,6 +63,9 @@ export default function ComercialBody() {
                     ))
                 }
             </div>
+
+
         </>
+
     )
 }

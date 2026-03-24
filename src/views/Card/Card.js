@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 import Menu from "../../components/Nabvar/Menu/Menu";
+import ResidencialBody from "../../components/Nabvar/ResidencialBody/ResidencialBody";
 
 export default function Card() {
   const [roller, setRoller] = useState([]);

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "icon": "user",
+    "titulo": "Consulta con nuestros expertos",
+    "text": "Contáctanos y un experto te ayudará a elegir el producto perfecto para tu hogar."
+  },
+  {
+    "id": 2,
+    "icon": "support",
+    "titulo": "Mediciones profesionales",
+    "text": "Tras analizar todos los detalles de su proyecto, nuestros profesionales medirán sus ventanas y le proporcionarán un presupuesto."
+  }
+]
