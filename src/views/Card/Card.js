@@ -3,7 +3,6 @@ import "./Card.css";
 import { Link } from "react-router-dom";
 import Menu from "../../components/Nabvar/Menu/Menu";
 
-
 export default function Card() {
   const [roller, setRoller] = useState([]);
   const [openId, setOpenId] = useState(null);
