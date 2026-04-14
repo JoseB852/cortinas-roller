@@ -11,12 +11,7 @@
 /* ===============================
    SCROLL HORIZONTAL (CLAVE)
 ================================ */
-.comercial-scroll {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  overflow-x: auto; /* 🔥 permite adaptarse a laptops */
-}
+
 
 /* ===============================
    CONTENEDOR (CENTRADO REAL)
