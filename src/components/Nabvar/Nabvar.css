@@ -87,6 +87,7 @@
   list-style: none;
   display: flex;
   gap: 50px;   /* 🔥 más separación */
+  transform: translateX(-20px);
 }
 
 .navbar-nav a {

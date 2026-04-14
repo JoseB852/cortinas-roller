@@ -1,217 +1,107 @@
 /* ==============================
-   CONTENEDOR PRINCIPAL
+   CONTENEDOR
 ============================== */
 .menu-container {
-  width: 400px;
-  margin: 50px auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1000;
-  isolation: isolate;
-  
-}
-
-/* ================= MOBILE ================= */
-.menu {
-  width: 200px;
-  height: 40px;
   display: flex;
   justify-content: center;
-  position: relative;
-}
-
-.menu-list {
-  list-style: none;
+  align-items: center;
   width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border-radius: 50px;
-  color: white;
-  background: rgba(30, 30, 30, 0.18);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
-  border: 1px solid rgba(255,255,255,0.08);
-  margin: 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 1001;
 }
 
-.menu-list:hover {
-  background: rgba(30, 30, 30, 0.28);
-}
-
-.menu-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: 500;
-  width: 100%;
-  height: 100%;
-}
-
-.chevron-icon {
-  display: inline-block;
-  font-weight: bold;
-  margin-left: 5px;
-  transition: transform 0.3s ease;
-  font-size: 16px;
-  color: #fff;
-  opacity: 0.8;
-}
-
-.chevron-icon::after {
-  content: "›";
-  display: inline-block;
-}
-
-.chevron-icon.closed { transform: rotate(90deg); }
-.chevron-icon.open { transform: rotate(-90deg); }
-
-/* ================= SUBMENU ================= */
-.submenu-panel {
-  width: 200px;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.3s ease,
-              transform 0.3s ease;
-  opacity: 0;
-  transform: translateY(-10px);
-  background: rgba(30, 30, 30, 0.20);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
-  border-radius: 25px;
-  border: 1px solid rgba(255,255,255,0.08);
-  z-index: 1002;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
-
-.submenu-panel.open {
-  max-height: 280px;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.submenu-list {
-  list-style: none;
-  padding: 15px 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.submenu-item {
-  width: 85%;
-  text-align: center;
-}
-
-.submenu-item a {
-  display: block;
-  padding: 12px 20px;
-  border-radius: 25px;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  background: transparent;
-  font-size: 14px;
-}
-
-.submenu-item a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  transform: translateX(5px);
-}
-
-.submenu-item a.active {
-  background-color: white;
-  color: black;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* ================= DESKTOP ================= */
+/* ==============================
+   MENÚ DESKTOP
+============================== */
 .menu-desktop {
   display: flex;
-  list-style: none;
-  width: 400px;
-  height: 45px;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 0;
-  margin-left: 80px;
-  border-radius: 30px;
-  color: white;
-  background: black;
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
-  border: 1px solid rgba(255,255,255,0.08);
+  justify-content: center;
+  margin-top: 60px;
+  gap: 12px;
+  padding: 6px 10px;
+  border-radius: 40px;
+  background: black; /* 🔥 fondo negro sólido */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.05);
   position: relative;
-  overflow: hidden;
+  margin-left: 40px; /* 🔥 mueve a la derecha (ajústalo si quieres más) */
+  list-style: none; /* 🔥 quita puntos */
 }
 
+/* ==============================
+   ITEMS
+============================== */
 .menu-item {
-  padding: 8px;
-  text-align: center;
-  cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  list-style: none; /* 🔥 asegura sin puntos */
 }
 
 .menu-item a {
-  text-decoration: none;
-  color: inherit;
-  padding: 8px 20px;
-  border-radius: 20px;
-  display: inline-block;
-  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  font-size: 14.5px;
   font-weight: 500;
+  letter-spacing: 0.3px;
+
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  transition: all 0.3s ease;
 }
 
+/* hover */
+.menu-item a:hover {
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* activo */
 .menu-item a.active {
   color: black;
 }
 
-.menu-item a:hover {
-  color: black;
-  height: 34px;
-  background-color: white;
-  transition: all 0.3s ease;
-}
-
-/* ================= SLIDER FONDO BLANCO ================= */
+/* ==============================
+   SLIDER
+============================== */
 .menu-slider {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 34px;
-  background-color: white;
-  border-radius: 20px;
-  transition: all 0.6s ease;
-  z-index: 0;
-  
-  margin-left: 8px; /* respeta el padding del item */
+  height: 38px;
+
+  background: white;
+
+  border-radius: 30px;
+
+  box-shadow: 
+    0 6px 18px rgba(255,255,255,0.15),
+    inset 0 1px 2px rgba(0,0,0,0.15);
+
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+  z-index: 1;
 }
 
-/* ================= MEDIA QUERIES ================= */
+/* ==============================
+   RESPONSIVE
+============================== */
 @media (max-width: 768px) {
-  .menu-container { width: 200px; }
-  .menu-desktop { display: none; }
+  .menu-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) {
-  .menu, .submenu-panel { display: none; }
-  .menu-desktop { display: flex; }
+  .menu,
+  .submenu-panel {
+    display: none;
+  }
 }
