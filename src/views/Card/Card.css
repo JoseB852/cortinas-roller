@@ -5,25 +5,39 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow-x: visible; 
-  padding-bottom: 100px; /* AQUI CAMBIO LA ALTURA DE LAS CARD QUE NO SE PEGUEN EL FOOTER*/
+  overflow-x: hidden;
+  padding-bottom: 100px;
+  transform: translateY(-100px);
 }
 
+/* ===============================
+   SCROLL WRAPPER (IMPORTANTE)
+================================ */
+.cards-scroll {
+  width: 100%;
+  max-width: 1400px;   /* 🔥 límite visual como Lutron */
+  margin: 0 auto;      /* 🔥 CENTRADO REAL */
+  overflow: hidden;
+  position: relative;
+}
 
 /* ===============================
-   CONTENEDOR
+   CONTENEDOR (FIX REAL AQUÍ)
 ================================ */
 .cards-container {
   display: flex;
   gap: 60px;
   width: max-content;
-  margin: 50px auto 0; 
-  transition: transform 0.6s ease;
-  margin-right: 50px;
+  min-width: 100%;
+  margin: 50px; /* 🔥 IMPORTANTE */
+  position: relative;
+  padding: 0 40px;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
 }
 
 /* ===============================
-   ANIMACIÓN ENTRADA IZQ → DER
+   ANIMACIÓN ENTRADA
 ================================ */
 @keyframes fadeInLeft {
   from {
@@ -44,13 +58,16 @@
   height: 600px;
   width: 250px;
   flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+
   opacity: 0;
-  animation: fadeInLeft 1.8s ease forwards;
-  transition: width 0.6s ease;
+  animation: fadeInLeft 1.2s ease forwards;
+  transition: width 0.5s ease;
 }
 
 .card-wrapper.open {
-  width: 920px;
+  width: 850px;
 }
 
 /* stagger */
@@ -65,22 +82,43 @@
 .card {
   width: 300px;
   height: 600px;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   flex-shrink: 0;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 1.5s ease;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.25),
+    transparent
+  );
+  z-index: 1;
 }
 
 /* ===============================
@@ -105,10 +143,10 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: white;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card:hover .arrow {
@@ -124,21 +162,27 @@
    PANEL LATERAL
 ================================ */
 .card-panel {
-  width: 600px;
-  max-height: 620px; 
+  width: 550px;
+  min-width: 550px; /* 🔥 asegura ancho real */
+  max-height: 600px;
+
   background: #ffffff;
-  padding: 40px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 35px;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
-  opacity: 0;
-  transform: translateX(-300px);
-  pointer-events: none;
-  transition: opacity 0.45s ease, transform 0.45s ease;
-  overflow: hidden; 
-}
 
+  opacity: 0;
+  transform: translateX(-200px);
+  pointer-events: none;
+
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  backdrop-filter: blur(6px);
+}
 
 .card-wrapper.open .card-panel {
   opacity: 1;
@@ -151,29 +195,14 @@
 ================================ */
 .card-panel h4 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #111;
 }
 
 .card-panel p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   color: #444;
-}
-
-/* ===============================
-   BOTÓN
-================================ */
-.card-panel button {
-  width: 180px;
-  border-radius: 20px;
-  border: none;
-  padding: 10px;
-  background-color: rgb(13, 110, 253);
-  color: white;
-  cursor: pointer;
-  align-self: flex-start;
-  margin: 10px 0 30px;
 }
 
 /* ===============================
@@ -183,36 +212,53 @@
   margin-top: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px 20px;
+  gap: 20px;
 }
 
 .panel-mini-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
   text-decoration: none;
 }
 
 .panel-mini-card img {
   width: 100%;
-  height: 165px;
+  height: 140px;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
+  border-radius: 4px;
 }
 
 .panel-mini-card span {
-  margin-top: 10px;
-  font-size: 0.9rem;
+  margin-top: 8px;
+  font-size: 0.85rem;
   color: #111;
   text-align: center;
-  
 }
 
 .panel-mini-card:hover img {
   transform: scale(1.05);
 }
 
+/* ===============================
+   BOTÓN CERRAR
+================================ */
+.card-panel .panel-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.card-panel .panel-close:hover {
+  transform: rotate(90deg);
+  opacity: 0.6;
+}
 
 /* ===============================
    MOBILE ≤ 768px
@@ -222,33 +268,23 @@
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 700px;
-    margin: 20px auto;
-    transform: none !important;
-    justify-items: center;
+    gap: 15px;
     padding: 0 10px;
-    box-sizing: border-box;
+    transform: none !important;
   }
 
   .card-wrapper {
     width: 100% !important;
-    max-width: 300px;
     height: auto;
     flex-direction: column;
   }
 
   .card {
-    width: 100%;
-    height: 450px;
+    height: 300px;
   }
 
   .card-wrapper.open {
     grid-column: 1 / -1;
-    max-width: 700px;
-    margin: 0 auto;
-    align-items: center;
   }
 
   .card-panel {
@@ -258,12 +294,9 @@
   .card-wrapper.open .card-panel {
     display: flex;
     width: 100%;
-    max-width: 650px;
-    margin: 20px auto 0;
-    padding: 25px;
-    height: auto;
-    opacity: 1;
+    margin-top: 15px;
     transform: none;
+    opacity: 1;
   }
 
   .panel-cards {
@@ -272,78 +305,10 @@
 }
 
 /* ===============================
-   BOTÓN CERRAR (X) – OVERRIDE
-================================ */
-.card-panel .panel-close {
-  width: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  background: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-
-  color: #111 !important;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 1;
-
-  cursor: pointer;
-
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  outline: none;
-  box-shadow: none;
-
-  position: absolute;
-  top: 18px;
-  right: 18px;
-
-  z-index: 10;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.card-panel .panel-close:hover {
-  transform: rotate(90deg);
-  opacity: 0.6;
-}
-
-
-
-/* ===============================
-   MOBILE PEQUEÑO ≤ 480px
+   MOBILE PEQUEÑO
 ================================ */
 @media (max-width: 480px) {
-
   .cards-container {
     grid-template-columns: 1fr;
-    max-width: 350px;
-  }
-
-  .card {
-    height: 280px;
-  }
-
-  .card-wrapper.open .card-panel {
-    max-width: 320px;
-  }
-}
-
-/* ===============================
-   TABLET
-================================ */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .cards-container {
-    gap: 40px;
-  }
-
-  .card-wrapper {
-    width: 280px;
-  }
-
-  .card-wrapper.open {
-    width: 850px;
   }
 }
