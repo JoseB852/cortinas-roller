@@ -207,3 +207,26 @@
   .menu, .submenu-panel { display: none; }
   .menu-desktop { display: flex; }
 }
+
+/* ================= FIX SOLO PARA PANTALLAS MUY GRANDES ================= */
+
+/* 2K */
+@media (min-width: 1600px) {
+  .menu-container {
+    margin-left: 27%;
+  }
+}
+
+/* 4K */
+@media (min-width: 1900px) {
+  .menu-container {
+    margin-left: 24%;
+  }
+}
+
+/* ultra wide */
+@media (min-width: 2300px) {
+  .menu-container {
+    margin-left: 22%;
+  }
+}
