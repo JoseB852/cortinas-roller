@@ -69,6 +69,7 @@ const Nabvar = () => {
           <li><Link to="/catalog">Catalogo</Link></li>
           <li><Link to="/us">Nosotros</Link></li>
           <li><Link to="/contact">Contacto</Link></li>
+         
         </ul>
 
         <div className="navbar-actions">

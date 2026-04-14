@@ -2,24 +2,24 @@
    CONTENEDOR PRINCIPAL
 ============================== */
 .menu-container {
-  width: 400px;
-  margin: 8% auto;
+  width: 600px;
+  margin: 5% auto 8% 29%;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* 🔥 centra todo */
   z-index: 1000;
   isolation: isolate;
-  
 }
 
 /* ================= MOBILE ================= */
 .menu {
-  width: 200px;
+  width: 400px;
   height: 40px;
   display: flex;
   justify-content: center;
   position: relative;
+ 
 }
 
 .menu-list {
@@ -61,7 +61,6 @@
 
 .chevron-icon {
   display: inline-block;
-  font-weight: bold;
   margin-left: 5px;
   transition: transform 0.3s ease;
   font-size: 16px;
@@ -82,14 +81,11 @@
   width: 200px;
   position: absolute;
   top: 45px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px); /* 🔥 centrado */
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.3s ease,
-              transform 0.3s ease;
   opacity: 0;
-  transform: translateY(-10px);
   background: rgba(30, 30, 30, 0.20);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
@@ -97,12 +93,13 @@
   border: 1px solid rgba(255,255,255,0.08);
   z-index: 1002;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
 }
 
 .submenu-panel.open {
   max-height: 280px;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 .submenu-list {
@@ -127,8 +124,6 @@
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
-  background: transparent;
-  font-size: 14px;
 }
 
 .submenu-item a:hover {
@@ -139,7 +134,6 @@
 .submenu-item a.active {
   background-color: white;
   color: black;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 /* ================= DESKTOP ================= */
@@ -150,8 +144,8 @@
   height: 45px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0;
-  margin-left: 80px;
+  padding: 0;
+  margin: 0 auto; /* 🔥 FIX REAL */
   border-radius: 30px;
   color: white;
   background: black;
@@ -186,12 +180,12 @@
 
 .menu-item a:hover {
   color: black;
-  height: 34px;
   background-color: white;
-  transition: all 0.3s ease;
 }
 
-/* ================= SLIDER FONDO BLANCO ================= */
+
+
+/* ================= SLIDER ================= */
 .menu-slider {
   position: absolute;
   top: 50%;
@@ -199,10 +193,8 @@
   height: 34px;
   background-color: white;
   border-radius: 20px;
-  transition: all 0.6s ease;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 0;
-  
-  margin-left: 8px; /* respeta el padding del item */
 }
 
 /* ================= MEDIA QUERIES ================= */
