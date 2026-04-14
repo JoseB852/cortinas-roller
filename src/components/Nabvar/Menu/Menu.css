@@ -10,9 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* 🔥 centra todo */
-  z-index: 1000;
-  isolation: isolate;
 }
 
 /* ================= MOBILE ================= */
@@ -232,21 +229,18 @@
 
 /* ================= FIX SOLO PARA PANTALLAS MUY GRANDES ================= */
 
-/* 2K */
 @media (min-width: 1600px) {
   .menu-container {
     margin-left: 27%;
   }
 }
 
-/* 4K */
 @media (min-width: 1900px) {
   .menu-container {
     margin-left: 24%;
   }
 }
 
-/* ultra wide */
 @media (min-width: 2300px) {
   .menu-container {
     margin-left: 22%;
