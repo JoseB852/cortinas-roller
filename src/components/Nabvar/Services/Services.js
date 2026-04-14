@@ -75,6 +75,9 @@ export default function Services() {
             </div>
           ))}
         </div>
+        <div className="banner-home">
+          hola
+        </div>
       </div>
     </div>
   );

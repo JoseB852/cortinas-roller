@@ -41,7 +41,7 @@ export default function ComercialBody() {
 
     return (
         <>
-            <h1>¿POR QUÉ LAS EMPRESAS?</h1>
+            <h1 className='text-tiltle'>¿POR QUÉ LAS EMPRESAS?</h1>
 
             <div className='comercial-body'>
                 {

@@ -44,7 +44,7 @@ export default function ResidencialBody() {
         <>
             <Card />
 
-            <h1>DISEÑADO EXCLUSIVAMENTE PARA TI</h1>
+            <h1 className='text-tiltle'>DISEÑADO EXCLUSIVAMENTE PARA TI</h1>
             <div className='comercial-body'>
 
 
