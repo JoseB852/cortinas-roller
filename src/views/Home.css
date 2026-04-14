@@ -1,58 +1,38 @@
-/* RESET BÁSICO */
+/* ========================= */
+/* RESET */
+/* ========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /* ========================= */
   /* BODY */
+  /* ========================= */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
   }
   
-  /* CONTENEDOR PRINCIPAL */
-  .container {
+  /* ========================= */
+  /* LAYOUT PRINCIPAL */
+  /* ========================= */
+  .main-layout {
     width: 100%;
-    max-width: 1200px; /* evita que se estire en desktop */
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: 1200px;   /* controla el ancho en desktop */
+    margin: 0 auto;      /* centra todo */
+    padding: 0 16px;     /* espacio lateral */
   }
   
-  /* SECCIONES */
-  .section {
+  /* separa cada sección automáticamente */
+  .main-layout > * {
     margin: 40px 0;
   }
   
-  /* CARD */
-  .card {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  /* SERVICES */
-  .services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  /* ITEM DE SERVICE (ejemplo) */
-  .service-item {
-    flex: 1 1 300px; /* se adapta automáticamente */
-    max-width: 350px;
-  }
-  
-  /* QUOTER */
-  .quoter {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  /* IMÁGENES RESPONSIVE */
+  /* ========================= */
+  /* IMÁGENES */
+  /* ========================= */
   img {
     width: 100%;
     height: auto;
@@ -60,38 +40,50 @@
   }
   
   /* ========================= */
-  /* 📱 MOBILE */
+  /* MOBILE */
   /* ========================= */
   @media (max-width: 768px) {
-    .section {
+    .main-layout {
+      padding: 0 12px;
+    }
+  
+    .main-layout > * {
       margin: 24px 0;
     }
-  
-    .services {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .service-item {
-      width: 100%;
-      max-width: 100%;
-    }
   }
   
   /* ========================= */
-  /* 💻 TABLET */
+  /* TABLET */
   /* ========================= */
   @media (min-width: 769px) and (max-width: 1024px) {
-    .services {
-      justify-content: center;
+    .main-layout {
+      max-width: 900px;
     }
   }
   
   /* ========================= */
-  /* 🖥️ DESKTOP GRANDE */
+  /* DESKTOP */
+  /* ========================= */
+  @media (min-width: 1025px) {
+    .main-layout {
+      max-width: 1200px;
+    }
+  }
+  
+  /* ========================= */
+  /* DESKTOP GRANDE */
   /* ========================= */
   @media (min-width: 1400px) {
-    .container {
-      max-width: 1400px; /* se adapta a pantallas grandes */
+    .main-layout {
+      max-width: 1400px;
+    }
+  }
+  
+  /* ========================= */
+  /* ULTRA WIDE */
+  /* ========================= */
+  @media (min-width: 1800px) {
+    .main-layout {
+      max-width: 1600px;
     }
   }
