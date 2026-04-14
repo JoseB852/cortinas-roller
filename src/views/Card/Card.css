@@ -5,10 +5,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow-x: visible; 
-  padding-bottom: 100px; /* AQUI CAMBIO LA ALTURA DE LAS CARD QUE NO SE PEGUEN EL FOOTER*/
+  overflow-x: visible;
+  padding-bottom: 100px;
 }
-
 
 /* ===============================
    CONTENEDOR
@@ -17,13 +16,13 @@
   display: flex;
   gap: 60px;
   width: max-content;
-  margin: 50px auto 0; 
-  transition: transform 0.6s ease;
+  margin: 50px auto 0;
   margin-right: 50px;
+  transition: transform 0.6s ease;
 }
 
 /* ===============================
-   ANIMACIÓN ENTRADA IZQ → DER
+   ANIMACIÓN
 ================================ */
 @keyframes fadeInLeft {
   from {
@@ -37,7 +36,7 @@
 }
 
 /* ===============================
-   WRAPPER EXPANDIBLE
+   WRAPPER
 ================================ */
 .card-wrapper {
   display: flex;
@@ -49,6 +48,7 @@
   transition: width 0.6s ease;
 }
 
+/* 🔥 MISMO comportamiento que tú */
 .card-wrapper.open {
   width: 920px;
 }
@@ -60,7 +60,7 @@
 .card-wrapper:nth-child(4) { animation-delay: 0.55s; }
 
 /* ===============================
-   CARD
+   CARD (TAMAÑO ORIGINAL)
 ================================ */
 .card {
   width: 300px;
@@ -121,24 +121,29 @@
 }
 
 /* ===============================
-   PANEL LATERAL
+   PANEL LATERAL (IGUAL PERO RESPONSIVE FIX)
 ================================ */
 .card-panel {
   width: 600px;
-  max-height: 620px; 
+  max-width: 90vw; /* 🔥 único ajuste importante */
+
+  max-height: 620px;
   background: #ffffff;
   padding: 40px;
+
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   opacity: 0;
   transform: translateX(-300px);
   pointer-events: none;
-  transition: opacity 0.45s ease, transform 0.45s ease;
-  overflow: hidden; 
-}
 
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  overflow: hidden;
+}
 
 .card-wrapper.open .card-panel {
   opacity: 1;
@@ -206,16 +211,53 @@
   font-size: 0.9rem;
   color: #111;
   text-align: center;
-  
 }
 
 .panel-mini-card:hover img {
   transform: scale(1.05);
 }
 
+/* ===============================
+   BOTÓN CERRAR (TU X ORIGINAL)
+================================ */
+.card-panel .panel-close {
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+
+  color: #111 !important;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  outline: none;
+  box-shadow: none;
+
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  z-index: 10;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.card-panel .panel-close:hover {
+  transform: rotate(90deg);
+  opacity: 0.6;
+}
 
 /* ===============================
-   MOBILE ≤ 768px
+   MOBILE
 ================================ */
 @media (max-width: 768px) {
 
@@ -272,48 +314,7 @@
 }
 
 /* ===============================
-   BOTÓN CERRAR (X) – OVERRIDE
-================================ */
-.card-panel .panel-close {
-  width: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  background: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-
-  color: #111 !important;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 1;
-
-  cursor: pointer;
-
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  outline: none;
-  box-shadow: none;
-
-  position: absolute;
-  top: 18px;
-  right: 18px;
-
-  z-index: 10;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.card-panel .panel-close:hover {
-  transform: rotate(90deg);
-  opacity: 0.6;
-}
-
-
-
-/* ===============================
-   MOBILE PEQUEÑO ≤ 480px
+   MOBILE PEQUEÑO
 ================================ */
 @media (max-width: 480px) {
 
