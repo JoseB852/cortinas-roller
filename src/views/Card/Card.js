@@ -13,6 +13,7 @@ export default function Card() {
     fetch("/data/roller.json")
       .then((res) => res.json())
       .then((data) => {
+        // data ahora es directamente el array de roller
         setRoller(data);
       })
       .catch((err) => console.error(err));
@@ -20,22 +21,25 @@ export default function Card() {
 
   const toggleCard = (id, index) => {
     const container = containerRef.current;
+
     if (!container) return;
 
     if (openId === id) {
       setOpenId(null);
 
       if (window.innerWidth > 768) {
-        container.style.transform = "translateX(-50%)";
+        container.style.transform = "translateX(0)";
       }
     } else {
       setOpenId(id);
 
       if (window.innerWidth > 768) {
         const wrapper = container.children[index];
+
         if (!wrapper) return;
 
         const panel = wrapper.querySelector(".card-panel");
+
         if (!panel) return;
 
         const panelWidth = panel.offsetWidth;
@@ -43,12 +47,11 @@ export default function Card() {
         const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
 
         if (wrapperRight + panelWidth > containerWidth) {
-          const move =
-            wrapperRight + panelWidth - containerWidth + 200;
-
-          container.style.transform = `translateX(calc(-50% - ${move}px))`;
+          container.style.transform = `translateX(-${
+            wrapperRight + panelWidth - containerWidth + 200
+          }px)`;
         } else {
-          container.style.transform = "translateX(-50%)";
+          container.style.transform = "translateX(0)";
         }
       }
     }
@@ -59,7 +62,7 @@ export default function Card() {
     setOpenId(null);
 
     if (window.innerWidth > 768 && containerRef.current) {
-      containerRef.current.style.transform = "translateX(-50%)";
+      containerRef.current.style.transform = "translateX(0)";
     }
   };
 
@@ -81,6 +84,8 @@ export default function Card() {
                 }`}
               >
 
+                {/* CARD PRINCIPAL */}
+
                 <div
                   className="card"
                   onClick={() => toggleCard(product.id, index)}
@@ -97,7 +102,11 @@ export default function Card() {
                   </div>
                 </div>
 
+                {/* PANEL LATERAL */}
+
                 <div className="card-panel">
+
+                  {/* BOTON CERRAR */}
 
                   <button
                     className="panel-close"
@@ -109,6 +118,21 @@ export default function Card() {
                   <h4>{product.panel?.title}</h4>
 
                   <p>{product.panel?.description}</p>
+
+                  {/* BOTON VER MAS 
+
+                  <div className="panel-header">
+                    <Link
+                      to={`/productoDetalle/${product.id}`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <button className="panel-button">
+                        Ver más
+                      </button>
+                    </Link>
+                  </div>*/}
+
+                  {/* MINI CARDS */}
 
                   <div className="panel-cards">
 
