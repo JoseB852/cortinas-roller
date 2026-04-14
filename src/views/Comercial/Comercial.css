@@ -2,35 +2,38 @@
    SECCIÓN CENTRADA
 ================================ */
 .comercial-section {
-  width: 100%;
+  width: 97%;
   display: flex;
   justify-content: center;
-  overflow-x: hidden; /* evita scroll lateral */
+  overflow: hidden;
 }
 
 /* ===============================
-   SCROLL HORIZONTAL
+   SCROLL HORIZONTAL (CLAVE)
 ================================ */
 .comercial-scroll {
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
+  overflow-x: auto; /* 🔥 permite adaptarse a laptops */
 }
 
 /* ===============================
-   CONTENEDOR
+   CONTENEDOR (CENTRADO REAL)
 ================================ */
 .comercial-content {
   display: flex;
   gap: 60px;
   width: max-content;
+
   margin: 50px auto 0;
+  padding: 0 20px; /* 🔥 evita que se pegue a bordes */
+
   transition: transform 0.6s ease;
 }
 
 /* ===============================
-   ANIMACIÓN ENTRADA IZQ → DER
+   ANIMACIÓN
 ================================ */
 @keyframes fadeInLeft {
   from {
@@ -44,7 +47,7 @@
 }
 
 /* ===============================
-   WRAPPER EXPANDIBLE
+   WRAPPER
 ================================ */
 .comercial-wrapper {
   display: flex;
@@ -67,7 +70,7 @@
 .comercial-wrapper:nth-child(4) { animation-delay: 0.55s; }
 
 /* ===============================
-   CARD
+   CARD (SIN CAMBIOS)
 ================================ */
 .comercial {
   width: 300px;
@@ -128,20 +131,26 @@
 }
 
 /* ===============================
-   PANEL LATERAL
+   PANEL (FIX REAL)
 ================================ */
 .comercial-panel {
   width: 600px;
+  max-width: 85vw; /* 🔥 evita romper en laptops */
+
   height: 600px;
   background: #ffffff;
   padding: 40px;
+
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   opacity: 0;
   transform: translateX(-30px);
   pointer-events: none;
+
   transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
@@ -217,7 +226,44 @@
 }
 
 /* ===============================
-   MOBILE ≤ 768px
+   BOTÓN CERRAR
+================================ */
+.panel-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s ease;
+}
+
+.panel-close:hover {
+  animation: spin 0.6s ease;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===============================
+   FIX LAPTOPS
+================================ */
+@media (max-width: 1400px) {
+  .comercial-panel {
+    width: 500px;
+  }
+
+  .comercial-wrapper.open {
+    width: 820px;
+  }
+}
+
+/* ===============================
+   MOBILE
 ================================ */
 @media (max-width: 768px) {
 
@@ -273,37 +319,8 @@
   }
 }
 
-/* BOTÓN CERRAR PANEL CON UNA VUELTA 360°  ANIMACION*/
-.panel-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: transparent;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  z-index: 10;
-  transition: color 0.2s ease;
-}
-
-/* Hover: color + animación de giro */
-.panel-close:hover {
-  animation: spin 0.6s ease;
-}
-
-/* Animación de giro 360° */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 /* ===============================
-   MOBILE PEQUEÑO ≤ 480px
+   MOBILE PEQUEÑO
 ================================ */
 @media (max-width: 480px) {
 

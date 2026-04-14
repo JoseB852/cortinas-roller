@@ -15,14 +15,14 @@
   top: 20px;
   z-index: 1000;
 
-  width: 100%;
-  max-width: 1200px;      /* 🔥 controla ancho en desktop */
-  margin: 20px auto 0;    /* 🔥 centrado */
+  width: 95%;              /* 🔥 ahora ocupa más ancho */
+  max-width: 1400px;      /* 🔥 igual que tus cards */
+  margin: 20px auto 0;
 
   border-radius: 8px;
   overflow: hidden;
 
-  height: 80px;
+  height: 90px;           /* 🔥 un poco más alto */
   transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
@@ -52,7 +52,7 @@
    EXPAND SEARCH
 ============================== */
 .custom-navbar.expanded {
-  height: 150px;
+  height: 160px;
 }
 
 /* ==============================
@@ -60,12 +60,12 @@
 ============================== */
 .navbar-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 
-  padding: 0 16px;   /* 🔥 clave para que no se pegue */
+  padding: 0 30px;   /* 🔥 más aire lateral */
 
-  height: 80px;
+  height: 90px;
 
   display: flex;
   align-items: center;
@@ -73,10 +73,10 @@
 }
 
 /* ==============================
-   LOGO
+   LOGO (MÁS GRANDE 🔥)
 ============================== */
 .navbar-logo {
-  width: 90px;
+  width: 130px;   /* 🔥 antes 90px */
   height: auto;
 }
 
@@ -86,13 +86,14 @@
 .navbar-nav {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;   /* 🔥 más separación */
 }
 
 .navbar-nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.05rem;
 }
 
 /* ==============================
@@ -101,14 +102,14 @@
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .search-btn {
   background: none;
   border: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
@@ -125,7 +126,7 @@
 }
 
 .hamburger-btn span {
-  width: 22px;
+  width: 24px;
   height: 2px;
   background: white;
   transition: 0.3s;
@@ -188,12 +189,11 @@
   }
 
   .navbar-logo {
-    width: 50px;
+    width: 90px; /* 🔥 proporcional en mobile */
   }
 
   .custom-navbar {
     width: calc(100% - 20px);
-    margin: 20px auto 0;
   }
 }
 
@@ -201,5 +201,5 @@
    CONTENIDO OFFSET
 ============================== */
 .main-content {
-  padding-top: 120px;
+  padding-top: 140px;
 }
