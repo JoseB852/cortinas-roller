@@ -9,6 +9,21 @@
 }
 
 /* ==============================
+   RESET CLAVE (🔥 MUY IMPORTANTE)
+============================== */
+.menu-list,
+.submenu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li,
+.submenu-list li {
+  list-style: none;
+}
+
+/* ==============================
    MENÚ DESKTOP
 ============================== */
 .menu-desktop {
@@ -19,62 +34,49 @@
   gap: 12px;
   padding: 6px 10px;
   border-radius: 40px;
-
-  /* 🔥 GLASS MÁS OSCURO */
-  background: rgba(20, 20, 20, 0.35);
+  background: rgba(20, 20, 20, 0.57);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-
+  list-style: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
-
   box-shadow: 
     0 10px 25px rgba(0,0,0,0.25),
     inset 0 1px 0 rgba(255,255,255,0.08);
 
   position: relative;
   margin-left: 40px;
-  list-style: none;
 }
+
 /* ==============================
    ITEMS
 ============================== */
 .menu-item {
   position: relative;
   z-index: 2;
-  list-style: none; /* 🔥 asegura sin puntos */
 }
 
 .menu-item a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 10px 22px;
-
   font-size: 14.5px;
   font-weight: 500;
   letter-spacing: 0.3px;
-
   color: rgba(255,255,255,0.85);
   text-decoration: none;
-
   border-radius: 30px;
-
   transition: all 0.3s ease;
 }
 
-/* hover */
 .menu-item a:hover {
   color: white;
   transform: translateY(-1px);
 
-  /* 🔥 hover oscuro glass */
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 }
 
-/* activo */
 .menu-item a.active {
   color: black;
 }
@@ -89,7 +91,6 @@
   height: 38px;
 
   background: white;
-
   border-radius: 30px;
 
   box-shadow: 
@@ -102,14 +103,120 @@
 }
 
 /* ==============================
+   MOBILE BASE
+============================== */
+.menu {
+  display: none;
+  position: relative;
+}
+
+/* ==============================
    RESPONSIVE
 ============================== */
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
   .menu-desktop {
     display: none;
   }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* BOTÓN PRINCIPAL */
+  .menu-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 220px;
+    padding: 12px 18px;
+
+    border-radius: 30px;
+
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+
+  /* ESTADO ACTIVO */
+  .menu-list.active .menu-main {
+    background: rgba(20, 20, 20, 0.65);
+  }
+
+  /* ICONO */
+  .chevron-icon {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+
+  .chevron-icon.open {
+    transform: rotate(-135deg);
+  }
+
+  /* PANEL DESPLEGABLE */
+  .submenu-panel {
+    width: 220px;
+    margin-top: 10px;
+
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+  }
+
+  .submenu-panel.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* LISTA */
+  .submenu-list {
+    padding: 10px;
+  }
+
+  .submenu-item a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background 0.2s ease;
+  }
+
+  .submenu-item a:hover {
+    background: rgba(255,255,255,0.08);
+  }
 }
 
+/* ===== DESKTOP ===== */
 @media (min-width: 769px) {
   .menu,
   .submenu-panel {

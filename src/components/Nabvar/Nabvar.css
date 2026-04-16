@@ -13,25 +13,27 @@
 .custom-navbar {
   position: sticky;
   top: 40px;
-  z-index: 1000;
+  z-index: 9999;
   width: 95%;
   max-width: 1400px;
   margin: 20px auto 0;
   overflow: hidden;
   height: 70px;
   transition: transform 0.4s ease, opacity 0.3s ease;
-
-  background: rgba(20, 20, 20, 0.35); /* 🔥 más oscuro pero elegante */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 }
 
 /* ==============================
    GLASS
 ============================== */
 .navbar-glass {
-  background: rgba(20, 20, 20, 0.35);
-  backdrop-filter: blur(6px);
+  background: rgba(20, 20, 20, 0.15); /* más transparente */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.navbar-solid {
+  background: rgba(20, 20, 20, 0.57); /* 🔥 más oscuro */
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(6px);
 }
 
@@ -148,6 +150,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .hamburger-btn span {

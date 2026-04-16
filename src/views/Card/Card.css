@@ -258,9 +258,8 @@
 
 
 /* ===============================
-  FONDO PRINCIPAL
+   FONDO PRINCIPAL (FIXED)
 ================================ */
-
 .cards-section::before {
   content: "";
   position: absolute;
@@ -272,15 +271,12 @@
   height: 900px;
 
   background:
-    /* 🔥 degradado más limpio y equilibrado */
     linear-gradient(
       to right,
-      rgb(175, 150, 105),   /* base más clara */
-      rgb(205, 180, 130),   /* tono principal */
-      rgb(215, 195, 145)    /* luz suave (sin quemar) */
+      rgb(175, 150, 105),
+      rgb(205, 180, 130),
+      rgb(215, 195, 145)
     ),
-
-    /* 🔥 luces más finas (menos saturadas) */
     radial-gradient(
       circle at 20% 30%,
       rgba(205, 180, 130, 0.18),
@@ -298,7 +294,10 @@
     );
 
   filter: blur(120px);
+
   z-index: -1;
+
+  pointer-events: none; /* 🔥 CLAVE: no bloquea clicks */
 }
 
 
