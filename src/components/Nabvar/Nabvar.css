@@ -12,27 +12,23 @@
 ============================== */
 .custom-navbar {
   position: sticky;
-  top: 20px;
+  top: 40px;
   z-index: 1000;
-
-  width: 95%;              /* 🔥 ahora ocupa más ancho */
-  max-width: 1400px;      /* 🔥 igual que tus cards */
+  width: 95%;            
+  max-width: 1400px;     
   margin: 20px auto 0;
-
   border-radius: 8px;
   overflow: hidden;
-
-  height: 90px;           /* 🔥 un poco más alto */
+  height: 70px; /* 🔥 MÁS FINO */
   transition: transform 0.4s ease, opacity 0.3s ease;
+  background: rgba(30, 30, 30, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 /* ==============================
-   BACKGROUNDS
+   GLASS (por si usas clase extra)
 ============================== */
-.navbar-solid {
-  background: black !important;
-}
-
 .navbar-glass {
   background: rgba(30, 30, 30, 0.25);
   backdrop-filter: blur(6px);
@@ -52,7 +48,7 @@
    EXPAND SEARCH
 ============================== */
 .custom-navbar.expanded {
-  height: 160px;
+  height: 140px;
 }
 
 /* ==============================
@@ -62,21 +58,18 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-
-  padding: 0 30px;   /* 🔥 más aire lateral */
-
-  height: 90px;
-
+  padding: 0 30px;
+  height: 70px; /* 🔥 MATCH con navbar */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* ==============================
-   LOGO (MÁS GRANDE 🔥)
+   LOGO
 ============================== */
 .navbar-logo {
-  width: 130px;   /* 🔥 antes 90px */
+  width: 140px; /* ligeramente ajustado */
   height: auto;
 }
 
@@ -86,15 +79,48 @@
 .navbar-nav {
   list-style: none;
   display: flex;
-  gap: 50px;   /* 🔥 más separación */
+  gap: 50px;
   transform: translateX(-20px);
+}
+
+.navbar-nav li {
+  position: relative; /* 🔥 necesario para el punto */
 }
 
 .navbar-nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
+  position: relative;
+}
+
+/* 🔥 PUNTO BLANCO (oculto) */
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: -6px;
+
+  width: 6px;
+  height: 6px;
+
+  background: white;
+  border-radius: 50%;
+
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+
+  transition: all 0.3s ease;
+
+  /* ✨ glow suave */
+  box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+/* 🔥 HOVER */
+.navbar-nav li a:hover::after {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
 }
 
 /* ==============================
@@ -190,7 +216,7 @@
   }
 
   .navbar-logo {
-    width: 90px; /* 🔥 proporcional en mobile */
+    width: 90px;
   }
 
   .custom-navbar {
@@ -202,5 +228,5 @@
    CONTENIDO OFFSET
 ============================== */
 .main-content {
-  padding-top: 140px;
+  padding-top: 120px; /* 🔥 ajustado al nuevo alto */
 }

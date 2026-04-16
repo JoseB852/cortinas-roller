@@ -19,16 +19,22 @@
   gap: 12px;
   padding: 6px 10px;
   border-radius: 40px;
-  background: black; /* 🔥 fondo negro sólido */
-  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  /* 🔥 GLASS EFFECT */
+  background: rgba(30, 30, 30, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
   box-shadow: 
     0 10px 25px rgba(0,0,0,0.25),
-    inset 0 1px 0 rgba(255,255,255,0.05);
-  position: relative;
-  margin-left: 40px; /* 🔥 mueve a la derecha (ajústalo si quieres más) */
-  list-style: none; /* 🔥 quita puntos */
-}
+    inset 0 1px 0 rgba(255,255,255,0.08);
 
+  position: relative;
+  margin-left: 40px;
+  list-style: none;
+}
 /* ==============================
    ITEMS
 ============================== */
@@ -61,6 +67,11 @@
 .menu-item a:hover {
   color: white;
   transform: translateY(-1px);
+
+  /* 🔥 hover oscuro glass */
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 /* activo */
