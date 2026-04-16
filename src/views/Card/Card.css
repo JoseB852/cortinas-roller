@@ -272,28 +272,28 @@
   height: 900px;
 
   background:
-    /* 🔥 degradado beige más oscuro */
+    /* 🔥 degradado más oscuro y sin borde claro */
     linear-gradient(
       to right,
-      rgb(120, 105, 75),   /* más profundo */
-      rgb(170, 155, 120),  /* base */
-      rgb(210, 195, 160)   /* luz */
+      rgb(85, 70, 45),     /* oscuro profundo */
+      rgb(130, 115, 85),   /* medio */
+      rgb(160, 145, 110)   /* ya no tan claro */
     ),
 
-    /* 🔥 luces más sutiles (para no quemar el color) */
+    /* 🔥 luces más suaves (evitan “lavado”) */
     radial-gradient(
       circle at 20% 30%,
-      rgba(170, 155, 120, 0.20),
+      rgba(160, 145, 110, 0.15),
       transparent 60%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(200, 180, 140, 0.16),
+      rgba(180, 160, 120, 0.12),
       transparent 60%
     ),
     radial-gradient(
       circle at 50% 80%,
-      rgba(150, 130, 95, 0.14),
+      rgba(120, 100, 70, 0.10),
       transparent 70%
     );
 

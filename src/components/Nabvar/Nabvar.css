@@ -17,7 +17,6 @@
   width: 95%;            
   max-width: 1400px;     
   margin: 20px auto 0;
- 
   overflow: hidden;
   height: 70px; /* 🔥 MÁS FINO */
   transition: transform 0.4s ease, opacity 0.3s ease;
@@ -69,7 +68,8 @@
    LOGO
 ============================== */
 .navbar-logo {
-  width: 140px; /* ligeramente ajustado */
+  margin-top: 5px;
+  width: 180px; /* ligeramente ajustado */
   height: auto;
 }
 
