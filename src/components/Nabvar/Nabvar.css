@@ -14,22 +14,23 @@
   position: sticky;
   top: 40px;
   z-index: 1000;
-  width: 95%;            
-  max-width: 1400px;     
+  width: 95%;
+  max-width: 1400px;
   margin: 20px auto 0;
   overflow: hidden;
-  height: 70px; /* 🔥 MÁS FINO */
+  height: 70px;
   transition: transform 0.4s ease, opacity 0.3s ease;
-  background: rgba(30, 30, 30, 0.25);
+
+  background: rgba(20, 20, 20, 0.35); /* 🔥 más oscuro pero elegante */
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
 
 /* ==============================
-   GLASS (por si usas clase extra)
+   GLASS
 ============================== */
 .navbar-glass {
-  background: rgba(30, 30, 30, 0.25);
+  background: rgba(20, 20, 20, 0.35);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }

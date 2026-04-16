@@ -20,8 +20,8 @@
   padding: 6px 10px;
   border-radius: 40px;
 
-  /* 🔥 GLASS EFFECT */
-  background: rgba(30, 30, 30, 0.25);
+  /* 🔥 GLASS MÁS OSCURO */
+  background: rgba(20, 20, 20, 0.35);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
