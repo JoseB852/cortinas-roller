@@ -6,7 +6,7 @@
   overflow: hidden;
   border-radius: 18px;
   position: relative;
-  background: #000; /* evita “huecos” en contain */
+
 }
 
 /* imágenes del carrusel */
@@ -20,7 +20,7 @@
   object-position: center;        /* centra la imagen */
 
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /* imagen activa */
