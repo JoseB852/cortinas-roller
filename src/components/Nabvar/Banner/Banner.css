@@ -1,57 +1,10 @@
 .container-banner {
   width: 100%;
-  max-width: 1200px;
-  height: 580px;
-  margin: 0 auto;
   overflow: hidden;
-  border-radius: 18px;
-  position: relative;
-
 }
 
-/* imágenes del carrusel */
-.slide {
-  position: absolute;
-  inset: 0;
+.banner-img {
   width: 100%;
-  height: 100%;
-
-  object-fit: cover;              /* llena sin deformar */
-  object-position: center;        /* centra la imagen */
-
-  opacity: 0;
-  transition: 1s ease-in-out;
-}
-
-/* imagen activa */
-.slide.active {
-  opacity: 1;
-}
-
-/* ========================= */
-/* 📱 TABLET */
-/* ========================= */
-@media (max-width: 768px) {
-  .container-banner {
-    height: 380px;
-    border-radius: 14px;
-  }
-
-  .slide {
-    object-position: center; /* puedes cambiar a center top si quieres */
-  }
-}
-
-/* ========================= */
-/* 📱 MOBILE */
-/* ========================= */
-@media (max-width: 480px) {
-  .container-banner {
-    height: 240px;
-    border-radius: 12px;
-  }
-
-  .slide {
-    object-position: center;
-  }
+  height: auto;
+  display: block;
 }
