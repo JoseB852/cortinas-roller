@@ -17,7 +17,9 @@
   width: 95%;
   max-width: 1400px;
   margin: 20px auto 0;
-  overflow: hidden;
+
+  overflow: visible; /* 🔥 FIX CLAVE */
+
   height: 70px;
   transition: transform 0.4s ease, opacity 0.3s ease;
 }
@@ -26,13 +28,13 @@
    GLASS
 ============================== */
 .navbar-glass {
-  background: rgba(20, 20, 20, 0.15); /* más transparente */
+  background: rgba(20, 20, 20, 0.15);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(6px);
 }
 
 .navbar-solid {
-  background: rgba(20, 20, 20, 0.57); /* 🔥 más oscuro */
+  background: rgba(20, 20, 20, 0.57);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -61,7 +63,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 30px;
-  height: 70px; /* 🔥 MATCH con navbar */
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +74,7 @@
 ============================== */
 .navbar-logo {
   margin-top: 5px;
-  width: 180px; /* ligeramente ajustado */
+  width: 180px;
   height: auto;
 }
 
@@ -87,7 +89,7 @@
 }
 
 .navbar-nav li {
-  position: relative; /* 🔥 necesario para el punto */
+  position: relative;
 }
 
 .navbar-nav a {
@@ -97,12 +99,12 @@
   position: relative;
 }
 
-/* 🔥 PUNTO BLANCO (oculto) */
+/* 🔥 PUNTO */
 .navbar-nav li a::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -6px;
+  bottom: -12px; /* 🔥 aquí ajustas la distancia */
   width: 6px;
   height: 6px;
   background: white;
@@ -112,12 +114,8 @@
   opacity: 0;
 
   transition: all 0.3s ease;
-
-  /* ✨ glow suave */
-  box-shadow: 0 0 8px rgba(255,255,255,0.8);
 }
 
-/* 🔥 HOVER */
 .navbar-nav li a:hover::after {
   transform: translateX(-50%) scale(1);
   opacity: 1;
@@ -161,14 +159,38 @@
 }
 
 /* ==============================
-   MOBILE MENU
+   MOBILE MENU (🔥 MEJORADO)
 ============================== */
 .mobile-menu {
-  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+
+  display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 20px;
+
+  /* 🔥 GLASS COMO NAVBAR */
+  background: rgba(20, 20, 20, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
   border-top: 1px solid rgba(255,255,255,0.1);
+
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+
+/* 🔥 CUANDO SE ABRE */
+.custom-navbar.menu-open .mobile-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .mobile-menu a {
@@ -212,10 +234,6 @@
     display: flex;
   }
 
-  .custom-navbar.menu-open .mobile-menu {
-    display: flex;
-  }
-
   .navbar-logo {
     width: 90px;
   }
@@ -229,5 +247,5 @@
    CONTENIDO OFFSET
 ============================== */
 .main-content {
-  padding-top: 120px; /* 🔥 ajustado al nuevo alto */
+  padding-top: 120px;
 }
