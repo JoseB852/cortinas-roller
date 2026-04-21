@@ -5,13 +5,10 @@
   width: 100%;
   background: #fff;
   color: #000;
-
   opacity: 0;
   pointer-events: none;
-
   filter: blur(6px); /* 🔥 efecto premium */
   transform: translateY(10px); /* 🔥 mínimo (no rompe scroll) */
-
   transition: 
     opacity 0.5s ease,
     transform 0.5s ease,
@@ -22,7 +19,6 @@
 .footer.show {
   opacity: 1;
   pointer-events: auto;
-
   filter: blur(0);
   transform: translateY(0);
 }
@@ -31,15 +27,13 @@
    CONTENEDOR INTERNO
 ========================= */
 .footer-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 50px auto 0; /* 🔥 espacio natural arriba */
-
+  width: 95%;
+  max-width: 1400px;
+  margin: 50px auto 0; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   padding: 20px 0;
 }
