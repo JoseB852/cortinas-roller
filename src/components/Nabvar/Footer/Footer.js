@@ -15,11 +15,12 @@ export default function Footer() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
-
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 5; // 🔥 más preciso
+  
       setVisible(scrollBottom);
     };
-
+  
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
