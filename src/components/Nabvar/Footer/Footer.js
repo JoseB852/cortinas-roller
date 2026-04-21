@@ -1,73 +1,60 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './Footer.css';
 
 export default function Footer() {
-  const [visible, setVisible] = useState(true);
-  const lastScrollY = useRef(window.scrollY);
+  const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > lastScrollY.current) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
-      lastScrollY.current = window.scrollY;
-    };
-
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  const handleHomeClick = () => {
+  const handleScrollTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 50;
+
+      setVisible(scrollBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <footer className={`footer ${visible ? 'show' : 'hide'}`}>
+    <footer className={`footer ${visible ? "show" : ""}`}>
       <div className="footer-container">
 
-        {/* COLUMNA 1 */}
+        {/* IZQUIERDA */}
         <div className="footer-column">
-          <h3>Cortinas Lenox</h3>
-          <p>
-            Especialistas en Cortinas Roller, Blackout, Dúo y soluciones
-            motorizadas de alta calidad para tu hogar y oficina.
-          </p>
+          <h3 onClick={handleScrollTop} className="footer-logo">
+            Cortinas Lenox
+          </h3>
+          © 2026 Cortinas Lenox — Todos los derechos reservados.
         </div>
 
-        {/* COLUMNA 2 */}
-        <div className="footer-column">
-          <h4>Productos</h4>
-          <Link to="/">Roller Blackout</Link>
-          <Link to="/">Roller Dual</Link>
-          <Link to="/">Roller Dúo</Link>
-          <Link to="/">Motorizadas</Link>
-          <Link to="/">Cortina Vertical</Link>
-        </div>
-
-        {/* COLUMNA 3 */}
-        <div className="footer-column">
-          <h4>Información</h4>
-          <Link to="/" onClick={handleHomeClick}>
-            Home
-          </Link>
-          <Link to="/condition">Términos y Condiciones</Link>
-          <Link to="/privacy">Política de Privacidad</Link>
+        {/* CENTRO */}
+        <div className="footer-column links">
+          <Link to="/condition">Términos</Link>
+          <Link to="/privacy">Privacidad</Link>
           <Link to="/contact">Contacto</Link>
-          <Link to="/">Mapa del Sitio</Link>
+          <Link to="/">Mapa</Link>
         </div>
 
-        {/* COLUMNA 4 */}
+        {/* DERECHA */}
         <div className="footer-column social">
-          <h4>Síguenos</h4>
-
           <div className="social-icons">
-            <i className="fa-brands fa-facebook"></i>
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-facebook-f"></i>
+            </a>
 
             <a
               href="https://www.instagram.com/cortinaslenox?igsh=MW11dnpzdWdnbnp2bQ=="
@@ -77,16 +64,20 @@ export default function Footer() {
               <i className="fa-brands fa-instagram"></i>
             </a>
 
-            <i className="fa-brands fa-whatsapp"></i>
+            <a
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-whatsapp"></i>
+            </a>
+
           </div>
         </div>
 
       </div>
 
-      {/* PARTE INFERIOR */}
-      <div className="footer-bottom">
-        © 2026 Cortinas Lenox — Todos los derechos reservados.
-      </div>
+      <div className="footer-bottom"></div>
     </footer>
   );
 }
