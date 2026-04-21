@@ -10,7 +10,7 @@ export default function Footer() {
 
   const handleScrollTop = () => {
     if (location.pathname !== "/") {
-      navigate("/"); // 🔥 ir al home
+      navigate("/"); //  ir al home
       setTimeout(() => {
         window.scrollTo({
           top: 0,
