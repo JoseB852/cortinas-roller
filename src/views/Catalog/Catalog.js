@@ -37,26 +37,16 @@ export default function Catalog() {
   const [sortOption, setSortOption] = useState("");
   const [loading, setLoading] = useState(true);
 
-  /* FETCH - CORREGIDO */
   useEffect(() => {
-    fetch("/data/products.json") // Cambiado a products.json
-      .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json();
-      })
+    fetch("/data/products.json")
+      .then(res => res.json())
       .then(data => {
-        setProducts(data); // data es directamente el array de productos
+        setProducts(data);
         setLoading(false);
       })
-      .catch(err => {
-        console.error("Error cargando productos:", err);
-        setLoading(false);
-      });
+      .catch(() => setLoading(false));
   }, []);
 
-  /* FILTRO CATEGORÍAS */
   const handleCategoryChange = (category) => {
     setSelectedCategories(prev =>
       prev.includes(category)
@@ -65,7 +55,6 @@ export default function Catalog() {
     );
   };
 
-  /* FILTRO TIPOS */
   const handleTypeChange = (type) => {
     setSelectedTypes(prev =>
       prev.includes(type)
@@ -74,7 +63,6 @@ export default function Catalog() {
     );
   };
 
-  /* FILTRAR */
   let filteredProducts = products.filter(product => {
     const matchCategory =
       selectedCategories.length === 0 ||
@@ -89,30 +77,22 @@ export default function Catalog() {
     return matchCategory && matchType;
   });
 
-  /* ORDENAR */
   if (sortOption === "precio-asc") {
-    filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
+    filteredProducts.sort((a, b) => a.price - b.price);
   }
 
   if (sortOption === "precio-desc") {
-    filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
+    filteredProducts.sort((a, b) => b.price - a.price);
   }
 
   if (sortOption === "az") {
-    filteredProducts = [...filteredProducts].sort((a, b) =>
+    filteredProducts.sort((a, b) =>
       a.name.localeCompare(b.name)
     );
   }
 
-  // Mostrar loading mientras carga
   if (loading) {
-    return (
-      <section className="main-content">
-        <div className="loading-container">
-          <p>Cargando productos...</p>
-        </div>
-      </section>
-    );
+    return <p className="loading">Cargando catálogo...</p>;
   }
 
   return (
@@ -122,117 +102,57 @@ export default function Catalog() {
       <aside className="filter">
         <h2>Filtros</h2>
 
-        <AccordionSection title="Categorias">
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleCategoryChange("roller-blackout")}
-            />
-            Roller Blackout
-          </label>
-
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleCategoryChange("roller-sunscreen")}
-            />
-            Roller Sunscreen
-          </label>
-
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleCategoryChange("roller-dual")}
-            />
-            Roller Dual
-          </label>
-
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleCategoryChange("roller-motorizada")}
-            />
-            Roller Motorizada
-          </label>
+        <AccordionSection title="Categorías">
+          <label><input type="checkbox" onChange={() => handleCategoryChange("roller-blackout")} /> Roller Blackout</label>
+          <label><input type="checkbox" onChange={() => handleCategoryChange("roller-sunscreen")} /> Roller Screen</label>
+          <label><input type="checkbox" onChange={() => handleCategoryChange("roller-dual")} /> Dúo / Día-Noche</label>
+          <label><input type="checkbox" onChange={() => handleCategoryChange("roller-motorizada")} /> Motorizadas</label>
         </AccordionSection>
 
-        <AccordionSection title="Tipos">
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleTypeChange("blackout")}
-            />
-            Blackout
-          </label>
-
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleTypeChange("sunscreen")}
-            />
-            Sunscreen
-          </label>
-
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleTypeChange("dual")}
-            />
-            Dual
-          </label>
-
-          <label>
-            <input
-              type="checkbox"
-              onChange={() => handleTypeChange("motorizada")}
-            />
-            Motorizada
-          </label>
+        <AccordionSection title="Tipo de tela">
+          <label><input type="checkbox" onChange={() => handleTypeChange("blackout")} /> Blackout</label>
+          <label><input type="checkbox" onChange={() => handleTypeChange("sunscreen")} /> Screen</label>
+          <label><input type="checkbox" onChange={() => handleTypeChange("dual")} /> Dúo</label>
         </AccordionSection>
       </aside>
 
       {/* CONTENIDO */}
       <main className="collections">
 
-        <div className="option">
-          <h2>PRODUCTOS ({filteredProducts.length})</h2>
-
-          <div className="sort-options">
-            <label>
-              Ordenar por:
-              <select
-                onChange={(e) => setSortOption(e.target.value)}
-                value={sortOption}
-              >
-                <option value="">Seleccionar</option>
-                <option value="az">Alfabéticamente (A-Z)</option>
-                <option value="precio-asc">Precio: menor a mayor</option>
-                <option value="precio-desc">Precio: mayor a menor</option>
-              </select>
-            </label>
+        <div className="header">
+          <div>
+            <h2>Catálogo</h2>
+            <span>{filteredProducts.length} productos</span>
           </div>
+
+          <select
+            onChange={(e) => setSortOption(e.target.value)}
+            value={sortOption}
+          >
+            <option value="">Ordenar</option>
+            <option value="az">A-Z</option>
+            <option value="precio-asc">Precio ↑</option>
+            <option value="precio-desc">Precio ↓</option>
+          </select>
         </div>
 
         <div className="product-grid">
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map(product => (
-              <div key={product.id} className="product-card">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="product-image"
-                />
+          {filteredProducts.map((product, index) => (
+            <div
+              key={product.id}
+              className={`product-card ${index % 5 === 0 ? "big" : ""}`}
+            >
+              <div className="image-wrapper">
+                <img src={product.image} alt={product.name} />
+              </div>
+
+              <div className="product-info">
                 <h4>{product.name}</h4>
                 <p>${product.price.toLocaleString("es-CL")}</p>
-                <small>SKU: {product.sku}</small>
-                <small>Stock: {product.stock} unidades</small>
+                <span>{product.category}</span>
               </div>
-            ))
-          ) : (
-            <div className="no-products">
-              <p>No hay productos que coincidan con los filtros seleccionados.</p>
             </div>
-          )}
+          ))}
         </div>
 
       </main>
