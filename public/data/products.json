@@ -1,110 +1,98 @@
 [
-    {
-      "id": 1,
-      "category": "roller-blackout",
-      "name": "Roller Blackout Gris",
-      "price": 49990,
-      "sku": "RB-GRIS-01",
-      "stock": 15,
-      "image": "/images/blackout-gris.jpg"
-    },
-    {
-      "id": 2,
-      "category": "roller-blackout",
-      "name": "Roller Blackout Blanco",
-      "price": 47990,
-      "sku": "RB-BLANCO-01",
-      "stock": 10,
-      "image": "/images/blackout-blanco.jpg"
-    },
-    {
-      "id": 3,
-      "category": "roller-blackout",
-      "name": "Roller Blackout Beige",
-      "price": 48990,
-      "sku": "RB-BEIGE-01",
-      "stock": 8,
-      "image": "/images/blackout-beige.jpg"
-    },
-    {
-      "id": 4,
-      "category": "roller-sunscreen",
-      "name": "Roller Sunscreen 5%",
-      "price": 45990,
-      "sku": "RS-5-01",
-      "stock": 20,
-      "image": "/images/sunscreen-5.jpg"
-    },
-    {
-      "id": 5,
-      "category": "roller-sunscreen",
-      "name": "Roller Sunscreen 3%",
-      "price": 48990,
-      "sku": "RS-3-01",
-      "stock": 12,
-      "image": "/images/sunscreen-3.jpg"
-    },
-    {
-      "id": 6,
-      "category": "roller-sunscreen",
-      "name": "Roller Sunscreen Gris Oscuro",
-      "price": 49990,
-      "sku": "RS-GRIS-01",
-      "stock": 9,
-      "image": "/images/sunscreen-gris.jpg"
-    },
-    {
-      "id": 7,
-      "category": "roller-dual",
-      "name": "Roller Dual Beige",
-      "price": 59990,
-      "sku": "RD-BEIGE-01",
-      "stock": 12,
-      "image": "/images/dual-beige.jpg"
-    },
-    {
-      "id": 8,
-      "category": "roller-dual",
-      "name": "Roller Dual Gris",
-      "price": 61990,
-      "sku": "RD-GRIS-01",
-      "stock": 6,
-      "image": "/images/dual-gris.jpg"
-    },
-    {
-      "id": 9,
-      "category": "roller-dual",
-      "name": "Roller Dual Blanco",
-      "price": 62990,
-      "sku": "RD-BLANCO-01",
-      "stock": 5,
-      "image": "/images/dual-blanco.jpg"
-    },
-    {
-      "id": 10,
-      "category": "roller-motorizada",
-      "name": "Roller Motorizada Blanco",
-      "price": 89990,
-      "sku": "RM-BLANCO-01",
-      "stock": 4,
-      "image": "/images/motorizada-blanco.jpg"
-    },
-    {
-      "id": 11,
-      "category": "roller-motorizada",
-      "name": "Roller Motorizada Negra",
-      "price": 94990,
-      "sku": "RM-NEGRO-01",
-      "stock": 3,
-      "image": "/images/motorizada-negro.jpg"
-    },
-    {
-      "id": 12,
-      "category": "roller-motorizada",
-      "name": "Roller Motorizada Premium",
-      "price": 99990,
-      "sku": "RM-PREM-01",
-      "stock": 2,
-      "image": "/images/motorizada-premium.jpg"
-    }
-  ]
+  {
+    "id":1,
+    "category":"roller-blackout",
+    "name":"Roller Blackout Gris",
+    "sku":"RB-GRIS-01",
+    "stock":15,
+    "image":"/images/blackout-gris.jpg"
+  },
+  {
+    "id":2,
+    "category":"roller-blackout",
+    "name":"Roller Blackout Blanco",
+    "sku":"RB-BLANCO-01",
+    "stock":10,
+    "image":"/images/blackout-blanco.jpg"
+  },
+  {
+    "id":3,
+    "category":"roller-blackout",
+    "name":"Roller Blackout Beige",
+    "sku":"RB-BEIGE-01",
+    "stock":8,
+    "image":"/images/blackout-beige.jpg"
+  },
+  {
+    "id":4,
+    "category":"roller-sunscreen",
+    "name":"Roller Sunscreen 5%",
+    "sku":"RS-5-01",
+    "stock":20,
+    "image":"/images/sunscreen-5.jpg"
+  },
+  {
+    "id":5,
+    "category":"roller-sunscreen",
+    "name":"Roller Sunscreen 3%",
+    "sku":"RS-3-01",
+    "stock":12,
+    "image":"/images/sunscreen-3.jpg"
+  },
+  {
+    "id":6,
+    "category":"roller-sunscreen",
+    "name":"Roller Sunscreen Gris Oscuro",
+    "sku":"RS-GRIS-01",
+    "stock":9,
+    "image":"/images/sunscreen-gris.jpg"
+  },
+  {
+    "id":7,
+    "category":"roller-dual",
+    "name":"Roller Dual Beige",
+    "sku":"RD-BEIGE-01",
+    "stock":12,
+    "image":"/images/dual-beige.jpg"
+  },
+  {
+    "id":8,
+    "category":"roller-dual",
+    "name":"Roller Dual Gris",
+    "sku":"RD-GRIS-01",
+    "stock":6,
+    "image":"/images/dual-gris.jpg"
+  },
+  {
+    "id":9,
+    "category":"roller-dual",
+    "name":"Roller Dual Blanco",
+    "sku":"RD-BLANCO-01",
+    "stock":5,
+    "image":"/images/dual-blanco.jpg"
+  },
+  {
+    "id":10,
+    "category":"roller-motorizada",
+    "name":"Roller Motorizada Blanco",
+    "sku":"RM-BLANCO-01",
+    "stock":4,
+    "image":"/images/motorizada-blanco.jpg"
+  },
+  {
+    "id":11,
+    "category":"roller-motorizada",
+    "name":"Roller Motorizada Negra",
+    "sku":"RM-NEGRO-01",
+    "stock":3,
+    "image":"/images/motorizada-negro.jpg"
+  },
+  {
+    "id":12,
+    "category":"roller-motorizada",
+    "name":"Roller Motorizada Premium",
+    "sku":"RM-PREM-01",
+    "stock":2,
+    "image":"/images/motorizada-premium.jpg"
+  }
+]
