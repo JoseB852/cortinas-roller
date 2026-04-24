@@ -20,6 +20,7 @@ import Catalog from './views/Catalog/Catalog';
 import Privacy from './views/Privacy/Privacy';
 import Condition from './views/Condition/Condition';
 import ResidencialBody from './components/Nabvar/ResidencialBody/ResidencialBody';
+import DetailProducts from './views/DetailProducts/DetailProducts';
 
 export default function App() {
   return (
@@ -38,6 +39,8 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/us" element={<Us />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/producto/:id" element={<DetailProducts />}
+/>
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/condition" element={<Condition />} />
           <Route path="/card" element={<Card />} />
