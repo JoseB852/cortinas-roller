@@ -122,15 +122,7 @@ export default function Catalog() {
 
     <>
       {/* HERO */}
-      <section className="catalog-hero">
-        <div className="hero-content">
-          <span>Colección 2026</span>
-          <h1>
-            Cortinas y telas para
-            espacios contemporáneos
-          </h1>
-        </div>
-      </section>
+ 
 
 
 
