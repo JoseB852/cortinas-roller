@@ -55,7 +55,6 @@ export default function Catalog() {
   }, []);
 
 
-
   const handleCategoryChange = (category) => {
 
     setSelectedCategories(prev =>
@@ -63,7 +62,6 @@ export default function Catalog() {
         ? prev.filter(c => c !== category)
         : [...prev, category])
   };
-
 
 
   const handleTypeChange = (type) => {
@@ -106,7 +104,6 @@ export default function Catalog() {
   }
 
 
-
   if (loading) {
     return (
       <p className="loading">
@@ -116,17 +113,9 @@ export default function Catalog() {
 
   }
 
-
-
   return (
 
     <>
-      {/* HERO */}
- 
-
-
-
-
       <section className="main-content">
         {/* FILTROS */}
         <aside className="filter">
