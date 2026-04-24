@@ -1,11 +1,74 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
 export default function Contact() {
 
+  const [formData, setFormData] = useState({
+    nombre: "",
+    correo: "",
+    telefono: "",
+    mensaje: ""
+  });
+
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (formData) => {
+    fetch("http://localhost:3000/email", {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': "application/json"
+      }
+    })
+      .then(async (response) => {
+
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(text);
+        }
+
+        return response.json();
+      })
+      .then((datos) => {
+        console.log("Correo enviado:", datos);
+
+        setSuccess(true);
+
+        // limpiar formulario
+        setFormData({
+          nombre: "",
+          correo: "",
+          telefono: "",
+          mensaje: ""
+        });
+
+        // ocultar popup
+        setTimeout(() => {
+          setSuccess(false);
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error("Error al enviar el formulario", err);
+      });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail(formData);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
   return (
     <div className='content-form'>
-      
+
       {/* PANEL IZQUIERDO */}
       <div className='form-description'>
         <div className='contact'>
@@ -29,19 +92,58 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* PANEL DERECHO - FORMULARIO */}
+      {/* FORMULARIO */}
       <div className='contact-form'>
-
         <h3>Envíanos un Mensaje</h3>
 
-        <input type="text" placeholder="Nombre" />
-        <input type="email" placeholder="Correo Electrónico" />
-        <input type="tel" placeholder="Teléfono" />
-        <textarea placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+        <form onSubmit={handleSubmit}>
 
-        <button>Enviar Mensaje</button>
+          <input
+            type="text"
+            placeholder="Nombre"
+            name="nombre"
+            value={formData.nombre}
+            onChange={handleChange}
+          />
 
+          <input
+            type="email"
+            placeholder="Correo Electrónico"
+            name="correo"
+            value={formData.correo}
+            onChange={handleChange}
+          />
+
+          <input
+            type="tel"
+            placeholder="Teléfono"
+            name="telefono"
+            value={formData.telefono}
+            onChange={handleChange}
+          />
+
+          <textarea
+            placeholder="Escribe tu mensaje aquí..."
+            name="mensaje"
+            rows="5"
+            value={formData.mensaje}
+            onChange={handleChange}
+          ></textarea>
+
+          <button type='submit'>Enviar Mensaje</button>
+
+        </form>
       </div>
+
+      {/* POPUP */}
+      {success && (
+        <div className="popup-overlay">
+          <div className="popup">
+            <div className="check-circle">✓</div>
+            <p>Mensaje enviado</p>
+          </div>
+        </div>
+      )}
 
     </div>
   )
