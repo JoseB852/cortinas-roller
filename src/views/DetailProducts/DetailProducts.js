@@ -50,9 +50,7 @@ export default function DetailProducts() {
                     </div>
                 </div>
                 <div className="product-info">
-                    <span className="product-label">
-                        Colección Premium
-                    </span>
+                   
                     <h1>
                         {product.name}
                     </h1>
