@@ -1,13 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './index.css';
-
 import Nabvar from './components/Nabvar/Nabvar';
-import Footer from './components/Nabvar/Footer/Footer';
-import Whatsapp from './components/Nabvar/Whatsapp/Whatsapp';
-import ScrollToTop from './components/Nabvar/ScrollToTop/ScrollToTop';
-
-// Vistas
+import Footer from './components/Footer/Footer';
+import Whatsapp from './components/Whatsapp/Whatsapp';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Home from './views/Home';
 import Card from './views/Card/Card';
 import Comercial from './views/Comercial/Comercial';
@@ -19,7 +16,7 @@ import Us from './views/Us/Us';
 import Catalog from './views/Catalog/Catalog';
 import Privacy from './views/Privacy/Privacy';
 import Condition from './views/Condition/Condition';
-import ResidencialBody from './components/Nabvar/ResidencialBody/ResidencialBody';
+import ResidencialBody from './components/ResidencialBody/ResidencialBody';
 import DetailProducts from './views/DetailProducts/DetailProducts';
 
 export default function App() {
