@@ -41,7 +41,6 @@ body,
 width:100%;
 min-height:100%;
 overflow-x:hidden;
-
 color:var(--text);
 }
 
@@ -51,10 +50,8 @@ font-family:var(--font-body);
 font-size:16px;
 font-weight:400;
 line-height:1.65;
-
 -webkit-font-smoothing:antialiased;
 -moz-osx-font-smoothing:grayscale;
-
 text-rendering:optimizeLegibility;
 }
 
@@ -74,7 +71,6 @@ letter-spacing:-0.04em;
 line-height:1.05;
 color:var(--text);
 }
-
 
 /* Escalas */
 

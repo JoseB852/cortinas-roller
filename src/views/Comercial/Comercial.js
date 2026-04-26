@@ -1,154 +1,267 @@
-import './Comercial.css';
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Menu from '../../components/Nabvar/Menu/Menu';
-import ComercialBody from '../../components/Nabvar/ComercialBody/ComercialBody';
+import {useEffect,useState,useContext} from "react";
+import './Comercial.css'
+import { Link } from "react-router-dom";
+import Menu from "../../components/Menu/Menu";
+import ComercialBody from "../../components/ComercialBody/ComercialBody";
+import { StoreContext } from "../../components/Context/StoreContext";
+
+
 
 export default function Comercial() {
 
-  const [comercial, setComercial] = useState([]);
-  const [openId, setOpenId] = useState(null);
+  const {comercial,getComercialProducts} = useContext(StoreContext);
+  const [openId, setOpenId] =useState(null);
 
   useEffect(() => {
-    document.body.classList.add('comercial-page');
-
-    
-    fetch('/data/comercial.json')
-      .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then(data => {
-   
-        setComercial(data);
-      })
-      .catch(err => console.error('Error cargando comercial:', err));
-
+    document.body.classList.add( "comercial-page");
+    getComercialProducts();
     return () => {
-      document.body.classList.remove('comercial-page');
+      document.body.classList.remove( "comercial-page");
     };
-  }, []);
+  },[getComercialProducts]);
 
-  const toggleComercial = (id, index) => {
+
+
+  /* Toggle Panel */
+
+  const toggleComercial = (
+    id,
+    index
+  ) => {
+
     if (openId === id) {
+
       setOpenId(null);
 
       if (window.innerWidth > 768) {
-        const content = document.querySelector('.comercial-content');
+
+        const content =
+          document.querySelector(
+            ".comercial-content"
+          );
+
         if (content) {
-          content.style.transform = 'translateX(0)';
+          content.style.transform =
+            "translateX(0)";
         }
-      }
-    } else {
-      setOpenId(id);
 
-      if (window.innerWidth > 768) {
-        const container = document.querySelector('.comercial-content');
-        if (!container) return;
-        
-        const wrapper = container.children[index];
-        if (!wrapper) return;
-        
-        const panel = wrapper.querySelector('.comercial-panel');
-        if (!panel) return;
-        
-        const panelWidth = panel.offsetWidth;
-        const containerWidth = container.offsetWidth;
-        const wrapperRight = wrapper.offsetLeft + wrapper.offsetWidth;
-
-        if (wrapperRight + panelWidth > containerWidth) {
-          container.style.transform = `translateX(-${
-            wrapperRight + panelWidth - containerWidth + 30
-          }px)`;
-        } else {
-          container.style.transform = 'translateX(0)';
-        }
       }
+
+      return;
     }
-  };
 
-  const closePanel = (e) => {
-    e.stopPropagation();
-    setOpenId(null);
+
+    setOpenId(id);
+
 
     if (window.innerWidth > 768) {
-      const content = document.querySelector('.comercial-content');
-      if (content) {
-        content.style.transform = 'translateX(0)';
+
+      const container =
+        document.querySelector(
+          ".comercial-content"
+        );
+
+      if (!container) return;
+
+      const wrapper =
+        container.children[index];
+
+      if (!wrapper) return;
+
+      const panel =
+        wrapper.querySelector(
+          ".comercial-panel"
+        );
+
+      if (!panel) return;
+
+
+      const panelWidth =
+        panel.offsetWidth;
+
+      const containerWidth =
+        container.offsetWidth;
+
+      const wrapperRight =
+        wrapper.offsetLeft +
+        wrapper.offsetWidth;
+
+
+      if (
+        wrapperRight + panelWidth >
+        containerWidth
+      ) {
+
+        container.style.transform =
+          `translateX(-${wrapperRight +
+          panelWidth -
+          containerWidth +
+          30
+          }px)`;
+
+      } else {
+
+        container.style.transform =
+          "translateX(0)";
+
       }
+
     }
+
   };
 
+
+
+  /* Close Panel */
+
+  const closePanel = (e) => {
+
+    e.stopPropagation();
+
+    setOpenId(null);
+
+
+    if (window.innerWidth > 768) {
+
+      const content =
+        document.querySelector(
+          ".comercial-content"
+        );
+
+      if (content) {
+        content.style.transform =
+          "translateX(0)";
+      }
+
+    }
+
+  };
+
+
+
   return (
+
     <section className="comercial-page">
 
       <Menu />
 
+
       <div className="comercial-section">
         <div className="comercial-scroll">
+
           <div className="comercial-content">
 
-            {comercial.map((product, index) => (
-              <div
-                key={product.id}
-                className={`comercial-wrapper ${
-                  openId === product.id ? 'open' : ''
-                }`}
-              >
+            {comercial.map(
+              (product, index) => (
 
-                {/* CARD PRINCIPAL */}
                 <div
-                  className="comercial"
-                  onClick={() => toggleComercial(product.id, index)}
+                  key={product.id}
+                  className={`comercial-wrapper ${openId === product.id
+                      ? "open"
+                      : ""
+                    }`}
                 >
-                  <h3>{product.title}</h3>
-                  <img src={product.image} alt={product.title} />
-                  <div className="arrow">
-                    <i className="fa-solid fa-arrow-right-long"></i>
-                  </div>
-                </div>
 
-                {/* PANEL LATERAL */}
-                <div className="comercial-panel">
+                  {/* Card */}
 
-                  {/* BOTÓN CERRAR */}
-                  <button
-                    className="panel-close"
-                    onClick={closePanel}
+                  <div
+                    className="comercial"
+                    onClick={() => toggleComercial(
+                      product.id,
+                      index
+                    )}
                   >
-                    ×
-                  </button>
 
-                  <h4>{product.panel?.title || 'Título no disponible'}</h4>
-                  <p>{product.panel?.description || 'Descripción no disponible'}</p>
+                    <h3>
+                      {product.title}
+                    </h3>
 
-                  <div className="panel-cards">
-                    {product.panel?.miniCards?.map(item => (
-                      <Link
-                        key={item.id}
-                        to={`/comercial/${item.viewId}`}
-                        className="panel-mini-card"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <img src={item.image} alt={item.label} />
-                        <span>{item.label}</span>
-                      </Link>
-                    ))}
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                    />
+
+                    <div className="arrow">
+                      <i className="fa-solid fa-arrow-right-long"></i>
+                    </div>
+
+                  </div>
+
+
+
+                  {/* Side Panel */}
+
+                  <div className="comercial-panel">
+
+                    <button
+                      className="panel-close"
+                      onClick={closePanel}
+                    >
+                      ×
+                    </button>
+
+
+                    <h4>
+                      {
+                        product.panel?.title ||
+                        "Título no disponible"
+                      }
+                    </h4>
+
+
+                    <p>
+                      {
+                        product.panel?.description ||
+                        "Descripción no disponible"
+                      }
+                    </p>
+
+
+
+                    <div className="panel-cards">
+
+                      {product.panel?.miniCards?.map(
+                        (item) => (
+
+                          <Link
+                            key={item.id}
+                            to={`/comercial/${item.viewId}`}
+                            className="panel-mini-card"
+                            onClick={(e) =>
+                              e.stopPropagation()
+                            }
+                          >
+
+                            <img
+                              src={item.image}
+                              alt={item.label}
+                            />
+
+                            <span>
+                              {item.label}
+                            </span>
+
+                          </Link>
+
+                        ))}
+
+                    </div>
+
                   </div>
 
                 </div>
 
-              </div>
-            ))}
+              ))}
 
           </div>
         </div>
       </div>
 
+
       <ComercialBody />
 
     </section>
-  );
+
+  )
+
 }
