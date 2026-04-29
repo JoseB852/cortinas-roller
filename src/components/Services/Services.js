@@ -40,7 +40,7 @@ export default function Services() {
 
             <>
 
-              <h2>
+              <h2 className="title-intro">
 
                 {introData.title}
 
@@ -55,22 +55,11 @@ export default function Services() {
                     "Aislamiento térmico"
                   ]}
 
-                  mainClassName="
-  rotating-highlight
-  "
-
-                  rotationInterval={3000}
-                />
-
+                  mainClassName="rotating-highlight"rotationInterval={3000}/>
               </h2>
-
-
-
               <h3>
                 {introData.subtitle}
               </h3>
-
-
               <p>
                 {introData.text}
               </p>
