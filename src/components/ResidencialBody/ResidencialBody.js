@@ -40,53 +40,22 @@ export default function ResidencialBody() {
     return (
 
         <>
-
             <Card />
-
-
-            <h1 className="text-tiltle">
-                DISEÑADO EXCLUSIVAMENTE
-                PARA TI
-            </h1>
-
-
-
+            <h1 className="text-tiltle"> DISEÑADO EXCLUSIVAMENTE PARA TI</h1>
             <div className="comercial-body">
-
                 {
                     residencialContent.map(
                         (content) => (
-
-                            <div
-                                key={content.id}
-                                className="body-one"
-                            >
-
+                            <div key={content.id}className="body-one">
                                 <div className="icon">
-                                    {
-                                        iconMap[
-                                        content.icon
-                                        ]
-                                    }
+                                    {iconMap[content.icon]}
                                 </div>
-
-
-                                <h1>
-                                    {content.titulo}
-                                </h1>
-
-
-                                <p>
-                                    {content.text}
-                                </p>
-
+                                <h1>{content.titulo}</h1>
+                                <p> {content.text}</p>
                             </div>
-
                         ))
                 }
-
             </div>
-
         </>
 
     )

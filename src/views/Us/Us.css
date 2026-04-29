@@ -8,10 +8,11 @@
 
 /* ================= TITULO ================= */
 
-.title-us {
+.title-us h1{
     width: 500px;
     margin: 60px auto 30px auto;
     text-align: center;
+    font-size: xxx-large;
 }
 
 /* ================= DESCRIPCION ================= */

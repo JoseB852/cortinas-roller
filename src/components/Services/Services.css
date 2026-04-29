@@ -45,6 +45,11 @@ body {
     margin-left: 8px;
     font-weight: 600;
     cursor: pointer;
+    font-size: xx-large;
+  }
+
+  .title-intro{
+    font-size: xxx-large;
   }
 
 .description-services {
