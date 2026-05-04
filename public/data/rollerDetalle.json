@@ -1,55 +1,307 @@
 [
   {
     "id": 1,
-    "slug": "roller-blackout",
-    "hero": {
-      "type": "video",
-      "src": "/videos/CortinaBlackout.mp4"
-    },
+    "hero": { "src": "/videos/blackout.mp4" },
     "intro": {
-      "title": "Built for Brilliance",
-      "subtitle": "Cortina Roller Blackout",
-      "description": "Oscurecimiento total con diseño elegante para crear ambientes confortables y modernos."
+      "title": "Roller Blackout Gris",
+      "subtitle": "Oscuridad total y confort",
+      "description": "Bloquea completamente la luz y mejora el descanso."
     },
     "sections": [
       {
         "id": 1,
-        "title": "Total Light Control",
-        "text": "Bloquea completamente la entrada de luz, ideal para dormitorios, salas de cine y oficinas.",
-        "image": "/images/imagen-blackout-1.jpg"
+        "title": "Bloqueo total",
+        "text": "Ideal para dormitorios y salas.",
+        "image": "/images/blackout-gris.jpg"
       },
       {
         "id": 2,
-        "title": "Premium Fabrics",
-        "text": "Materiales de alta calidad que aseguran durabilidad, fácil mantenimiento y una caída perfecta.",
-        "image": "/images/imagen-blackout-2.jpg"
-      },
-      {
-        "id": 3,
-        "title": "Minimal Design",
-        "text": "Diseño limpio y moderno que se integra perfectamente en cualquier espacio.",
-        "image": "/images/imagen-blackout-3.jpg"
+        "title": "Aislación térmica",
+        "text": "Reduce calor y frío exterior.",
+        "image": "/images/blackout-beige.jpg"
       }
     ],
     "explore": {
-      "title": "Explore Intelligent Lighting",
-      "description": "Find the light source best suited to a project based on the desired range of color temperatures, budget, and system compatibility.",
+      "title": "Beneficios",
+      "description": "Ventajas principales",
       "items": [
-        {
-          "id": 1,
-          "name": "Lumaris",
-          "text": "Tunable white and warm dim from one light source."
-        },
-        {
-          "id": 2,
-          "name": "Rania",
-          "text": "Exceptional natural light for high-craft lamps and luminaires."
-        },
-        {
-          "id": 3,
-          "name": "Ketra",
-          "text": "Our most innovative lighting technology for high-craft lamps and luminaires."
-        }
+        { "id": 1, "name": "Privacidad", "text": "100% cobertura" },
+        { "id": 2, "name": "Energía", "text": "Ahorro energético" }
+      ]
+    }
+  },
+
+  {
+    "id": 2,
+    "hero": { "src": "/videos/blackout.mp4" },
+    "intro": {
+      "title": "Roller Blackout Blanco",
+      "subtitle": "Diseño elegante",
+      "description": "Perfecto para espacios modernos."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Estética limpia",
+        "text": "Combina con todo.",
+        "image": "/images/blackout-blanco.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Características",
+      "description": "Lo que lo hace especial",
+      "items": [
+        { "id": 1, "name": "Minimalista", "text": "Diseño moderno" }
+      ]
+    }
+  },
+
+  {
+    "id": 3,
+    "hero": { "src": "/videos/blackout.mp4" },
+    "intro": {
+      "title": "Roller Blackout Beige",
+      "subtitle": "Ambiente cálido",
+      "description": "Ideal para espacios acogedores."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Color neutro",
+        "text": "Perfecto para interiores.",
+        "image": "/images/blackout-beige.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Ventajas",
+      "description": "Beneficios del producto",
+      "items": [
+        { "id": 1, "name": "Calidez", "text": "Ambiente acogedor" }
+      ]
+    }
+  },
+
+  {
+    "id": 4,
+    "hero": { "src": "/videos/sunscreen.mp4" },
+    "intro": {
+      "title": "Roller Sunscreen 5%",
+      "subtitle": "Luz natural controlada",
+      "description": "Permite ver hacia afuera sin perder privacidad."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Control solar",
+        "text": "Reduce rayos UV.",
+        "image": "/images/sunscreen-5.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Beneficios",
+      "description": "Ventajas del sunscreen",
+      "items": [
+        { "id": 1, "name": "Visibilidad", "text": "Vista exterior" }
+      ]
+    }
+  },
+
+  {
+    "id": 5,
+    "hero": { "src": "/videos/sunscreen.mp4" },
+    "intro": {
+      "title": "Roller Sunscreen 3%",
+      "subtitle": "Mayor privacidad",
+      "description": "Menor entrada de luz con mayor protección."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Protección",
+        "text": "Ideal para oficinas.",
+        "image": "/images/sunscreen-3.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Características",
+      "description": "Detalles clave",
+      "items": [
+        { "id": 1, "name": "Privacidad", "text": "Más cobertura" }
+      ]
+    }
+  },
+
+  {
+    "id": 6,
+    "hero": { "src": "/videos/sunscreen.mp4" },
+    "intro": {
+      "title": "Roller Sunscreen Gris",
+      "subtitle": "Estilo moderno",
+      "description": "Diseño elegante con protección solar."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Diseño",
+        "text": "Perfecto para oficinas.",
+        "image": "/images/sunscreen-gris.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Ventajas",
+      "description": "Beneficios",
+      "items": [
+        { "id": 1, "name": "Durabilidad", "text": "Alta resistencia" }
+      ]
+    }
+  },
+
+  {
+    "id": 7,
+    "hero": { "src": "/videos/dual.mp4" },
+    "intro": {
+      "title": "Roller Dual Beige",
+      "subtitle": "Día y noche",
+      "description": "Control total de luz con franjas."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Versatilidad",
+        "text": "Regula luz fácilmente.",
+        "image": "/images/dual-beige.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Beneficios",
+      "description": "Lo mejor del dual",
+      "items": [
+        { "id": 1, "name": "Control", "text": "Flexible" }
+      ]
+    }
+  },
+
+  {
+    "id": 8,
+    "hero": { "src": "/videos/dual.mp4" },
+    "intro": {
+      "title": "Roller Dual Gris",
+      "subtitle": "Moderno",
+      "description": "Elegante y funcional."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Diseño",
+        "text": "Combina con todo.",
+        "image": "/images/dual-gris.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Ventajas",
+      "description": "Beneficios",
+      "items": [
+        { "id": 1, "name": "Estética", "text": "Moderna" }
+      ]
+    }
+  },
+
+  {
+    "id": 9,
+    "hero": { "src": "/videos/dual.mp4" },
+    "intro": {
+      "title": "Roller Dual Blanco",
+      "subtitle": "Minimalista",
+      "description": "Ideal para espacios claros."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Luminosidad",
+        "text": "Ambientes claros.",
+        "image": "/images/dual-blanco.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Características",
+      "description": "Detalles",
+      "items": [
+        { "id": 1, "name": "Luz", "text": "Natural" }
+      ]
+    }
+  },
+
+  {
+    "id": 10,
+    "hero": { "src": "/videos/motor.mp4" },
+    "intro": {
+      "title": "Roller Motorizada Blanco",
+      "subtitle": "Automatización",
+      "description": "Control remoto inteligente."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Tecnología",
+        "text": "Fácil uso.",
+        "image": "/images/motorizada-blanco.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Beneficios",
+      "description": "Ventajas",
+      "items": [
+        { "id": 1, "name": "Smart", "text": "Automático" }
+      ]
+    }
+  },
+
+  {
+    "id": 11,
+    "hero": { "src": "/videos/motor.mp4" },
+    "intro": {
+      "title": "Roller Motorizada Negra",
+      "subtitle": "Elegancia",
+      "description": "Tecnología con estilo."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Diseño",
+        "text": "Alta gama.",
+        "image": "/images/motorizada-negro.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Ventajas",
+      "description": "Beneficios",
+      "items": [
+        { "id": 1, "name": "Premium", "text": "Alta calidad" }
+      ]
+    }
+  },
+
+  {
+    "id": 12,
+    "hero": { "src": "/videos/motor.mp4" },
+    "intro": {
+      "title": "Roller Motorizada Premium",
+      "subtitle": "Alta gama",
+      "description": "Integración domótica completa."
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Domótica",
+        "text": "Control total.",
+        "image": "/images/motorizada-premium.jpg"
+      }
+    ],
+    "explore": {
+      "title": "Características",
+      "description": "Lo mejor",
+      "items": [
+        { "id": 1, "name": "Smart Home", "text": "Integración total" }
       ]
     }
   }

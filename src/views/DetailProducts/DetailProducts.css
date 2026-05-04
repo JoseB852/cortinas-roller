@@ -128,12 +128,19 @@ body {
     margin-bottom: 1rem;
 }
 
-.description p {
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 2rem;
-}
 
+.description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 5%;
+  }
+  
+  .description-text p {
+    margin: 0;
+  }
 
 
 /* BUTTON */
@@ -147,6 +154,7 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     transition: .3s;
+    margin-top: 5%;
 }
 
 .quote-button:hover {
