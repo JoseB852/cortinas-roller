@@ -88,28 +88,6 @@
     }
   },
   {
-    "id": 5,
-    "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5%",
-    "sku": "RS-5-01",
-    "stock": 20,
-    "image": "/images/sunscreen-5.jpg",
-    "intro": "Filtra la luz sin perder visibilidad exterior.",
-    "specs": {
-      "tela": "Sunscreen 5%",
-      "privacidad": "Media",
-      "aislacion": "Baja",
-      "accionamiento": "Manual / Motor"
-    },
-    "description": "Disfruta de espacios luminosos sin renunciar al confort.\n\nControl solar eficiente con diseño moderno.",
-    "technical": {
-      "ancho": "350 cm",
-      "caida": "320 cm",
-      "mantenimiento": "Paño húmedo",
-      "opciones": "Manual / Motorizada"
-    }
-  },
-  {
     "id": 6,
     "category": "roller-sunscreen",
     "name": "Roller Sunscreen 3%",
@@ -244,7 +222,7 @@
   {
     "id": 14,
     "category": "roller-dual",
-    "name": "Roller Dual Beige",
+    "name": "Roller Dual Crudo",
     "sku": "RD-BEIGE-01",
     "stock": 12,
     "image": "/images/dual-beige.jpg",
@@ -266,10 +244,10 @@
   {
     "id": 15,
     "category": "roller-dual",
-    "name": "Roller Dual Dark",
+    "name": "Roller Dual",
     "sku": "RD-DARK-01",
     "stock": 10,
-    "image": "/images/dual-dark.jpg",
+    "image": "/images/dual-black.jpg",
     "intro": "Control total de luz con diseño oscuro elegante.",
     "specs": {
       "tela": "Dúo Dark",
@@ -288,10 +266,10 @@
   {
     "id": 16,
     "category": "roller-dual",
-    "name": "Roller Dual Blackout",
+    "name": "Roller Dual Gris",
     "sku": "RD-BLACKOUT-01",
     "stock": 10,
-    "image": "/images/dual-blackout.jpg",
+    "image": "/images/roller-dual-gris.jpg",
     "intro": "Doble sistema blackout para máxima oscuridad.",
     "specs": {
       "tela": "Dúo Blackout",
@@ -304,6 +282,272 @@
       "ancho": "300 cm",
       "caida": "280 cm",
       "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 17,
+    "category": "roller-dual",
+    "name": "Roller Dual Blanca",
+    "sku": "RD-BLACKOUT-01",
+    "stock": 10,
+    "image": "/images/roller-dual-blanca.jpg",
+    "intro": "Doble sistema blackout para máxima oscuridad.",
+    "specs": {
+      "tela": "Dúo Blackout",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Sistema dual con blackout total para día y noche.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 18,
+    "category": "roller-vertical",
+    "name": "Vertical Negra",
+    "sku": "RV-NEGRA-01",
+    "stock": 10,
+    "image": "/images/vertical-negra.jpg",
+    "intro": "Cortina vertical elegante en negro.",
+    "specs": {
+      "tela": "Vertical",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Diseño vertical moderno para espacios elegantes.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 19,
+    "category": "roller-vertical",
+    "name": "Vertical Blanca",
+    "sku": "RV-BLANCA-01",
+    "stock": 10,
+    "image": "/images/vertical-blanca.jpg",
+    "intro": "Vertical blanca limpia y moderna.",
+    "specs": {
+      "tela": "Vertical",
+      "privacidad": "Media-Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Luminosidad y estilo en un solo producto.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 20,
+    "category": "roller-vertical",
+    "name": "Vertical Crudo",
+    "sku": "RV-CRUDO-01",
+    "stock": 10,
+    "image": "/images/vertical-crudo.jpg",
+    "intro": "Tono crudo natural en vertical.",
+    "specs": {
+      "tela": "Vertical",
+      "privacidad": "Media",
+      "aislacion": "Media",
+      "accionamiento": "Manual"
+    },
+    "description": "Equilibrio entre luz natural y privacidad.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual"
+    }
+  },
+
+  {
+    "id": 21,
+    "category": "roller-blackout-dark",
+    "name": "Blackout Dark Blanca",
+    "sku": "BD-BLANCA-01",
+    "stock": 10,
+    "image": "/images/blackout-dark-blanca.jpg",
+    "intro": "Blackout avanzado blanco.",
+    "specs": {
+      "tela": "Blackout Dark",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Oscuridad total con diseño premium.",
+    "technical": {
+      "ancho": "340 cm",
+      "caida": "300 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 22,
+    "category": "roller-blackout-dark",
+    "name": "Blackout Dark Negro",
+    "sku": "BD-NEGRO-01",
+    "stock": 10,
+    "image": "/images/blackout-dark-negro.jpg",
+    "intro": "Blackout total negro profundo.",
+    "specs": {
+      "tela": "Blackout Dark",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Máxima oscuridad con estilo elegante.",
+    "technical": {
+      "ancho": "340 cm",
+      "caida": "300 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 23,
+    "category": "roller-blackout-dark",
+    "name": "Blackout Dark Gris",
+    "sku": "BD-GRIS-01",
+    "stock": 10,
+    "image": "/images/blackout-dark-gris.jpg",
+    "intro": "Blackout gris sofisticado.",
+    "specs": {
+      "tela": "Blackout Dark",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Control total de luz con elegancia.",
+    "technical": {
+      "ancho": "340 cm",
+      "caida": "300 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 24,
+    "category": "roller-blackout-dark",
+    "name": "Blackout Dark Beige",
+    "sku": "BD-BEIGE-01",
+    "stock": 10,
+    "image": "/images/blackout-dark-beige.jpg",
+    "intro": "Blackout cálido beige.",
+    "specs": {
+      "tela": "Blackout Dark",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Oscuridad con estilo cálido.",
+    "technical": {
+      "ancho": "340 cm",
+      "caida": "300 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+
+  {
+    "id": 25,
+    "category": "roller-dual",
+    "name": "Dual Blanco",
+    "sku": "RD-BLANCO-02",
+    "stock": 10,
+    "image": "/images/roller-dual-blanco.jpg",
+    "intro": "Dual blanco elegante.",
+    "specs": {
+      "tela": "Dual",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Día y noche en un solo sistema.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 26,
+    "category": "roller-dual",
+    "name": "Dual Crudo",
+    "sku": "RD-CRUDO-01",
+    "stock": 10,
+    "image": "/images/roller-dual-crudo.jpg",
+    "intro": "Dual tono natural.",
+    "specs": {
+      "tela": "Dual",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual"
+    },
+    "description": "Elegancia natural funcional.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual"
+    }
+  },
+  {
+    "id": 27,
+    "category": "roller-dual",
+    "name": "Dual Gris",
+    "sku": "RD-GRIS-01",
+    "stock": 10,
+    "image": "/images/rollers-dual-gris.jpg",
+    "intro": "Dual gris moderno.",
+    "specs": {
+      "tela": "Dual",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Control de luz con estilo contemporáneo.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 28,
+    "category": "roller-dual",
+    "name": "Dual Negro",
+    "sku": "RD-NEGRO-01",
+    "stock": 10,
+    "image": "/images/dual-negro.jpg",
+    "intro": "Dual negro premium.",
+    "specs": {
+      "tela": "Dual",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Elegancia total con doble función.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
       "opciones": "Manual / Motorizada"
     }
   }
