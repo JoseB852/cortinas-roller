@@ -132,34 +132,12 @@
     }
   },
   {
-    "id": 7,
-    "category": "roller-sunscreen",
-    "name": "Roller Sunscreen Gris Oscuro",
-    "sku": "RS-GRIS-01",
-    "stock": 9,
-    "image": "/images/sunscreen-gris.jpg",
-    "intro": "Diseño moderno con control solar eficiente.",
-    "specs": {
-      "tela": "Sunscreen Gris",
-      "privacidad": "Media",
-      "aislacion": "Media",
-      "accionamiento": "Motor"
-    },
-    "description": "Ideal para oficinas modernas.",
-    "technical": {
-      "ancho": "360 cm",
-      "caida": "320 cm",
-      "mantenimiento": "Paño húmedo",
-      "opciones": "Motorizada"
-    }
-  },
-  {
     "id": 8,
     "category": "roller-sunscreen",
     "name": "Roller Sunscreen 5% Gris",
     "sku": "RS-5-GRIS-01",
     "stock": 10,
-    "image": "/images/sunscreen-5-gris.jpg",
+    "image": "/images/sunscreen-gris.jpg",
     "intro": "Control de luz moderno y elegante.",
     "specs": {
       "tela": "Sunscreen 5%",
@@ -217,28 +195,6 @@
       "caida": "320 cm",
       "mantenimiento": "Paño húmedo",
       "opciones": "Manual / Motorizada"
-    }
-  },
-  {
-    "id": 11,
-    "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 3% Blanco",
-    "sku": "RS-3-BLANCO-01",
-    "stock": 12,
-    "image": "/images/sunscreen-3-blanco.jpg",
-    "intro": "Máximo control solar.",
-    "specs": {
-      "tela": "Sunscreen 3%",
-      "privacidad": "Media-Alta",
-      "aislacion": "Media",
-      "accionamiento": "Manual"
-    },
-    "description": "Protección solar avanzada con diseño limpio.",
-    "technical": {
-      "ancho": "340 cm",
-      "caida": "300 cm",
-      "mantenimiento": "Paño húmedo",
-      "opciones": "Manual"
     }
   },
   {
