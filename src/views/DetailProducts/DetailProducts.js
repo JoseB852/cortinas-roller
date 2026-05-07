@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { StoreContext } from "../../components/Context/StoreContext";
 import "./DetailProducts.css";
@@ -7,11 +7,18 @@ export default function DetailProducts() {
 
   const { id } = useParams();
   const { selectedProduct, getProductById } = useContext(StoreContext);
+  const [mainImage, setMainImage] = useState("");
 
   useEffect(() => {
     if (!id) return;
     getProductById(id);
   }, [id, getProductById]);
+
+  useEffect(() => {
+    if (selectedProduct?.image) {
+      setMainImage(selectedProduct.image);
+    }
+  }, [selectedProduct]);
 
   if (!selectedProduct) {
     return <div className="loading">Cargando producto...</div>;
@@ -27,14 +34,19 @@ export default function DetailProducts() {
         <div className="gallery-column">
 
           <div className="main-image">
-            <img src={selectedProduct.image} alt={selectedProduct.name} />
+            <img src={mainImage} alt={selectedProduct.name} />
           </div>
 
           <div className="gallery-grid">
-            <img src={selectedProduct.image} alt="" />
-            <img src="/images/detail-2.jpg" alt="" />
-            <img src="/images/detail-3.jpg" alt="" />
-            <img src="/images/detail-4.jpg" alt="" />
+            {selectedProduct.gallery?.map((img, index) => (
+              <img 
+                key={index} 
+                src={img} 
+                alt={`${selectedProduct.name} - ${index + 1}`}
+                onClick={() => setMainImage(img)}
+                style={{ cursor: "pointer" }}
+              />
+            ))}
           </div>
 
         </div>

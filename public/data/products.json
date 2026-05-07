@@ -6,6 +6,12 @@
     "sku": "RB-GRIS-01",
     "stock": 15,
     "image": "/images/blackout-gris.jpg",
+    "gallery": [
+      "/images/blackout-gris.jpg",
+      "/images/blackout-gris-2.jpg",
+      "/images/blackout-gris-3.jpg",
+      "/images/blackout-gris-4.jpg"
+    ],
     "intro": "Control total de luz y privacidad para cualquier espacio.",
     "specs": {
       "tela": "Blackout Premium",
@@ -28,6 +34,12 @@
     "sku": "RB-BLANCO-01",
     "stock": 10,
     "image": "/images/blackout-blanco.jpg",
+    "gallery": [
+      "/images/blackout-blanco.jpg",
+      "/images/blackout-blanco-2.jpg",
+      "/images/blackout-blanco-3.jpg",
+      "/images/blackout-blanco-4.jpg"
+    ],
     "intro": "Elegancia y funcionalidad en tonos claros.",
     "specs": {
       "tela": "Blackout Light",
@@ -50,6 +62,12 @@
     "sku": "RB-BEIGE-01",
     "stock": 8,
     "image": "/images/blackout-beige.jpg",
+    "gallery": [
+      "/images/blackout-beige.jpg",
+      "/images/blackout-beige-2.jpg",
+      "/images/blackout-beige-3.jpg",
+      "/images/blackout-beige-4.jpg"
+    ],
     "intro": "Calidez y confort en cada espacio.",
     "specs": {
       "tela": "Blackout Texturizado",
@@ -57,7 +75,7 @@
       "aislacion": "Térmica",
       "accionamiento": "Manual / Motor"
     },
-    "description": "Disfruta del confort y la privacidad que tu hogar merece.\n\nBeneficios:\n✨ Limpieza fácil\n👶 Seguro para niños\n🎨 Colores cálidos\n🌙 Oscuridad total",
+    "description": "Disfruta del confort y la privacidad que tu hogar merece.\n\nNuestras cortinas con tejido opaco bloquean eficazmente la entrada de luz, creando ambientes más acogedores y protegidos. Fabricadas con materiales de alta resistencia, no solo aportan estilo, sino también un excelente aislamiento térmico, incluso si no cuentas con persianas.\n\nBeneficios que marcan la diferencia:\n✨ Limpieza rápida y sin complicaciones\n👶 Sistema seguro para niños\n🎨 Amplia variedad de colores para combinar con tu espacio\n🌙 Oscuridad total para un mejor descanso\n\nDale a tus espacios un toque moderno, funcional y elegante.",
     "technical": {
       "ancho": "330 cm",
       "caida": "300 cm",
@@ -72,6 +90,12 @@
     "sku": "RB-NEGRO-01",
     "stock": 10,
     "image": "/images/blackout-negro.jpg",
+    "gallery": [
+      "/images/blackout-negro.jpg",
+      "/images/blackout-negro-2.jpg",
+      "/images/blackout-negro-3.jpg",
+      "/images/blackout-negro-4.jpg"
+    ],
     "intro": "Oscuridad total con estilo elegante.",
     "specs": {
       "tela": "Blackout Premium",
@@ -88,12 +112,18 @@
     }
   },
   {
-    "id": 6,
+    "id": 5,
     "category": "roller-sunscreen",
     "name": "Roller Sunscreen 3%",
     "sku": "RS-3-01",
     "stock": 12,
     "image": "/images/sunscreen-3.jpg",
+    "gallery": [
+      "/images/sunscreen-3.jpg",
+      "/images/sunscreen-3-2.jpg",
+      "/images/sunscreen-3-3.jpg",
+      "/images/sunscreen-3-4.jpg"
+    ],
     "intro": "Mayor control solar con visibilidad.",
     "specs": {
       "tela": "Sunscreen 3%",
@@ -101,7 +131,7 @@
       "aislacion": "Media",
       "accionamiento": "Manual"
     },
-    "description": "Cortinas Screen 5%: luz natural con confort y máxima practicidad.\n\nDisfruta de espacios luminosos sin renunciar al confort con nuestras cortinas Screen 5%, diseñadas para filtrar la luz y reducir el deslumbramiento mientras mantienes la visibilidad hacia el exterior y proteges tus ambientes del exceso de radiación solar.\n\nSu tejido screen de alta calidad permite regular la entrada de luz de forma eficiente, aportando confort visual y un ambiente más agradable durante todo el día, con un diseño moderno y funcional.\n\nAdemás, su sistema de instalación sin herramientas hace que su montaje sea rápido, limpio y práctico, ideal para quienes buscan soluciones simples y elegantes para su hogar u oficina.\n\n✨ Control de luz con apertura 5% y visibilidad exterior\n🪟 Diseño con marco integrado, moderno y discreto\n🛠️ Instalación sin taladro ni herramientas\n🚪 Ideal para puertas y ventanas abatibles u oscilobatientes\n🌞 Tejido screen que reduce el deslumbramiento\n👶 Sistema seguro para niños\n\nDale a tus espacios un toque moderno, funcional y elegante.",
+    "description": "Cortinas Screen 3%: equilibrio perfecto entre luz, confort y tecnología.\n\nDisfruta de ambientes luminosos y confortables con nuestras cortinas Screen 3%, diseñadas para filtrar la luz natural y reducir el deslumbramiento sin perder la visibilidad hacia el exterior. La opción ideal para quienes buscan funcionalidad, diseño y bienestar en un solo producto.\n\nSu tejido técnico de alta calidad no solo regula la entrada de luz, sino que también ofrece propiedades ignífugas, antibacterianas y libres de olores, garantizando un entorno más seguro, limpio y saludable.\n\nAdemás, puedes personalizar tu experiencia eligiendo el nivel de apertura y disfrutar de un manejo aún más cómodo gracias a su opción de control mediante App móvil.\n\n✨ Filtración de luz con apertura 3% y visibilidad exterior\n📱 Control inteligente desde App móvil\n🔥 Tejido ignífugo para mayor seguridad\n🧼 Limpieza fácil y mantenimiento práctico\n🦠 Material antibacteriano y sin olor\n👶 Sistema seguro para niños",
     "technical": {
       "ancho": "340 cm",
       "caida": "300 cm",
@@ -110,13 +140,75 @@
     }
   },
   {
-    "id": 8,
+    "id": 6,
     "category": "roller-sunscreen",
     "name": "Roller Sunscreen 5% Gris",
     "sku": "RS-5-GRIS-01",
     "stock": 10,
     "image": "/images/sunscreen-gris.jpg",
+    "gallery": [
+      "/images/sunscreen-gris.jpg",
+      "/images/sunscreen-gris-2.jpg",
+      "/images/sunscreen-gris-3.jpg",
+      "/images/sunscreen-gris-4.jpg"
+    ],
     "intro": "Control de luz moderno y elegante.",
+    "specs": {
+      "tela": "Sunscreen 5%",
+      "privacidad": "Media",
+      "aislacion": "Baja",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Cortinas Screen 5%: luz natural con confort y máxima practicidad. Disfruta de espacios luminosos sin renunciar al confort con nuestras cortinas Screen 5%. Diseñadas para filtrar la luz y reducir el deslumbramiento, te permiten mantener la visibilidad hacia el exterior mientras proteges tus ambientes del exceso de radiación solar.\n\nBeneficios que marcan la diferencia:\n✨ Control de luz con apertura 5% y visibilidad exterior\n🪟 Diseño con marco integrado, moderno y discreto\n🛠️ Instalación sin taladro ni herramientas\n🚪 Ideal para puertas y ventanas abatibles u oscilobatientes\n🌞 Tejido screen que reduce el deslumbramiento\n👶 Sistema seguro para niños\nDale a tus espacios un toque moderno, funcional y elegante.",
+    "technical": {
+      "ancho": "350 cm",
+      "caida": "320 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 7,
+    "category": "roller-sunscreen",
+    "name": "Roller Sunscreen 5% Blanco",
+    "sku": "RS-5-BLANCO-01",
+    "stock": 10,
+    "image": "/images/sunscreen-5-blanco.jpg",
+    "gallery": [
+      "/images/sunscreen-5-blanco.jpg",
+      "/images/sunscreen-5-blanco-2.jpg",
+      "/images/sunscreen-5-blanco-3.jpg",
+      "/images/sunscreen-5-blanco-4.jpg"
+    ],
+    "intro": "Luz natural con claridad total.",
+    "specs": {
+      "tela": "Sunscreen 5%",
+      "privacidad": "Media",
+      "aislacion": "Baja",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Cortinas Screen 5%: luz natural con confort y máxima practicidad. Disfruta de espacios luminosos sin renunciar al confort con nuestras cortinas Screen 5%. Diseñadas para filtrar la luz y reducir el deslumbramiento, te permiten mantener la visibilidad hacia el exterior mientras proteges tus ambientes del exceso de radiación solar.\n\nBeneficios que marcan la diferencia:\n✨ Control de luz con apertura 5% y visibilidad exterior\n🪟 Diseño con marco integrado, moderno y discreto\n🛠️ Instalación sin taladro ni herramientas\n🚪 Ideal para puertas y ventanas abatibles u oscilobatientes\n🌞 Tejido screen que reduce el deslumbramiento\n👶 Sistema seguro para niños\nDale a tus espacios un toque moderno, funcional y elegante.",
+    "technical": {
+      "ancho": "350 cm",
+      "caida": "320 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 8,
+    "category": "roller-sunscreen",
+    "name": "Roller Sunscreen 5% Crudo",
+    "sku": "RS-5-CRUDO-01",
+    "stock": 10,
+    "image": "/images/sunscreen-5-crudo.jpg",
+    "gallery": [
+      "/images/sunscreen-5-crudo.jpg",
+      "/images/sunscreen-5-crudo-2.jpg",
+      "/images/sunscreen-5-crudo-3.jpg",
+      "/images/sunscreen-5-crudo-4.jpg"
+    ],
+    "intro": "Tono natural y elegante.",
     "specs": {
       "tela": "Sunscreen 5%",
       "privacidad": "Media",
@@ -134,11 +226,17 @@
   {
     "id": 9,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5% Blanco",
-    "sku": "RS-5-BLANCO-01",
+    "name": "Roller Sunscreen 5% Negra",
+    "sku": "RS-5-NEGRA-01",
     "stock": 10,
-    "image": "/images/sunscreen-5-blanco.jpg",
-    "intro": "Luz natural con claridad total.",
+    "image": "/images/sunscreen-5-negra.jpg",
+    "gallery": [
+      "/images/sunscreen-5-negra.jpg",
+      "/images/sunscreen-5-negra-2.jpg",
+      "/images/sunscreen-5-negra-3.jpg",
+      "/images/sunscreen-5-negra-4.jpg"
+    ],
+    "intro": "Elegancia en negro con control solar.",
     "specs": {
       "tela": "Sunscreen 5%",
       "privacidad": "Media",
@@ -156,32 +254,16 @@
   {
     "id": 10,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5% Crudo",
-    "sku": "RS-5-CRUDO-01",
-    "stock": 10,
-    "image": "/images/sunscreen-5-crudo.jpg",
-    "intro": "Tono natural y elegante.",
-    "specs": {
-      "tela": "Sunscreen 5%",
-      "privacidad": "Media",
-      "aislacion": "Baja",
-      "accionamiento": "Manual / Motor"
-    },
-    "description": "Cortinas Screen 5%: luz natural con confort y máxima practicidad. Disfruta de espacios luminosos sin renunciar al confort con nuestras cortinas Screen 5%. Diseñadas para filtrar la luz y reducir el deslumbramiento, te permiten mantener la visibilidad hacia el exterior mientras proteges tus ambientes del exceso de radiación solar.\n\nBeneficios que marcan la diferencia:\n✨ Control de luz con apertura 5% y visibilidad exterior\n🪟 Diseño con marco integrado, moderno y discreto\n🛠️ Instalación sin taladro ni herramientas\n🚪 Ideal para puertas y ventanas abatibles u oscilobatientes\n🌞 Tejido screen que reduce el deslumbramiento\n👶 Sistema seguro para niños\nDale a tus espacios un toque moderno, funcional y elegante.",
-    "technical": {
-      "ancho": "350 cm",
-      "caida": "320 cm",
-      "mantenimiento": "Paño húmedo",
-      "opciones": "Manual / Motorizada"
-    }
-  },
-  {
-    "id": 12,
-    "category": "roller-sunscreen",
     "name": "Roller Sunscreen 3% Gris",
     "sku": "RS-3-GRIS-01",
     "stock": 12,
     "image": "/images/sunscreen-3-gris.jpg",
+    "gallery": [
+      "/images/sunscreen-3-gris.jpg",
+      "/images/sunscreen-3-gris-2.jpg",
+      "/images/sunscreen-3-gris-3.jpg",
+      "/images/sunscreen-3-gris-4.jpg"
+    ],
     "intro": "Control solar elegante.",
     "specs": {
       "tela": "Sunscreen 3%",
@@ -189,7 +271,7 @@
       "aislacion": "Media",
       "accionamiento": "Manual"
     },
-    "description": "Cortinas Screen 5%: luz natural con confort y máxima practicidad.\n\nDisfruta de espacios luminosos sin renunciar al confort con nuestras cortinas Screen 5%, diseñadas para filtrar la luz y reducir el deslumbramiento mientras mantienes la visibilidad hacia el exterior y proteges tus ambientes del exceso de radiación solar.\n\nSu tejido screen de alta calidad permite regular la entrada de luz de forma eficiente, aportando confort visual y un ambiente más agradable durante todo el día, con un diseño moderno y funcional.\n\nAdemás, su sistema de instalación sin herramientas hace que su montaje sea rápido, limpio y práctico, ideal para quienes buscan soluciones simples y elegantes para su hogar u oficina.\n\n✨ Control de luz con apertura 5% y visibilidad exterior\n🪟 Diseño con marco integrado, moderno y discreto\n🛠️ Instalación sin taladro ni herramientas\n🚪 Ideal para puertas y ventanas abatibles u oscilobatientes\n🌞 Tejido screen que reduce el deslumbramiento\n👶 Sistema seguro para niños\n\nDale a tus espacios un toque moderno, funcional y elegante.",
+    "description": "Cortinas Screen 3%: equilibrio perfecto entre luz, confort y tecnología.\n\nDisfruta de ambientes luminosos y confortables con nuestras cortinas Screen 3%, diseñadas para filtrar la luz natural y reducir el deslumbramiento sin perder la visibilidad hacia el exterior. La opción ideal para quienes buscan funcionalidad, diseño y bienestar en un solo producto.\n\nSu tejido técnico de alta calidad no solo regula la entrada de luz, sino que también ofrece propiedades ignífugas, antibacterianas y libres de olores, garantizando un entorno más seguro, limpio y saludable.\n\nAdemás, puedes personalizar tu experiencia eligiendo el nivel de apertura y disfrutar de un manejo aún más cómodo gracias a su opción de control mediante App móvil.\n\n✨ Filtración de luz con apertura 3% y visibilidad exterior\n📱 Control inteligente desde App móvil\n🔥 Tejido ignífugo para mayor seguridad\n🧼 Limpieza fácil y mantenimiento práctico\n🦠 Material antibacteriano y sin olor\n👶 Sistema seguro para niños",
     "technical": {
       "ancho": "340 cm",
       "caida": "300 cm",
@@ -198,12 +280,18 @@
     }
   },
   {
-    "id": 13,
+    "id": 11,
     "category": "roller-sunscreen",
     "name": "Roller Sunscreen 3% Negro",
     "sku": "RS-3-NEGRO-01",
     "stock": 12,
     "image": "/images/sunscreen-3-negro.jpg",
+    "gallery": [
+      "/images/sunscreen-3-negro.jpg",
+      "/images/sunscreen-3-negro-2.jpg",
+      "/images/sunscreen-3-negro-3.jpg",
+      "/images/sunscreen-3-negro-4.jpg"
+    ],
     "intro": "Oscuridad parcial con estilo.",
     "specs": {
       "tela": "Sunscreen 3%",
@@ -211,7 +299,7 @@
       "aislacion": "Media",
       "accionamiento": "Manual"
     },
-    "description": "Cortinas Screen 5%: luz natural con confort y máxima practicidad.\n\nDisfruta de espacios luminosos sin renunciar al confort con nuestras cortinas Screen 5%, diseñadas para filtrar la luz y reducir el deslumbramiento mientras mantienes la visibilidad hacia el exterior y proteges tus ambientes del exceso de radiación solar.\n\nSu tejido screen de alta calidad permite regular la entrada de luz de forma eficiente, aportando confort visual y un ambiente más agradable durante todo el día, con un diseño moderno y funcional.\n\nAdemás, su sistema de instalación sin herramientas hace que su montaje sea rápido, limpio y práctico, ideal para quienes buscan soluciones simples y elegantes para su hogar u oficina.\n\n✨ Control de luz con apertura 5% y visibilidad exterior\n🪟 Diseño con marco integrado, moderno y discreto\n🛠️ Instalación sin taladro ni herramientas\n🚪 Ideal para puertas y ventanas abatibles u oscilobatientes\n🌞 Tejido screen que reduce el deslumbramiento\n👶 Sistema seguro para niños\n\nDale a tus espacios un toque moderno, funcional y elegante.",
+    "description": "Cortinas Screen 3%: equilibrio perfecto entre luz, confort y tecnología.\n\nDisfruta de ambientes luminosos y confortables con nuestras cortinas Screen 3%, diseñadas para filtrar la luz natural y reducir el deslumbramiento sin perder la visibilidad hacia el exterior. La opción ideal para quienes buscan funcionalidad, diseño y bienestar en un solo producto.\n\nSu tejido técnico de alta calidad no solo regula la entrada de luz, sino que también ofrece propiedades ignífugas, antibacterianas y libres de olores, garantizando un entorno más seguro, limpio y saludable.\n\nAdemás, puedes personalizar tu experiencia eligiendo el nivel de apertura y disfrutar de un manejo aún más cómodo gracias a su opción de control mediante App móvil.\n\n✨ Filtración de luz con apertura 3% y visibilidad exterior\n📱 Control inteligente desde App móvil\n🔥 Tejido ignífugo para mayor seguridad\n🧼 Limpieza fácil y mantenimiento práctico\n🦠 Material antibacteriano y sin olor\n👶 Sistema seguro para niños",
     "technical": {
       "ancho": "340 cm",
       "caida": "300 cm",
@@ -220,12 +308,18 @@
     }
   },
   {
-    "id": 14,
+    "id": 12,
     "category": "roller-dual",
     "name": "Roller Dual Crudo",
     "sku": "RD-BEIGE-01",
     "stock": 12,
     "image": "/images/dual-beige.jpg",
+    "gallery": [
+      "/images/dual-beige.jpg",
+      "/images/dual-beige-2.jpg",
+      "/images/dual-beige-3.jpg",
+      "/images/dual-beige-4.jpg"
+    ],
     "intro": "Control total día y noche.",
     "specs": {
       "tela": "Dúo Beige",
@@ -242,12 +336,18 @@
     }
   },
   {
-    "id": 15,
+    "id": 13,
     "category": "roller-dual",
     "name": "Roller Dual",
     "sku": "RD-DARK-01",
     "stock": 10,
     "image": "/images/dual-black.jpg",
+    "gallery": [
+      "/images/dual-black.jpg",
+      "/images/dual-black-2.jpg",
+      "/images/dual-black-3.jpg",
+      "/images/dual-black-4.jpg"
+    ],
     "intro": "Control total de luz con diseño oscuro elegante.",
     "specs": {
       "tela": "Dúo Dark",
@@ -264,12 +364,18 @@
     }
   },
   {
-    "id": 16,
+    "id": 14,
     "category": "roller-dual",
     "name": "Roller Dual Gris",
     "sku": "RD-BLACKOUT-01",
     "stock": 10,
     "image": "/images/roller-dual-gris.jpg",
+    "gallery": [
+      "/images/roller-dual-gris.jpg",
+      "/images/roller-dual-gris-2.jpg",
+      "/images/roller-dual-gris-3.jpg",
+      "/images/roller-dual-gris-4.jpg"
+    ],
     "intro": "Doble sistema blackout para máxima oscuridad.",
     "specs": {
       "tela": "Dúo Blackout",
@@ -286,12 +392,18 @@
     }
   },
   {
-    "id": 17,
+    "id": 15,
     "category": "roller-dual",
     "name": "Roller Dual Blanca",
     "sku": "RD-BLACKOUT-01",
     "stock": 10,
     "image": "/images/roller-dual-blanca.jpg",
+    "gallery": [
+      "/images/roller-dual-blanca.jpg",
+      "/images/roller-dual-blanca-2.jpg",
+      "/images/roller-dual-blanca-3.jpg",
+      "/images/roller-dual-blanca-4.jpg"
+    ],
     "intro": "Doble sistema blackout para máxima oscuridad.",
     "specs": {
       "tela": "Dúo Blackout",
@@ -308,12 +420,18 @@
     }
   },
   {
-    "id": 18,
+    "id": 16,
     "category": "roller-vertical",
     "name": "Vertical Negra",
     "sku": "RV-NEGRA-01",
     "stock": 10,
     "image": "/images/vertical-negra.jpg",
+    "gallery": [
+      "/images/vertical-negra.jpg",
+      "/images/vertical-negra-2.jpg",
+      "/images/vertical-negra-3.jpg",
+      "/images/vertical-negra-4.jpg"
+    ],
     "intro": "Cortina vertical elegante en negro.",
     "specs": {
       "tela": "Vertical",
@@ -330,12 +448,18 @@
     }
   },
   {
-    "id": 19,
+    "id": 17,
     "category": "roller-vertical",
     "name": "Vertical Blanca",
     "sku": "RV-BLANCA-01",
     "stock": 10,
     "image": "/images/vertical-blanca.jpg",
+    "gallery": [
+      "/images/vertical-blanca.jpg",
+      "/images/vertical-blanca-2.jpg",
+      "/images/vertical-blanca-3.jpg",
+      "/images/vertical-blanca-4.jpg"
+    ],
     "intro": "Vertical blanca limpia y moderna.",
     "specs": {
       "tela": "Vertical",
@@ -352,12 +476,18 @@
     }
   },
   {
-    "id": 20,
+    "id": 18,
     "category": "roller-vertical",
     "name": "Vertical Crudo",
     "sku": "RV-CRUDO-01",
     "stock": 10,
     "image": "/images/vertical-crudo.jpg",
+    "gallery": [
+      "/images/vertical-crudo.jpg",
+      "/images/vertical-crudo-2.jpg",
+      "/images/vertical-crudo-3.jpg",
+      "/images/vertical-crudo-4.jpg"
+    ],
     "intro": "Tono crudo natural en vertical.",
     "specs": {
       "tela": "Vertical",
@@ -373,15 +503,76 @@
       "opciones": "Manual"
     }
   },
-
   {
-    "id": 21,
+    "id": 19,
     "category": "roller-blackout-dark",
     "name": "Blackout Dark Blanca",
     "sku": "BD-BLANCA-01",
     "stock": 10,
     "image": "/images/blackout-dark-blanca.jpg",
+    "gallery": [
+      "/images/blackout-dark-blanca.jpg",
+      "/images/blackout-dark-blanca-2.jpg",
+      "/images/blackout-dark-blanca-3.jpg",
+      "/images/blackout-dark-blanca-4.jpg"
+    ],
     "intro": "Blackout avanzado blanco.",
+    "specs": {
+      "tela": "Blackout Dark",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Cortinas Roller con sistema guiado: confort, diseño y tecnología en perfecta armonía.\n\nEleva el confort y la estética de tus espacios con nuestras cortinas roller de sistema guiado, pensadas para quienes buscan eficiencia sin renunciar al diseño. Su exclusivo tejido térmico con respaldo metalizado refleja la radiación solar, ayudando a mantener ambientes más frescos, elegantes y con una iluminación perfectamente equilibrada.\n\nDisfruta de un control lumínico superior, regulando la entrada de luz con precisión para lograr mayor privacidad, descanso y una atmósfera acogedora en cualquier momento del día. Su estilo minimalista y sofisticado se integra con facilidad en todo tipo de decoración, realzando cada espacio con un acabado impecable.\n\nAdemás, su innovador sistema de instalación sin taladro permite una fijación firme, limpia y discreta, protegiendo tus superficies y facilitando una instalación rápida y sin complicaciones.\n\n✨ Aislamiento térmico con respaldo metalizado\n🌗 Control preciso de luz y privacidad\n🪟 Sistema guiado para mayor estabilidad\n🛠️ Instalación sin taladro, práctica y segura\n🎨 Diseño moderno y elegante\n🧼 Fácil mantenimiento\n\nTecnología, elegancia y bienestar en una solución de alto nivel.",
+    "technical": {
+      "ancho": "340 cm",
+      "caida": "300 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 20,
+    "category": "roller-blackout-dark",
+    "name": "Blackout Dark Negro",
+    "sku": "BD-NEGRO-01",
+    "stock": 10,
+    "image": "/images/blackout-dark-negro.jpg",
+    "gallery": [
+      "/images/blackout-dark-negro.jpg",
+      "/images/blackout-dark-negro-2.jpg",
+      "/images/blackout-dark-negro-3.jpg",
+      "/images/blackout-dark-negro-4.jpg"
+    ],
+    "intro": "Blackout total negro profundo.",
+    "specs": {
+      "tela": "Blackout Dark",
+      "privacidad": "Muy Alta",
+      "aislacion": "Térmica",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Cortinas Roller con sistema guiado: confort, diseño y tecnología en perfecta armonía.\n\nEleva el confort y la estética de tus espacios con nuestras cortinas roller de sistema guiado, pensadas para quienes buscan eficiencia sin renunciar al diseño. Su exclusivo tejido térmico con respaldo metalizado refleja la radiación solar, ayudando a mantener ambientes más frescos, elegantes y con una iluminación perfectamente equilibrada.\n\nDisfruta de un control lumínico superior, regulando la entrada de luz con precisión para lograr mayor privacidad, descanso y una atmósfera acogedora en cualquier momento del día. Su estilo minimalista y sofisticado se integra con facilidad en todo tipo de decoración, realzando cada espacio con un acabado impecable.\n\nAdemás, su innovador sistema de instalación sin taladro permite una fijación firme, limpia y discreta, protegiendo tus superficies y facilitando una instalación rápida y sin complicaciones.\n\n✨ Aislamiento térmico con respaldo metalizado\n🌗 Control preciso de luz y privacidad\n🪟 Sistema guiado para mayor estabilidad\n🛠️ Instalación sin taladro, práctica y segura\n🎨 Diseño moderno y elegante\n🧼 Fácil mantenimiento\n\nTecnología, elegancia y bienestar en una solución de alto nivel.",
+    "technical": {
+      "ancho": "340 cm",
+      "caida": "300 cm",
+      "mantenimiento": "Limpieza en seco",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 21,
+    "category": "roller-blackout-dark",
+    "name": "Blackout Dark Gris",
+    "sku": "BD-GRIS-01",
+    "stock": 10,
+    "image": "/images/blackout-dark-gris.jpg",
+    "gallery": [
+      "/images/blackout-dark-gris.jpg",
+      "/images/blackout-dark-gris-2.jpg",
+      "/images/blackout-dark-gris-3.jpg",
+      "/images/blackout-dark-gris-4.jpg"
+    ],
+    "intro": "Blackout gris sofisticado.",
     "specs": {
       "tela": "Blackout Dark",
       "privacidad": "Muy Alta",
@@ -399,11 +590,17 @@
   {
     "id": 22,
     "category": "roller-blackout-dark",
-    "name": "Blackout Dark Negro",
-    "sku": "BD-NEGRO-01",
+    "name": "Blackout Dark Beige",
+    "sku": "BD-BEIGE-01",
     "stock": 10,
-    "image": "/images/blackout-dark-negro.jpg",
-    "intro": "Blackout total negro profundo.",
+    "image": "/images/blackout-dark-beige.jpg",
+    "gallery": [
+      "/images/blackout-dark-beige.jpg",
+      "/images/blackout-dark-beige-2.jpg",
+      "/images/blackout-dark-beige-3.jpg",
+      "/images/blackout-dark-beige-4.jpg"
+    ],
+    "intro": "Blackout cálido beige.",
     "specs": {
       "tela": "Blackout Dark",
       "privacidad": "Muy Alta",
@@ -420,57 +617,74 @@
   },
   {
     "id": 23,
-    "category": "roller-blackout-dark",
-    "name": "Blackout Dark Gris",
-    "sku": "BD-GRIS-01",
-    "stock": 10,
-    "image": "/images/blackout-dark-gris.jpg",
-    "intro": "Blackout gris sofisticado.",
-    "specs": {
-      "tela": "Blackout Dark",
-      "privacidad": "Muy Alta",
-      "aislacion": "Térmica",
-      "accionamiento": "Manual / Motor"
-    },
-    "description": "Cortinas Roller con sistema guiado: confort, diseño y tecnología en perfecta armonía.\n\nEleva el confort y la estética de tus espacios con nuestras cortinas roller de sistema guiado, pensadas para quienes buscan eficiencia sin renunciar al diseño. Su exclusivo tejido térmico con respaldo metalizado refleja la radiación solar, ayudando a mantener ambientes más frescos, elegantes y con una iluminación perfectamente equilibrada.\n\nDisfruta de un control lumínico superior, regulando la entrada de luz con precisión para lograr mayor privacidad, descanso y una atmósfera acogedora en cualquier momento del día. Su estilo minimalista y sofisticado se integra con facilidad en todo tipo de decoración, realzando cada espacio con un acabado impecable.\n\nAdemás, su innovador sistema de instalación sin taladro permite una fijación firme, limpia y discreta, protegiendo tus superficies y facilitando una instalación rápida y sin complicaciones.\n\n✨ Aislamiento térmico con respaldo metalizado\n🌗 Control preciso de luz y privacidad\n🪟 Sistema guiado para mayor estabilidad\n🛠️ Instalación sin taladro, práctica y segura\n🎨 Diseño moderno y elegante\n🧼 Fácil mantenimiento\n\nTecnología, elegancia y bienestar en una solución de alto nivel.",
-    "technical": {
-      "ancho": "340 cm",
-      "caida": "300 cm",
-      "mantenimiento": "Limpieza en seco",
-      "opciones": "Manual / Motorizada"
-    }
-  },
-  {
-    "id": 24,
-    "category": "roller-blackout-dark",
-    "name": "Blackout Dark Beige",
-    "sku": "BD-BEIGE-01",
-    "stock": 10,
-    "image": "/images/blackout-dark-beige.jpg",
-    "intro": "Blackout cálido beige.",
-    "specs": {
-      "tela": "Blackout Dark",
-      "privacidad": "Muy Alta",
-      "aislacion": "Térmica",
-      "accionamiento": "Manual / Motor"
-    },
-    "description": "Cortinas Roller con sistema guiado: confort, diseño y tecnología en perfecta armonía.\n\nEleva el confort y la estética de tus espacios con nuestras cortinas roller de sistema guiado, pensadas para quienes buscan eficiencia sin renunciar al diseño. Su exclusivo tejido térmico con respaldo metalizado refleja la radiación solar, ayudando a mantener ambientes más frescos, elegantes y con una iluminación perfectamente equilibrada.\n\nDisfruta de un control lumínico superior, regulando la entrada de luz con precisión para lograr mayor privacidad, descanso y una atmósfera acogedora en cualquier momento del día. Su estilo minimalista y sofisticado se integra con facilidad en todo tipo de decoración, realzando cada espacio con un acabado impecable.\n\nAdemás, su innovador sistema de instalación sin taladro permite una fijación firme, limpia y discreta, protegiendo tus superficies y facilitando una instalación rápida y sin complicaciones.\n\n✨ Aislamiento térmico con respaldo metalizado\n🌗 Control preciso de luz y privacidad\n🪟 Sistema guiado para mayor estabilidad\n🛠️ Instalación sin taladro, práctica y segura\n🎨 Diseño moderno y elegante\n🧼 Fácil mantenimiento\n\nTecnología, elegancia y bienestar en una solución de alto nivel.",
-    "technical": {
-      "ancho": "340 cm",
-      "caida": "300 cm",
-      "mantenimiento": "Limpieza en seco",
-      "opciones": "Manual / Motorizada"
-    }
-  },
-
-  {
-    "id": 25,
     "category": "roller-dual",
     "name": "Dual Blanco",
     "sku": "RD-BLANCO-02",
     "stock": 10,
     "image": "/images/roller-dual-blanco.jpg",
+    "gallery": [
+      "/images/roller-dual-blanco.jpg",
+      "/images/roller-dual-blanco-2.jpg",
+      "/images/roller-dual-blanco-3.jpg",
+      "/images/roller-dual-blanco-4.jpg"
+    ],
     "intro": "Dual blanco elegante.",
+    "specs": {
+      "tela": "Dual",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual / Motor"
+    },
+    "description": "Elegancia natural que transforma tus espacios.\n\nDescubre un tejido elegante y versátil que te permite graduar la luz con suavidad, creando ambientes cálidos y acogedores. Su entramado translúcido y semitransparente deja pasar la luz de forma equilibrada, mientras su delicada mota en distintas tonalidades aporta textura y distinción.\n\nGracias a su composición mixta de lino y poliéster, este tejido combina la belleza natural con la resistencia y fácil mantenimiento, convirtiéndose en la opción ideal para espacios de estilo clásico o mediterráneo.\n\n✨ Regulación suave de la luz\n🌿 Estética natural con textura sutil\n🪟 Sistema noche y día para mayor versatilidad\n👶 Seguridad para niños\n🧼 Limpieza fácil\n🎨 Tonos naturales que combinan con todo\n\nAporta a tu hogar un toque sofisticado, luminoso y atemporal.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual / Motorizada"
+    }
+  },
+  {
+    "id": 24,
+    "category": "roller-dual",
+    "name": "Dual Crudo",
+    "sku": "RD-CRUDO-01",
+    "stock": 10,
+    "image": "/images/roller-dual-crudo.jpg",
+    "gallery": [
+      "/images/roller-dual-crudo.jpg",
+      "/images/roller-dual-crudo-2.jpg",
+      "/images/roller-dual-crudo-3.jpg",
+      "/images/roller-dual-crudo-4.jpg"
+    ],
+    "intro": "Dual tono natural.",
+    "specs": {
+      "tela": "Dual",
+      "privacidad": "Alta",
+      "aislacion": "Media",
+      "accionamiento": "Manual"
+    },
+    "description": "Elegancia natural que transforma tus espacios.\n\nDescubre un tejido elegante y versátil que te permite graduar la luz con suavidad, creando ambientes cálidos y acogedores. Su entramado translúcido y semitransparente deja pasar la luz de forma equilibrada, mientras su delicada mota en distintas tonalidades aporta textura y distinción.\n\nGracias a su composición mixta de lino y poliéster, este tejido combina la belleza natural con la resistencia y fácil mantenimiento, convirtiéndose en la opción ideal para espacios de estilo clásico o mediterráneo.\n\n✨ Regulación suave de la luz\n🌿 Estética natural con textura sutil\n🪟 Sistema noche y día para mayor versatilidad\n👶 Seguridad para niños\n🧼 Limpieza fácil\n🎨 Tonos naturales que combinan con todo\n\nAporta a tu hogar un toque sofisticado, luminoso y atemporal.",
+    "technical": {
+      "ancho": "300 cm",
+      "caida": "280 cm",
+      "mantenimiento": "Paño húmedo",
+      "opciones": "Manual"
+    }
+  },
+  {
+    "id": 25,
+    "category": "roller-dual",
+    "name": "Dual Gris",
+    "sku": "RD-GRIS-01",
+    "stock": 10,
+    "image": "/images/rollers-dual-gris.jpg",
+    "gallery": [
+      "/images/rollers-dual-gris.jpg",
+      "/images/rollers-dual-gris-2.jpg",
+      "/images/rollers-dual-gris-3.jpg",
+      "/images/rollers-dual-gris-4.jpg"
+    ],
+    "intro": "Dual gris moderno.",
     "specs": {
       "tela": "Dual",
       "privacidad": "Alta",
@@ -488,54 +702,16 @@
   {
     "id": 26,
     "category": "roller-dual",
-    "name": "Dual Crudo",
-    "sku": "RD-CRUDO-01",
-    "stock": 10,
-    "image": "/images/roller-dual-crudo.jpg",
-    "intro": "Dual tono natural.",
-    "specs": {
-      "tela": "Dual",
-      "privacidad": "Alta",
-      "aislacion": "Media",
-      "accionamiento": "Manual"
-    },
-    "description": "Elegancia natural que transforma tus espacios.\n\nDescubre un tejido elegante y versátil que te permite graduar la luz con suavidad, creando ambientes cálidos y acogedores. Su entramado translúcido y semitransparente deja pasar la luz de forma equilibrada, mientras su delicada mota en distintas tonalidades aporta textura y distinción.\n\nGracias a su composición mixta de lino y poliéster, este tejido combina la belleza natural con la resistencia y fácil mantenimiento, convirtiéndose en la opción ideal para espacios de estilo clásico o mediterráneo.\n\n✨ Regulación suave de la luz\n🌿 Estética natural con textura sutil\n🪟 Sistema noche y día para mayor versatilidad\n👶 Seguridad para niños\n🧼 Limpieza fácil\n🎨 Tonos naturales que combinan con todo\n\nAporta a tu hogar un toque sofisticado, luminoso y atemporal.",
-    "technical": {
-      "ancho": "300 cm",
-      "caida": "280 cm",
-      "mantenimiento": "Paño húmedo",
-      "opciones": "Manual"
-    }
-  },
-  {
-    "id": 27,
-    "category": "roller-dual",
-    "name": "Dual Gris",
-    "sku": "RD-GRIS-01",
-    "stock": 10,
-    "image": "/images/rollers-dual-gris.jpg",
-    "intro": "Dual gris moderno.",
-    "specs": {
-      "tela": "Dual",
-      "privacidad": "Alta",
-      "aislacion": "Media",
-      "accionamiento": "Manual / Motor"
-    },
-    "description": "Elegancia natural que transforma tus espacios.\n\nDescubre un tejido elegante y versátil que te permite graduar la luz con suavidad, creando ambientes cálidos y acogedores. Su entramado translúcido y semitransparente deja pasar la luz de forma equilibrada, mientras su delicada mota en distintas tonalidades aporta textura y distinción.\n\nGracias a su composición mixta de lino y poliéster, este tejido combina la belleza natural con la resistencia y fácil mantenimiento, convirtiéndose en la opción ideal para espacios de estilo clásico o mediterráneo.\n\n✨ Regulación suave de la luz\n🌿 Estética natural con textura sutil\n🪟 Sistema noche y día para mayor versatilidad\n👶 Seguridad para niños\n🧼 Limpieza fácil\n🎨 Tonos naturales que combinan con todo\n\nAporta a tu hogar un toque sofisticado, luminoso y atemporal.",
-    "technical": {
-      "ancho": "300 cm",
-      "caida": "280 cm",
-      "mantenimiento": "Paño húmedo",
-      "opciones": "Manual / Motorizada"
-    }
-  },
-  {
-    "id": 28,
-    "category": "roller-dual",
     "name": "Dual Negro",
     "sku": "RD-NEGRO-01",
     "stock": 10,
     "image": "/images/dual-negro.jpg",
+    "gallery": [
+      "/images/dual-negro.jpg",
+      "/images/dual-negro-2.jpg",
+      "/images/dual-negro-3.jpg",
+      "/images/dual-negro-4.jpg"
+    ],
     "intro": "Dual negro premium.",
     "specs": {
       "tela": "Dual",
