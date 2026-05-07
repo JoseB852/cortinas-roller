@@ -37,8 +37,8 @@
     "gallery": [
       "/images/blackout-blanco.jpg",
       "/images/blackout-blanco-2.jpg",
-      "/images/blackout-blanco-3.jpg",
-      "/images/blackout-blanco-4.jpg"
+      "/images/blackout-blanco-3.jpg"
+   
     ],
     "intro": "Elegancia y funcionalidad en tonos claros.",
     "specs": {
@@ -93,8 +93,8 @@
     "gallery": [
       "/images/blackout-negro.jpg",
       "/images/blackout-negro-2.jpg",
-      "/images/blackout-negro-3.jpg",
-      "/images/blackout-negro-4.jpg"
+      "/images/blackout-negro-3.jpg"
+     
     ],
     "intro": "Oscuridad total con estilo elegante.",
     "specs": {
@@ -149,8 +149,8 @@
     "gallery": [
       "/images/sunscreen-gris.jpg",
       "/images/sunscreen-gris-2.jpg",
-      "/images/sunscreen-gris-3.jpg",
-      "/images/sunscreen-gris-4.jpg"
+      "/images/sunscreen-gris-3.jpg"
+     
     ],
     "intro": "Control de luz moderno y elegante.",
     "specs": {
@@ -177,8 +177,8 @@
     "gallery": [
       "/images/sunscreen-5-blanco.jpg",
       "/images/sunscreen-5-blanco-2.jpg",
-      "/images/sunscreen-5-blanco-3.jpg",
-      "/images/sunscreen-5-blanco-4.jpg"
+      "/images/sunscreen-5-blanco-3.jpg"
+     
     ],
     "intro": "Luz natural con claridad total.",
     "specs": {
@@ -205,8 +205,8 @@
     "gallery": [
       "/images/sunscreen-5-crudo.jpg",
       "/images/sunscreen-5-crudo-2.jpg",
-      "/images/sunscreen-5-crudo-3.jpg",
-      "/images/sunscreen-5-crudo-4.jpg"
+      "/images/sunscreen-5-crudo-3.jpg"
+      
     ],
     "intro": "Tono natural y elegante.",
     "specs": {
@@ -233,8 +233,7 @@
     "gallery": [
       "/images/sunscreen-5-negra.jpg",
       "/images/sunscreen-5-negra-2.jpg",
-      "/images/sunscreen-5-negra-3.jpg",
-      "/images/sunscreen-5-negra-4.jpg"
+      "/images/sunscreen-5-negra-3.jpg"
     ],
     "intro": "Elegancia en negro con control solar.",
     "specs": {
@@ -317,8 +316,8 @@
     "gallery": [
       "/images/dual-beige.jpg",
       "/images/dual-beige-2.jpg",
-      "/images/dual-beige-3.jpg",
-      "/images/dual-beige-4.jpg"
+      "/images/dual-beige-3.jpg"
+     
     ],
     "intro": "Control total día y noche.",
     "specs": {
@@ -373,8 +372,7 @@
     "gallery": [
       "/images/roller-dual-gris.jpg",
       "/images/roller-dual-gris-2.jpg",
-      "/images/roller-dual-gris-3.jpg",
-      "/images/roller-dual-gris-4.jpg"
+      "/images/roller-dual-gris-3.jpg"
     ],
     "intro": "Doble sistema blackout para máxima oscuridad.",
     "specs": {
@@ -401,8 +399,8 @@
     "gallery": [
       "/images/roller-dual-blanca.jpg",
       "/images/roller-dual-blanca-2.jpg",
-      "/images/roller-dual-blanca-3.jpg",
-      "/images/roller-dual-blanca-4.jpg"
+      "/images/roller-dual-blanca-3.jpg"
+     
     ],
     "intro": "Doble sistema blackout para máxima oscuridad.",
     "specs": {
@@ -429,8 +427,8 @@
     "gallery": [
       "/images/vertical-negra.jpg",
       "/images/vertical-negra-2.jpg",
-      "/images/vertical-negra-3.jpg",
-      "/images/vertical-negra-4.jpg"
+      "/images/vertical-negra-3.jpg"
+
     ],
     "intro": "Cortina vertical elegante en negro.",
     "specs": {
@@ -457,8 +455,8 @@
     "gallery": [
       "/images/vertical-blanca.jpg",
       "/images/vertical-blanca-2.jpg",
-      "/images/vertical-blanca-3.jpg",
-      "/images/vertical-blanca-4.jpg"
+      "/images/vertical-blanca-3.jpg"
+  
     ],
     "intro": "Vertical blanca limpia y moderna.",
     "specs": {
@@ -485,8 +483,8 @@
     "gallery": [
       "/images/vertical-crudo.jpg",
       "/images/vertical-crudo-2.jpg",
-      "/images/vertical-crudo-3.jpg",
-      "/images/vertical-crudo-4.jpg"
+      "/images/vertical-crudo-3.jpg"
+     
     ],
     "intro": "Tono crudo natural en vertical.",
     "specs": {
@@ -513,8 +511,8 @@
     "gallery": [
       "/images/blackout-dark-blanca.jpg",
       "/images/blackout-dark-blanca-2.jpg",
-      "/images/blackout-dark-blanca-3.jpg",
-      "/images/blackout-dark-blanca-4.jpg"
+      "/images/blackout-dark-blanca-3.jpg"
+     
     ],
     "intro": "Blackout avanzado blanco.",
     "specs": {
@@ -541,8 +539,8 @@
     "gallery": [
       "/images/blackout-dark-negro.jpg",
       "/images/blackout-dark-negro-2.jpg",
-      "/images/blackout-dark-negro-3.jpg",
-      "/images/blackout-dark-negro-4.jpg"
+      "/images/blackout-dark-negro-3.jpg"
+     
     ],
     "intro": "Blackout total negro profundo.",
     "specs": {
@@ -569,8 +567,8 @@
     "gallery": [
       "/images/blackout-dark-gris.jpg",
       "/images/blackout-dark-gris-2.jpg",
-      "/images/blackout-dark-gris-3.jpg",
-      "/images/blackout-dark-gris-4.jpg"
+      "/images/blackout-dark-gris-3.jpg"
+     
     ],
     "intro": "Blackout gris sofisticado.",
     "specs": {
@@ -597,8 +595,8 @@
     "gallery": [
       "/images/blackout-dark-beige.jpg",
       "/images/blackout-dark-beige-2.jpg",
-      "/images/blackout-dark-beige-3.jpg",
-      "/images/blackout-dark-beige-4.jpg"
+      "/images/blackout-dark-beige-3.jpg"
+     
     ],
     "intro": "Blackout cálido beige.",
     "specs": {
