@@ -112,7 +112,7 @@ export default function DetailProducts() {
               rel="noopener noreferrer"
             >
               <button className="quote-button">
-                WhatsApp
+                Contacta a 
               </button>
             </a>
 
