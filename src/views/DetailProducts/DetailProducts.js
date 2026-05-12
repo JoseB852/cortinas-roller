@@ -39,9 +39,9 @@ export default function DetailProducts() {
 
           <div className="gallery-grid">
             {selectedProduct.gallery?.map((img, index) => (
-              <img 
-                key={index} 
-                src={img} 
+              <img
+                key={index}
+                src={img}
                 alt={`${selectedProduct.name} - ${index + 1}`}
                 onClick={() => setMainImage(img)}
                 style={{ cursor: "pointer" }}
@@ -98,11 +98,25 @@ export default function DetailProducts() {
             </div>
           </div>
 
-          <Link to="/contact">
-            <button className="quote-button">
-              Solicitar Cotización
-            </button>
-          </Link>
+          <div className="buttons-row">
+
+            <Link to="/contact">
+              <button className="quote-button">
+                Solicitar Cotización
+              </button>
+            </Link>
+
+            <a
+              href="https://wa.me/56952067126?text=Hola,%20quiero%20cotizar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="quote-button">
+                WhatsApp
+              </button>
+            </a>
+
+          </div>
 
           <div className="sku-box">
             SKU: {selectedProduct.sku}

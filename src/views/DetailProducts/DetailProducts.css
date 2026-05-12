@@ -154,7 +154,18 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     transition: .3s;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 1rem;
     margin-top: 5%;
+    align-items: center;
+}
+
+.buttons-row a {
+    display: flex;
+    text-decoration: none;
 }
 
 .quote-button:hover {

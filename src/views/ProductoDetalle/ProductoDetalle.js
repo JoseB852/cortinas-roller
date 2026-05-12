@@ -212,8 +212,8 @@ export default function ProductoDetalle() {
             <div
               key={section.id}
               className={`content ${index % 2 !== 0
-                  ? "reverse"
-                  : ""
+                ? "reverse"
+                : ""
                 }`}
             >
 
