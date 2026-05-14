@@ -112,7 +112,7 @@
   {
     "id": 5,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 3%",
+    "name": "Roller Screen 3%",
     "sku": "RS-3-01",
     "stock": 12,
     "image": "/images/sunscreen-3.jpg",
@@ -140,7 +140,7 @@
   {
     "id": 6,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5% Gris",
+    "name": "Roller Screen 5% Gris",
     "sku": "RS-5-GRIS-01",
     "stock": 10,
     "image": "/images/sunscreen-gris.jpg",
@@ -168,7 +168,7 @@
   {
     "id": 7,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5% Blanco",
+    "name": "Roller Screen 5% Blanco",
     "sku": "RS-5-BLANCO-01",
     "stock": 10,
     "image": "/images/sunscreen-5-blanco.jpg",
@@ -196,7 +196,7 @@
   {
     "id": 8,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5% Crudo",
+    "name": "Roller Screen 5% Crudo",
     "sku": "RS-5-CRUDO-01",
     "stock": 10,
     "image": "/images/sunscreen-5-crudo.jpg",
@@ -224,7 +224,7 @@
   {
     "id": 9,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 5% Negra",
+    "name": "Roller Screen 5% Negra",
     "sku": "RS-5-NEGRA-01",
     "stock": 10,
     "image": "/images/sunscreen-5-negra.jpg",
@@ -251,7 +251,7 @@
   {
     "id": 10,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 3% Gris",
+    "name": "Roller Screen 3% Gris",
     "sku": "RS-3-GRIS-01",
     "stock": 12,
     "image": "/images/sunscreen-3-gris.jpg",
@@ -279,7 +279,7 @@
   {
     "id": 11,
     "category": "roller-sunscreen",
-    "name": "Roller Sunscreen 3% Negro",
+    "name": "Roller Screen 3% Negro",
     "sku": "RS-3-NEGRO-01",
     "stock": 12,
     "image": "/images/sunscreen-3-negro.jpg",
@@ -614,7 +614,7 @@
   {
     "id": 23,
     "category": "roller-dual",
-    "name": "Dual Blanco",
+    "name": "Dúo Blanco",
     "sku": "RD-BLANCO-02",
     "stock": 10,
     "image": "/images/roller-dual-blanco.jpg",
@@ -642,7 +642,7 @@
   {
     "id": 24,
     "category": "roller-dual",
-    "name": "Dual Crudo",
+    "name": "Dúo Crudo",
     "sku": "RD-CRUDO-01",
     "stock": 10,
     "image": "/images/roller-dual-crudo.jpg",
@@ -670,7 +670,7 @@
   {
     "id": 25,
     "category": "roller-dual",
-    "name": "Dual Gris",
+    "name": "Dúo Gris",
     "sku": "RD-GRIS-01",
     "stock": 10,
     "image": "/images/rollers-dual-gris.jpg",
@@ -698,7 +698,7 @@
   {
     "id": 26,
     "category": "roller-dual",
-    "name": "Dual Negro",
+    "name": "Dúo Negro",
     "sku": "RD-NEGRO-01",
     "stock": 10,
     "image": "/images/dual-negro.jpg",
