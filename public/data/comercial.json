@@ -59,7 +59,7 @@
         {
           "id": 1,
           "image": "/images/comercial-screen.jpg",
-          "label": "Comercial Screen",
+          "label": "Screen Comercial ",
           "viewId": "comercial-screen-rayas"
         },
         {
@@ -83,13 +83,13 @@
         {
           "id": 1,
           "image": "/images/comercial-vertical-1.jpg",
-          "label": "Comercial Vertical",
+          "label": " Vertical Comercial",
           "viewId": "comercial-duo-rayas"
         },
         {
           "id": 2,
           "image": "/images/comercial-vertical-2.jpg",
-          "label": "Comercial Vertical Blackout",
+          "label":  " Vertical Blackout Comercial",
           "viewId": "comercial-duo-luz"
         }
       ]
