@@ -18,6 +18,8 @@ import Privacy from './views/Privacy/Privacy';
 import Condition from './views/Condition/Condition';
 import ResidencialBody from './components/ResidencialBody/ResidencialBody';
 import DetailProducts from './views/DetailProducts/DetailProducts';
+import AgendaButton from './components/AgendaButton/AgendaButton';
+
 
 export default function App() {
   return (
@@ -36,14 +38,13 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/us" element={<Us />} />
           <Route path="/catalog" element={<Catalog />} />
-          <Route path="/producto/:id" element={<DetailProducts />}
-/>
+          <Route path="/producto/:id" element={<DetailProducts />}/>
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/condition" element={<Condition />} />
           <Route path="/card" element={<Card />} />
         </Routes>
       </main>
-
+      <AgendaButton />
       <Whatsapp />
       <Footer />
     </BrowserRouter>

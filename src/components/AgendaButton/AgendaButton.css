@@ -1,0 +1,80 @@
+/* CONTENEDOR */
+.agenda-container {
+  position: fixed;
+  bottom: 95px;
+  left: 22px;
+  z-index: 999999;
+}
+
+/* BOTÓN PRINCIPAL */
+.agenda-btn {
+  height: 46px;
+  padding: 0 18px;
+
+  border-radius: 999px;
+
+  background: rgba(20, 20, 20, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: #ffffff !important;
+
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(16px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.25s ease;
+
+  user-select: none;
+}
+
+/* ASEGURA QUE TODO EL TEXTO SEA BLANCO */
+.agenda-btn,
+.agenda-btn * {
+  color: #ffffff !important;
+}
+
+/* HOVER */
+.agenda-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(30, 30, 30, 0.95);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* CLICK */
+.agenda-btn:active {
+  transform: scale(0.97);
+}
+
+/* FOCUS (accesibilidad) */
+.agenda-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .agenda-container {
+    bottom: 85px;
+    left: 16px;
+  }
+
+  .agenda-btn {
+    height: 44px;
+    padding: 0 16px;
+    font-size: 12.5px;
+  }
+}

@@ -30,10 +30,14 @@
   box-sizing: border-box;
 }
 
+.title-blackout h1{
+  font-size: xx-large;
+}
+
 .title-blackout p {
   margin-top: 20px;
   width: 60%;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: normal;
   margin-right: auto; 
 }
@@ -88,11 +92,11 @@
 .explorer p {
   margin-top: 20px;
   max-width: 90%;      
-  font-size: 32px;
+  font-size: 22px;
   font-weight: normal;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 30%;
   text-align: center;     
   line-height: 1.4;     
 }
