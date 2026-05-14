@@ -31,13 +31,13 @@
 }
 
 .title-blackout h1{
-  font-size: xx-large;
+  font-size: 40px;
 }
 
 .title-blackout p {
   margin-top: 20px;
   width: 60%;
-  font-size: 22px;
+  font-size: 27px;
   font-weight: normal;
   margin-right: auto; 
 }
@@ -92,7 +92,7 @@
 .explorer p {
   margin-top: 20px;
   max-width: 90%;      
-  font-size: 22px;
+  font-size: 27px;
   font-weight: normal;
   margin-left: auto;
   margin-right: auto;
