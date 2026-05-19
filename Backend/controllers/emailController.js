@@ -11,7 +11,7 @@ const sendEmail = async (req, res, next) => {
         await resend.emails.send({
 
             from: "onboarding@resend.dev",
-            to: "cortinaslenox@gmail.com",
+            to: "jbetancourts976@gmail.com",
             subject: "Nuevo mensaje de contacto",
             html: `
                 <h2>Nuevo mensaje</h2>
