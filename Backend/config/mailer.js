@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+/*const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const transporter = nodemailer.createTransport({
@@ -9,4 +9,4 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-module.exports = transporter;
+module.exports = transporter;*/
