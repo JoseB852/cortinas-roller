@@ -105,7 +105,7 @@ export const StoreProvider = ({ children }) => {
   const sendContactEmail = useCallback(async (formData) => {
     try {
       setSendingEmail(true);
-      const response = await fetch("http://localhost:3000/email", {
+      const response = await fetch("https://cortinas-roller-a1w8.onrender.com/email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

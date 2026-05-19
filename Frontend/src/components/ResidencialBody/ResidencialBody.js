@@ -1,6 +1,6 @@
 import { useEffect, useContext } from "react";
 import Card from "../../views/Card/Card";
-import '../ResidencialBody/ResidencialBody.css'
+import './ResidencialBody.css'
 import { StoreContext } from "../Context/StoreContext";
 import { FaUserTie, FaHeadset } from "react-icons/fa";
 
